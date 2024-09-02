@@ -5,9 +5,10 @@
   "main": "src/index.ts",
   "scripts": {
     "compile": "rm -rf dist && tsc -d",
-    "lint": "prettier --check . && eslint .",
+    "lint": "prettier src --check && eslint src/**/*.{js,ts}",
     "format": "prettier --write src",
-    "pre-commit": "npm run lint"
+    "pre-commit": "npm run lint",
+    "test": "ts-node src/test.ts"
   },
   "repository": {
     "type": "git",
