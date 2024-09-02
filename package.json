@@ -1,0 +1,26 @@
+{
+  "name": "tmdb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackTiger007/tmdb.git"
+  },
+  "keywords": [
+    "tmdb",
+    "ts"
+  ],
+  "author": "BlackTiger007",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/BlackTiger007/tmdb/issues"
+  },
+  "homepage": "https://github.com/BlackTiger007/tmdb#readme",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}

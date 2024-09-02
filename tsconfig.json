@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "es2020",                                  /* Modernes JavaScript-Target für bessere Unterstützung aktueller Features. */
+    "module": "commonjs",                                /* CommonJS-Module für Node.js-Kompatibilität. */
+    "lib": ["es2020"],                                   /* Verwendung von modernen ES2020-Bibliotheken. */
+    "esModuleInterop": true,                             /* Verbesserte Interoperabilität mit CommonJS-Modulen. */
+    "strict": true,                                      /* Aktiviert alle strikten TypeScript-Prüfungen. */
+    "forceConsistentCasingInFileNames": true,            /* Sicherstellung konsistenter Groß-/Kleinschreibung bei Dateinamen. */
+    "skipLibCheck": true,                                /* Überspringen der Typprüfung von Bibliotheksdateien für schnellere Builds. */
+
+    /* Emit */
+    "declaration": true,                                 /* Erzeugung von .d.ts-Dateien zur Unterstützung der Typprüfung bei der Nutzung deines Pakets. */
+    "declarationMap": true,                              /* Sourcemaps für die .d.ts-Dateien zur besseren Debugging-Unterstützung. */
+    "sourceMap": true,                                   /* Erzeugung von Sourcemaps für den JavaScript-Code zur Debugging-Unterstützung. */
+    "outDir": "./dist",                                  /* Ausgabe aller kompilierten Dateien in das 'dist'-Verzeichnis. */
+    "removeComments": true,                              /* Entfernen von Kommentaren im generierten Code. */
+    "noEmitOnError": true,                               /* Keine Ausgabe von Dateien bei Kompilierungsfehlern. */
+
+    /* Modules */
+    "resolveJsonModule": true,                           /* Unterstützung für den Import von JSON-Dateien. */
+    "allowSyntheticDefaultImports": true,                /* Erlaubt den Import von Modulen ohne expliziten Default-Export. */
+    "moduleResolution": "node",                          /* Modulauflösung für Node.js. */
+    "isolatedModules": true,                             /* Sicherstellung, dass jeder Dateityp unabhängig von anderen transpiliert werden kann. */
+
+    /* Type Checking */
+    "noUnusedLocals": true,                              /* Fehler bei ungenutzten lokalen Variablen. */
+    "noUnusedParameters": true,                          /* Fehler bei ungenutzten Funktionsparametern. */
+    "noImplicitReturns": true,                           /* Fehler bei fehlenden Rückgabewerten in Funktionen. */
+    "noFallthroughCasesInSwitch": true                   /* Fehler bei fehlenden 'break'-Anweisungen in switch-Fällen. */
+  },
+  "include": ["src/**/*.ts"],                            /* Eingeschlossene Dateien zur Kompilierung. */
+  "exclude": ["node_modules", "dist"]                    /* Ausgeschlossene Verzeichnisse, die nicht kompiliert werden sollen. */
+}
