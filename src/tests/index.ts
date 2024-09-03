@@ -1,6 +1,13 @@
 import TMDB from '..';
+import dotenv from 'dotenv';
 
-const tmdb = new TMDB('API_KEY', 'de');
+dotenv.config();
+
+if (!process.env.API_KEY) {
+	throw new Error('API_KEY is not defined');
+}
+
+const tmdb = new TMDB(process.env.API_KEY, 'de');
 
 const test = async (e1: any, e2: any) => {
 	const check = e1 === e2;
