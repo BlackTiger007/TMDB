@@ -146,3 +146,60 @@ export type validateKeyResponse = {
 	status_code: number;
 	status_message: string;
 };
+
+export type changesResponse = {
+	changes: Array<{
+		key: string;
+		items: Array<{
+			id: string;
+			action: 'added' | 'updated' | 'deleted';
+			time: string; // in UTC time format
+			iso_639_1: string;
+			iso_3166_1: string;
+			value:
+				| string
+				| number
+				| {
+						title?: string;
+						type?: string;
+						iso_3166_1?: string;
+						primary?: boolean;
+						tagline?: string;
+						backdrop?: {
+							file_path: string;
+							iso_639_1: string | null;
+						};
+						poster?: {
+							file_path: string;
+							iso_639_1: string | null;
+						};
+						title_logo?: {
+							file_path: string;
+							iso_639_1: string | null;
+						};
+				  };
+			original_value?:
+				| string
+				| number
+				| {
+						title?: string;
+						type?: string;
+						iso_3166_1?: string;
+						primary?: boolean;
+						tagline?: string;
+						backdrop?: {
+							file_path: string;
+							iso_639_1: string | null;
+						};
+						poster?: {
+							file_path: string;
+							iso_639_1: string | null;
+						};
+						title_logo?: {
+							file_path: string;
+							iso_639_1: string | null;
+						};
+				  };
+		}>;
+	}>;
+};

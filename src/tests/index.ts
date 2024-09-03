@@ -21,6 +21,10 @@ const test = async (e1: any, e2: any) => {
 async function init() {
 	test((await tmdb.getMovie(12)).title, 'Findet Nemo');
 	test((await tmdb.alternativeTitle(12, 'DE')).id, 12);
+	test(
+		(await tmdb.changes(1032823, '2024-09-01', '2024-09-02')).changes[0].items[0].id,
+		'66d407564c75b4647978ed5a'
+	);
 }
 
 init();

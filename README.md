@@ -140,7 +140,7 @@
 | Details            | ✅         |
 | Account States     | ❌         |
 | Alternative Titles | ✅         |
-| Changes            | ❌         |
+| Changes            | ✅         |
 | Credits            | ❌         |
 | External IDs       | ❌         |
 | Images             | ❌         |
