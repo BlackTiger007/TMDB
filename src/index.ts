@@ -1,3 +1,3 @@
-import { TMDB } from './api/TMDB';
+import { MovieService } from './api/MovieService';
 
-export default TMDB;
+export default class TMDB extends MovieService {}
