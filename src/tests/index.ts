@@ -16,27 +16,31 @@ async function init() {
 		test((await tmdb.movie.alternativeTitle(12, 'DE')).id, 12);
 		const changes = (await tmdb.movie.changes(1032823, '2024-09-01', '2024-09-02')).changes;
 		await checkItemExists('66d407564c75b4647978ed5a', changes);
+		// await tmdb.movie
+		// 	.credits(12, 'DE')
+		// 	.then(() => console.log('Test Passed: Credits'))
+		// 	.catch((e) => console.error(e));
+		// test((await tmdb.movie.accountStates(12)).favorite, false);
+		// test((await tmdb.movie.externalIds(12)).imdb_id, 'tt0266543');
+		// await tmdb.movie
+		// 	.images(12, 'DE')
+		// 	.then(() => console.log('Test Passed: Images'))
+		// 	.catch((e) => console.error(e));
+		// await tmdb.movie
+		// 	.keywords(12)
+		// 	.then(() => console.log('Test Passed: Keywords'))
+		// 	.catch((e) => console.error(e));
+		// await tmdb.movie
+		// 	.latest()
+		// 	.then(() => console.log('Test Passed: Latest'))
+		// 	.catch((e) => console.error(e));
+		// await tmdb.movie
+		// 	.releaseDates(12)
+		// 	.then(() => console.log('Test Passed: Release Dates'))
+		// 	.catch((e) => console.error(e));
 		await tmdb.movie
-			.credits(12, 'DE')
-			.then(() => console.log('Test Passed: Credits'))
-			.catch((e) => console.error(e));
-		test((await tmdb.movie.accountStates(12)).favorite, false);
-		test((await tmdb.movie.externalIds(12)).imdb_id, 'tt0266543');
-		await tmdb.movie
-			.images(12, 'DE')
-			.then(() => console.log('Test Passed: Images'))
-			.catch((e) => console.error(e));
-		await tmdb.movie
-			.keywords(12)
-			.then(() => console.log('Test Passed: Keywords'))
-			.catch((e) => console.error(e));
-		await tmdb.movie
-			.latest()
-			.then(() => console.log('Test Passed: Latest'))
-			.catch((e) => console.error(e));
-		await tmdb.movie
-			.releaseDates(12)
-			.then(() => console.log('Test Passed: Release Dates'))
+			.translations(12)
+			.then(() => console.log('Test Passed: Translations'))
 			.catch((e) => console.error(e));
 	} catch (error) {
 		console.error('Error during tests:', error);

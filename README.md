@@ -151,7 +151,7 @@
 | Release Dates      | ✅         |
 | Reviews            | ❌         |
 | Similar            | ❌         |
-| Translations       | ❌         |
+| Translations       | ✅         |
 | Videos             | ❌         |
 | Watch Providers    | ❌         |
 | Add Rating         | ❌         |

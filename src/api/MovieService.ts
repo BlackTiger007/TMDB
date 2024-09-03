@@ -9,7 +9,8 @@ import {
 	ImageResponse,
 	KeywordsResponse,
 	LatestResponse,
-	ReleaseDatesResponse
+	ReleaseDatesResponse,
+	TranslationsResponse
 } from '../types';
 
 export class MovieService {
@@ -144,7 +145,10 @@ export class MovieService {
 
 	// @TODO Similar
 
-	// @TODO Translations
+	// Get the translations for a movie.
+	async translations(movieId: number): Promise<TranslationsResponse> {
+		return this.apiInstance.GET<TranslationsResponse>(`movie/${movieId}/translations`);
+	}
 
 	// @TODO Videos
 

@@ -341,3 +341,24 @@ export type ReleaseDatesResponse = {
 	id: number;
 	results: CountryReleaseDates[];
 };
+
+export type MovieData = {
+	homepage: string;
+	overview: string;
+	runtime: number;
+	tagline: string;
+	title: string;
+};
+
+export type Translation = {
+	iso_3166_1: string;
+	iso_639_1: string;
+	name: string;
+	english_name: string;
+	data: MovieData;
+};
+
+export type TranslationsResponse = {
+	id: number;
+	translations: Translation[];
+};
