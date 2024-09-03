@@ -65,7 +65,7 @@ export class api {
 		}
 	}
 
-	protected async GET<T>(endpoint: string, retries = api.MAX_RETRIES): Promise<T> {
+	public async GET<T>(endpoint: string, retries = api.MAX_RETRIES): Promise<T> {
 		try {
 			const headers: Record<string, string> = {
 				accept: 'application/json',

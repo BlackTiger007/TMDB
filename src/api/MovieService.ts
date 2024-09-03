@@ -1,9 +1,15 @@
 import { api } from '.';
 import { AlternativeTitlesResponse, changesResponse, Movie } from '../types';
 
-export class MovieService extends api {
+export class MovieService {
+	private apiInstance: api;
+
+	constructor(apiInstance: api) {
+		this.apiInstance = apiInstance;
+	}
+
 	async getMovie(id: number): Promise<Movie> {
-		return this.GET<Movie>(`movie/${id}`);
+		return this.apiInstance.GET<Movie>(`movie/${id}`);
 	}
 
 	async alternativeTitle(movieId: number, country?: string): Promise<AlternativeTitlesResponse> {
@@ -13,7 +19,7 @@ export class MovieService extends api {
 			endpoint += `?country=${encodeURIComponent(country)}`;
 		}
 
-		return this.GET<AlternativeTitlesResponse>(endpoint);
+		return this.apiInstance.GET<AlternativeTitlesResponse>(endpoint);
 	}
 
 	async changes(
@@ -40,6 +46,6 @@ export class MovieService extends api {
 			endpoint += `?${queryParams.toString()}`;
 		}
 
-		return this.GET<changesResponse>(endpoint);
+		return this.apiInstance.GET<changesResponse>(endpoint);
 	}
 }
