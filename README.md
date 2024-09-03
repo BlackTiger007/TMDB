@@ -153,7 +153,7 @@
 | Similar            | ❌         |
 | Translations       | ✅         |
 | Videos             | ✅         |
-| Watch Providers    | ❌         |
+| Watch Providers    | ✅         |
 | Add Rating         | ❌         |
 | Delete Rating      | ❌         |
 

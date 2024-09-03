@@ -11,7 +11,8 @@ import {
 	LatestResponse,
 	ReleaseDatesResponse,
 	TranslationsResponse,
-	VideosResponse
+	VideosResponse,
+	WatchProvidersResponse
 } from '../types';
 
 export class MovieService {
@@ -161,7 +162,10 @@ export class MovieService {
 		return this.apiInstance.GET<VideosResponse>(endpoint);
 	}
 
-	// @TODO Watch Providers
+	// Get the list of streaming providers we have for a movie.
+	async watchProviders(movieId: number): Promise<WatchProvidersResponse> {
+		return this.apiInstance.GET<WatchProvidersResponse>(`movie/${movieId}/watch/providers`);
+	}
 
 	// @TODO Add Rating
 

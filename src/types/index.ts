@@ -380,3 +380,24 @@ export type VideosResponse = {
 	id: number;
 	results: Trailer[];
 };
+
+export type StreamingProvider = {
+	logo_path: string;
+	provider_id: number;
+	provider_name: string;
+	display_priority: number;
+};
+
+export type RegionAvailability = {
+	link: string;
+	flatrate?: StreamingProvider[];
+	rent?: StreamingProvider[];
+	buy?: StreamingProvider[];
+};
+
+export type WatchProvidersResponse = {
+	id: number;
+	results: {
+		[regionCode: string]: RegionAvailability;
+	};
+};

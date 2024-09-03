@@ -42,9 +42,13 @@ async function init() {
 		// 	.translations(12)
 		// 	.then(() => console.log('Test Passed: Translations'))
 		// 	.catch((e) => console.error(e));
+		// await tmdb.movie
+		// 	.videos(12)
+		// 	.then(() => console.log('Test Passed: Videos'))
+		// 	.catch((e) => console.error(e));
 		await tmdb.movie
-			.videos(12)
-			.then(() => console.log('Test Passed: Videos'))
+			.watchProviders(12)
+			.then(() => console.log('Test Passed: Watch Providers'))
 			.catch((e) => console.error(e));
 	} catch (error) {
 		console.error('Error during tests:', error);
