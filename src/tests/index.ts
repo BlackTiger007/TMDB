@@ -21,6 +21,7 @@ async function init() {
 			.then(() => console.log('Test Passed: Credits'))
 			.catch((e) => console.error(e));
 		test((await tmdb.movie.accountStates(12)).favorite, false);
+		test((await tmdb.movie.externalIds(12)).imdb_id, 'tt0266543');
 	} catch (error) {
 		console.error('Error during tests:', error);
 	}

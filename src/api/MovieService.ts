@@ -4,7 +4,8 @@ import {
 	changesResponse,
 	Movie,
 	CreditsResponse,
-	AccountStatesResponse
+	AccountStatesResponse,
+	ExternalIDsResponse
 } from '../types';
 
 export class MovieService {
@@ -86,5 +87,9 @@ export class MovieService {
 		}
 
 		return this.apiInstance.GET<AccountStatesResponse>(endpoint);
+	}
+
+	async externalIds(movieId: number): Promise<ExternalIDsResponse> {
+		return this.apiInstance.GET<ExternalIDsResponse>(`movie/${movieId}/external_ids`);
 	}
 }

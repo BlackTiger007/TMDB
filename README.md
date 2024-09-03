@@ -142,7 +142,7 @@
 | Alternative Titles | ✅         |
 | Changes            | ✅         |
 | Credits            | ✅         |
-| External IDs       | ❌         |
+| External IDs       | ✅         |
 | Images             | ❌         |
 | Keywords           | ❌         |
 | Latest             | ❌         |
