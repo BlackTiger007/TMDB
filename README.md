@@ -145,7 +145,7 @@
 | External IDs       | ✅         |
 | Images             | ✅         |
 | Keywords           | ✅         |
-| Latest             | ❌         |
+| Latest             | ✅         |
 | Lists              | ❌         |
 | Recommendations    | ❌         |
 | Release Dates      | ❌         |

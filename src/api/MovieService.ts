@@ -7,7 +7,8 @@ import {
 	AccountStatesResponse,
 	ExternalIDsResponse,
 	ImageResponse,
-	KeywordsResponse
+	KeywordsResponse,
+	LatestResponse
 } from '../types';
 
 export class MovieService {
@@ -124,4 +125,28 @@ export class MovieService {
 	async keywords(movieId: number): Promise<KeywordsResponse> {
 		return this.apiInstance.GET<KeywordsResponse>(`movie/${movieId}/keywords`);
 	}
+
+	async latest(): Promise<LatestResponse> {
+		return this.apiInstance.GET<LatestResponse>('movie/latest');
+	}
+
+	// @TODO Lists
+
+	// @TODO Recommendations
+
+	// @TODO Release Dates
+
+	// @TODO Reviews
+
+	// @TODO Similar
+
+	// @TODO Translations
+
+	// @TODO Videos
+
+	// @TODO Watch Providers
+
+	// @TODO Add Rating
+
+	// @TODO Delete Rating
 }
