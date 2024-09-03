@@ -5,7 +5,8 @@ import {
 	Movie,
 	CreditsResponse,
 	AccountStatesResponse,
-	ExternalIDsResponse
+	ExternalIDsResponse,
+	ImageResponse
 } from '../types';
 
 export class MovieService {
@@ -91,5 +92,31 @@ export class MovieService {
 
 	async externalIds(movieId: number): Promise<ExternalIDsResponse> {
 		return this.apiInstance.GET<ExternalIDsResponse>(`movie/${movieId}/external_ids`);
+	}
+
+	// Get the images that belong to a movie.
+	async images(
+		movieId: number,
+		includeImageLanguage?: string,
+		language?: string
+	): Promise<ImageResponse> {
+		let endpoint = `movie/${movieId}/images`;
+
+		const queryParams = new URLSearchParams();
+
+		// includeImageLanguage - specify a comma separated list of ISO-639-1 values to query, for example: en,null
+		if (includeImageLanguage) {
+			queryParams.append('include_image_language', includeImageLanguage);
+		}
+
+		if (language) {
+			queryParams.append('language', language);
+		}
+
+		if (queryParams.toString()) {
+			endpoint += `?${queryParams.toString()}`;
+		}
+
+		return this.apiInstance.GET<ImageResponse>(endpoint);
 	}
 }

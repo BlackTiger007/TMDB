@@ -143,7 +143,7 @@
 | Changes            | ✅         |
 | Credits            | ✅         |
 | External IDs       | ✅         |
-| Images             | ❌         |
+| Images             | ✅         |
 | Keywords           | ❌         |
 | Latest             | ❌         |
 | Lists              | ❌         |

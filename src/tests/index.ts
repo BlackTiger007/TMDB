@@ -22,6 +22,10 @@ async function init() {
 			.catch((e) => console.error(e));
 		test((await tmdb.movie.accountStates(12)).favorite, false);
 		test((await tmdb.movie.externalIds(12)).imdb_id, 'tt0266543');
+		await tmdb.movie
+			.images(12, 'DE')
+			.then(() => console.log('Test Passed: Images'))
+			.catch((e) => console.error(e));
 	} catch (error) {
 		console.error('Error during tests:', error);
 	}
