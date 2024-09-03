@@ -223,3 +223,10 @@ export interface CreditsResponse {
 	id: number;
 	cast: CastMember[];
 }
+
+export interface AccountStatesResponse {
+	id: number;
+	favorite: boolean;
+	rated: boolean;
+	watchlist: boolean;
+}

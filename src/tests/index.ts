@@ -1,6 +1,6 @@
 import TMDB from '..';
 import dotenv from 'dotenv';
-import { test, checkItemExists } from './fn';
+import { checkItemExists, test } from './fn';
 
 dotenv.config();
 
@@ -20,6 +20,7 @@ async function init() {
 			.credits(12, 'DE')
 			.then(() => console.log('Test Passed: Credits'))
 			.catch((e) => console.error(e));
+		test((await tmdb.movie.accountStates(12)).favorite, false);
 	} catch (error) {
 		console.error('Error during tests:', error);
 	}

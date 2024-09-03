@@ -138,7 +138,7 @@
 | **Feature**        | **Status** |
 | ------------------ | ---------- |
 | Details            | ✅         |
-| Account States     | ❌         |
+| Account States     | ✅         |
 | Alternative Titles | ✅         |
 | Changes            | ✅         |
 | Credits            | ✅         |

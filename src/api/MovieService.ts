@@ -1,5 +1,11 @@
 import { api } from '.';
-import { AlternativeTitlesResponse, changesResponse, Movie, CreditsResponse } from '../types';
+import {
+	AlternativeTitlesResponse,
+	changesResponse,
+	Movie,
+	CreditsResponse,
+	AccountStatesResponse
+} from '../types';
 
 export class MovieService {
 	private apiInstance: api;
@@ -55,5 +61,30 @@ export class MovieService {
 			endpoint += `?language=${encodeURIComponent(language)}`;
 		}
 		return this.apiInstance.GET<CreditsResponse>(endpoint);
+	}
+
+	// Get the rating, watchlist and favourite status of an account.
+	async accountStates(
+		movieId: number,
+		sessionId?: string,
+		guestSessionId?: string
+	): Promise<AccountStatesResponse> {
+		let endpoint = `movie/${movieId}/account_states`;
+
+		const queryParams = new URLSearchParams();
+
+		if (sessionId) {
+			queryParams.append('session_id', sessionId);
+		}
+
+		if (guestSessionId) {
+			queryParams.append('guest_session_id', guestSessionId);
+		}
+
+		if (queryParams.toString()) {
+			endpoint += `?${queryParams.toString()}`;
+		}
+
+		return this.apiInstance.GET<AccountStatesResponse>(endpoint);
 	}
 }
