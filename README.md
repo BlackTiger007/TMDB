@@ -141,7 +141,7 @@
 | Account States     | ❌         |
 | Alternative Titles | ✅         |
 | Changes            | ✅         |
-| Credits            | ❌         |
+| Credits            | ✅         |
 | External IDs       | ❌         |
 | Images             | ❌         |
 | Keywords           | ❌         |

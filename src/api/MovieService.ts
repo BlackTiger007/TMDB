@@ -1,5 +1,5 @@
 import { api } from '.';
-import { AlternativeTitlesResponse, changesResponse, Movie } from '../types';
+import { AlternativeTitlesResponse, changesResponse, Movie, CreditsResponse } from '../types';
 
 export class MovieService {
 	private apiInstance: api;
@@ -47,5 +47,13 @@ export class MovieService {
 		}
 
 		return this.apiInstance.GET<changesResponse>(endpoint);
+	}
+
+	async credits(movieId: number, language?: string): Promise<CreditsResponse> {
+		let endpoint = `movie/${movieId}/credits`;
+		if (language) {
+			endpoint += `?language=${encodeURIComponent(language)}`;
+		}
+		return this.apiInstance.GET<CreditsResponse>(endpoint);
 	}
 }
