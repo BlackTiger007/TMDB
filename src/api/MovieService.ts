@@ -10,7 +10,8 @@ import {
 	KeywordsResponse,
 	LatestResponse,
 	ReleaseDatesResponse,
-	TranslationsResponse
+	TranslationsResponse,
+	VideosResponse
 } from '../types';
 
 export class MovieService {
@@ -150,7 +151,15 @@ export class MovieService {
 		return this.apiInstance.GET<TranslationsResponse>(`movie/${movieId}/translations`);
 	}
 
-	// @TODO Videos
+	async videos(movieId: number, language?: string): Promise<VideosResponse> {
+		let endpoint = `movie/${movieId}/videos`;
+
+		if (language) {
+			endpoint += `?language=${encodeURIComponent(language)}`;
+		}
+
+		return this.apiInstance.GET<VideosResponse>(endpoint);
+	}
 
 	// @TODO Watch Providers
 

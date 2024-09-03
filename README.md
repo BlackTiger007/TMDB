@@ -152,7 +152,7 @@
 | Reviews            | ❌         |
 | Similar            | ❌         |
 | Translations       | ✅         |
-| Videos             | ❌         |
+| Videos             | ✅         |
 | Watch Providers    | ❌         |
 | Add Rating         | ❌         |
 | Delete Rating      | ❌         |

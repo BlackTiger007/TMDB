@@ -38,9 +38,13 @@ async function init() {
 		// 	.releaseDates(12)
 		// 	.then(() => console.log('Test Passed: Release Dates'))
 		// 	.catch((e) => console.error(e));
+		// await tmdb.movie
+		// 	.translations(12)
+		// 	.then(() => console.log('Test Passed: Translations'))
+		// 	.catch((e) => console.error(e));
 		await tmdb.movie
-			.translations(12)
-			.then(() => console.log('Test Passed: Translations'))
+			.videos(12)
+			.then(() => console.log('Test Passed: Videos'))
 			.catch((e) => console.error(e));
 	} catch (error) {
 		console.error('Error during tests:', error);

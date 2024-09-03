@@ -362,3 +362,21 @@ export type TranslationsResponse = {
 	id: number;
 	translations: Translation[];
 };
+
+export type Trailer = {
+	iso_639_1: string;
+	iso_3166_1: string;
+	name: string;
+	key: string;
+	published_at: string;
+	site: string;
+	size: number;
+	type: string;
+	official: boolean;
+	id: string;
+};
+
+export type VideosResponse = {
+	id: number;
+	results: Trailer[];
+};
