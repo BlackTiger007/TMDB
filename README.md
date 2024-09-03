@@ -148,7 +148,7 @@
 | Latest             | ✅         |
 | Lists              | ❌         |
 | Recommendations    | ❌         |
-| Release Dates      | ❌         |
+| Release Dates      | ✅         |
 | Reviews            | ❌         |
 | Similar            | ❌         |
 | Translations       | ❌         |

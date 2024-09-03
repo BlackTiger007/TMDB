@@ -34,6 +34,10 @@ async function init() {
 			.latest()
 			.then(() => console.log('Test Passed: Latest'))
 			.catch((e) => console.error(e));
+		await tmdb.movie
+			.releaseDates(12)
+			.then(() => console.log('Test Passed: Release Dates'))
+			.catch((e) => console.error(e));
 	} catch (error) {
 		console.error('Error during tests:', error);
 	}

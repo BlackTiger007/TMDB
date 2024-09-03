@@ -8,7 +8,8 @@ import {
 	ExternalIDsResponse,
 	ImageResponse,
 	KeywordsResponse,
-	LatestResponse
+	LatestResponse,
+	ReleaseDatesResponse
 } from '../types';
 
 export class MovieService {
@@ -134,7 +135,10 @@ export class MovieService {
 
 	// @TODO Recommendations
 
-	// @TODO Release Dates
+	// Get the release dates and certifications for a movie.
+	async releaseDates(movieId: number): Promise<ReleaseDatesResponse> {
+		return this.apiInstance.GET<ReleaseDatesResponse>(`movie/${movieId}/release_dates`);
+	}
 
 	// @TODO Reviews
 
