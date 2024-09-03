@@ -26,6 +26,10 @@ async function init() {
 			.images(12, 'DE')
 			.then(() => console.log('Test Passed: Images'))
 			.catch((e) => console.error(e));
+		await tmdb.movie
+			.keywords(12)
+			.then(() => console.log('Test Passed: Keywords'))
+			.catch((e) => console.error(e));
 	} catch (error) {
 		console.error('Error during tests:', error);
 	}

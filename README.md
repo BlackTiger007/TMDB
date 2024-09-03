@@ -144,7 +144,7 @@
 | Credits            | ✅         |
 | External IDs       | ✅         |
 | Images             | ✅         |
-| Keywords           | ❌         |
+| Keywords           | ✅         |
 | Latest             | ❌         |
 | Lists              | ❌         |
 | Recommendations    | ❌         |
