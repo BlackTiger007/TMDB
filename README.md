@@ -28,7 +28,7 @@
 | Create Session (from v4 token) | ❌         |
 | Create Session (with login)    | ❌         |
 | Delete Session                 | ❌         |
-| Validate Key                   | ✅         |
+| Validate Key                   | ❌         |
 
 ### Certifications
 
