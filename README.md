@@ -147,7 +147,7 @@
 | Keywords           | ✅         |
 | Latest             | ✅         |
 | Lists              | ✅         |
-| Recommendations    | ❌         |
+| Recommendations    | ✅         |
 | Release Dates      | ✅         |
 | Reviews            | ❌         |
 | Similar            | ❌         |

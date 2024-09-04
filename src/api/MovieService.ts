@@ -13,7 +13,8 @@ import {
 	TranslationsResponse,
 	VideosResponse,
 	WatchProvidersResponse,
-	ListsResponse
+	ListsResponse,
+	RecommendationsResponse
 } from '../types';
 
 export class MovieService {
@@ -156,7 +157,29 @@ export class MovieService {
 		return this.apiInstance.GET<ListsResponse>(endpoint);
 	}
 
-	// @TODO Recommendations
+	async recommendations(
+		movieId: number,
+		language?: string,
+		page?: number
+	): Promise<RecommendationsResponse> {
+		let endpoint = `movie/${movieId}/recommendations`;
+
+		const queryParams = new URLSearchParams();
+
+		if (language) {
+			queryParams.append('language', language);
+		}
+
+		if (page) {
+			queryParams.append('page', page.toString());
+		}
+
+		if (queryParams.toString()) {
+			endpoint += `?${queryParams.toString()}`;
+		}
+
+		return this.apiInstance.GET<RecommendationsResponse>(endpoint);
+	}
 
 	// Get the release dates and certifications for a movie.
 	async releaseDates(movieId: number): Promise<ReleaseDatesResponse> {

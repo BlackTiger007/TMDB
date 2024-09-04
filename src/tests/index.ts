@@ -50,9 +50,13 @@ async function init() {
 		// 	.watchProviders(12)
 		// 	.then(() => console.log('Test Passed: Watch Providers'))
 		// 	.catch((e) => console.error(e));
+		// await tmdb.movie
+		// 	.lists(12)
+		// 	.then(() => console.log('Test Passed: Lists'))
+		// 	.catch((e) => console.error(e));
 		await tmdb.movie
-			.lists(12)
-			.then(() => console.log('Test Passed: Lists'))
+			.recommendations(12)
+			.then(() => console.log('Test Passed: Recommendations'))
 			.catch((e) => console.error(e));
 	} catch (error) {
 		console.error('Error during tests:', error);
