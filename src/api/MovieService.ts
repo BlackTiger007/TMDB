@@ -1,7 +1,7 @@
 import { api } from '.';
 import {
 	AlternativeTitlesResponse,
-	changesResponse,
+	ChangesResponse,
 	Movie,
 	CreditsResponse,
 	AccountStatesResponse,
@@ -43,7 +43,7 @@ export class MovieService {
 		start_date?: string,
 		end_date?: string,
 		page: number = 1
-	): Promise<changesResponse> {
+	): Promise<ChangesResponse> {
 		let endpoint = `movie/${movieId}/changes`;
 
 		const queryParams = new URLSearchParams();
@@ -62,7 +62,7 @@ export class MovieService {
 			endpoint += `?${queryParams.toString()}`;
 		}
 
-		return this.apiInstance.GET<changesResponse>(endpoint);
+		return this.apiInstance.GET<ChangesResponse>(endpoint);
 	}
 
 	async credits(movieId: number, language?: string): Promise<CreditsResponse> {

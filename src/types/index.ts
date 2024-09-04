@@ -2,15 +2,39 @@ export type Url = 'https://api.themoviedb.org/3';
 
 export type ImagePath = string | null;
 
+export interface Genre {
+	id: number;
+	name: string;
+}
+
+export interface ProductionCompany {
+	id: number;
+	logo_path: string | null;
+	name: string;
+	origin_country: string;
+}
+
+export interface ProductionCountry {
+	iso_3166_1: string;
+	name: string;
+}
+
+export interface SpokenLanguage {
+	iso_639_1: string;
+	name: string;
+}
+
 export type Movie = {
 	adult: boolean;
 	backdropPath: ImagePath;
-	belongsToCollection: null | object;
-	budget: number;
-	genres: ReadonlyArray<{
+	belongsToCollection: null | {
 		id: number;
 		name: string;
-	}>;
+		posterPath: string | null;
+		backdropPath: string | null;
+	};
+	budget: number;
+	genres: ReadonlyArray<Genre>;
 	homepage: string | null;
 	id: number;
 	imdbId: string | null;
@@ -19,21 +43,12 @@ export type Movie = {
 	overview: string | null;
 	popularity: number;
 	posterPath: ImagePath;
-	productionCompanies: ReadonlyArray<{
-		id: number;
-		name: string;
-	}>;
-	productionCountries: ReadonlyArray<{
-		iso31661: string;
-		name: string;
-	}>;
+	productionCompanies: ReadonlyArray<ProductionCompany>;
+	productionCountries: ReadonlyArray<ProductionCountry>;
 	releaseDate: string;
 	revenue: number;
 	runtime: number | null;
-	spokenLanguages: ReadonlyArray<{
-		iso6391: string;
-		name: string;
-	}>;
+	spokenLanguages: ReadonlyArray<SpokenLanguage>;
 	status: string;
 	tagline: string | null;
 	title: string;
@@ -53,19 +68,19 @@ export type AlternativeTitlesResponse = {
 	titles: AlternativeTitle[];
 };
 
-export type validateKeyResponse = {
+export type ValidateKeyResponse = {
 	success: boolean;
 	status_code: number;
 	status_message: string;
 };
 
-export type changesResponse = {
+export type ChangesResponse = {
 	changes: Array<{
 		key: string;
 		items: Array<{
 			id: string;
 			action: 'added' | 'updated' | 'deleted';
-			time: string; // in UTC time format
+			time: string;
 			iso_639_1: string;
 			iso_3166_1: string;
 			value:
@@ -340,6 +355,7 @@ export type GenreID =
 	| 10751 // Family
 	| 14; // Fantasy
 
+// Film Typ 2
 export type Movie2 = {
 	backdrop_path: string;
 	id: number;

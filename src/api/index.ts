@@ -1,4 +1,4 @@
-import type { Url, validateKeyResponse } from '../types/index';
+import type { Url, ValidateKeyResponse } from '../types/index';
 
 export class api {
 	protected apiKey: string;
@@ -40,7 +40,7 @@ export class api {
 	protected async validateKey(
 		apiKey: string,
 		retries = api.MAX_RETRIES
-	): Promise<validateKeyResponse> {
+	): Promise<ValidateKeyResponse> {
 		try {
 			const headers: Record<string, string> = {
 				accept: 'application/json',
@@ -58,7 +58,7 @@ export class api {
 				return this.validateKey(apiKey, retries - 1);
 			}
 
-			return (await response.json()) as validateKeyResponse;
+			return (await response.json()) as ValidateKeyResponse;
 		} catch (error) {
 			console.error('Failed to fetch:', error);
 			throw error;
