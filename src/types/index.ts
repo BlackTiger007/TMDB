@@ -1,56 +1,6 @@
 export type Url = 'https://api.themoviedb.org/3';
 
-export type QueryType = {
-	[key: string]: string | number | null;
-};
-
-export type ErrorResponse = {
-	statusCode: number;
-	statusMessage: string;
-};
-
 export type ImagePath = string | null;
-
-export type MovieBackdropImage = {
-	aspectRatio: number;
-	filePath: string;
-	height: number;
-	iso6391: null | string;
-	voteAverage: number;
-	voteCount: number;
-	width: number;
-};
-
-export type MovieCastCredit = {
-	castId: number;
-	character: string;
-	creditId: string;
-	gender: number | null;
-	id: number;
-	name: string;
-	order: number;
-	profilePath: ImagePath;
-};
-
-export type MovieCrewCredit = {
-	creditId: string;
-	department: string;
-	gender: number | null;
-	id: number;
-	job: string;
-	name: string;
-	profilePath: ImagePath;
-};
-
-export type MoviePosterImage = {
-	aspectRatio: number;
-	filePath: string;
-	height: number;
-	iso6391: string | null;
-	voteAverage: number;
-	voteCount: number;
-	width: number;
-};
 
 export type Movie = {
 	adult: boolean;
@@ -90,44 +40,6 @@ export type Movie = {
 	video: boolean;
 	voteAverage: number;
 	voteCount: number;
-};
-
-export type MovieVideo = {
-	id: string;
-	iso31661: string;
-	iso6391: string;
-	key: string;
-	name: string;
-	site: string;
-	size: number;
-	type: string;
-};
-
-export type Person = {
-	adult: boolean;
-	alsoKnownAs: ReadonlyArray<string>;
-	biography: string;
-	birthday: string | null;
-	deathday: string | null;
-	gender: number;
-	homepage: string | null;
-	id: number;
-	imdbId: string;
-	name: string;
-	placeOfBirth: string | null;
-	popularity: number;
-	profilePath: ImagePath;
-};
-
-export type Company = {
-	description: string;
-	headquarters: string;
-	homepage: string;
-	id: number;
-	logoPath: string;
-	name: string;
-	originCountry: string;
-	parentCompany: null | Company;
 };
 
 export type AlternativeTitle = {
