@@ -146,7 +146,7 @@
 | Images             | ✅         |
 | Keywords           | ✅         |
 | Latest             | ✅         |
-| Lists              | ❌         |
+| Lists              | ✅         |
 | Recommendations    | ❌         |
 | Release Dates      | ✅         |
 | Reviews            | ❌         |

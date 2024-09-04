@@ -12,7 +12,8 @@ import {
 	ReleaseDatesResponse,
 	TranslationsResponse,
 	VideosResponse,
-	WatchProvidersResponse
+	WatchProvidersResponse,
+	ListsResponse
 } from '../types';
 
 export class MovieService {
@@ -134,7 +135,26 @@ export class MovieService {
 		return this.apiInstance.GET<LatestResponse>('movie/latest');
 	}
 
-	// @TODO Lists
+	// Get the lists that a movie has been added to.
+	async lists(movieId: number, language?: string, page?: number): Promise<ListsResponse> {
+		let endpoint = `movie/${movieId}/lists`;
+
+		const queryParams = new URLSearchParams();
+
+		if (language) {
+			queryParams.append('language', language);
+		}
+
+		if (page) {
+			queryParams.append('page', page.toString());
+		}
+
+		if (queryParams.toString()) {
+			endpoint += `?${queryParams.toString()}`;
+		}
+
+		return this.apiInstance.GET<ListsResponse>(endpoint);
+	}
 
 	// @TODO Recommendations
 
