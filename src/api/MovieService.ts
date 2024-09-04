@@ -2,7 +2,7 @@ import { api } from '.';
 import {
 	AlternativeTitlesResponse,
 	ChangesResponse,
-	Movie,
+	DetailsResponse,
 	CreditsResponse,
 	AccountStatesResponse,
 	ExternalIDsResponse,
@@ -24,8 +24,8 @@ export class MovieService {
 		this.apiInstance = apiInstance;
 	}
 
-	async getMovie(id: number): Promise<Movie> {
-		return this.apiInstance.GET<Movie>(`movie/${id}`);
+	async details(id: number): Promise<DetailsResponse> {
+		return this.apiInstance.GET<DetailsResponse>(`movie/${id}`);
 	}
 
 	async alternativeTitle(movieId: number, country?: string): Promise<AlternativeTitlesResponse> {

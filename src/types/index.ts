@@ -24,7 +24,7 @@ export interface SpokenLanguage {
 	name: string;
 }
 
-export type Movie = {
+export type DetailsResponse = {
 	adult: boolean;
 	backdropPath: ImagePath;
 	belongsToCollection: null | {
