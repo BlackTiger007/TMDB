@@ -188,7 +188,7 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                               | **Status** |
 | ------------------------------------------------------------------------- | ---------- |
-| [Popular](https://developer.themoviedb.org/reference/person-popular-list) | ❌         |
+| [Popular](https://developer.themoviedb.org/reference/person-popular-list) | ✅         |
 
 ### People
 

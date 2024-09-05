@@ -11,9 +11,9 @@ const tmdb = new TMDB(process.env.API_KEY, 'de');
 
 async function init() {
 	try {
-		await tmdb.keywords
-			.details(3588)
-			.then(() => console.log('Test Passed: Keywords'))
+		await tmdb.peopleLists
+			.popular()
+			.then(() => console.log('Test Passed: People Lists - Popular'))
 			.catch((e) => console.error(e));
 	} catch (error) {
 		console.error('Error during tests:', error);
