@@ -111,8 +111,8 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                               | **Status** |
 | ------------------------------------------------------------------------- | ---------- |
-| [Movie List](https://developer.themoviedb.org/reference/genre-movie-list) | ❌         |
-| [TV List](https://developer.themoviedb.org/reference/genre-tv-list)       | ❌         |
+| [Movie List](https://developer.themoviedb.org/reference/genre-movie-list) | ✅         |
+| [TV List](https://developer.themoviedb.org/reference/genre-tv-list)       | ✅         |
 
 ### Guest Sessions
 
