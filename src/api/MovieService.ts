@@ -15,7 +15,7 @@ import {
 	WatchProvidersResponse,
 	ListsResponse,
 	RecommendationsResponse
-} from '../types';
+} from '../types/movie';
 
 export class MovieService {
 	private apiInstance: api;

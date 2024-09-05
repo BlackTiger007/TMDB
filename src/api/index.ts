@@ -1,4 +1,4 @@
-import type { Url, ValidateKeyResponse } from '../types/index';
+import type { Url, ValidateKeyResponse } from '../types/movie';
 
 export class api {
 	protected apiKey: string;
