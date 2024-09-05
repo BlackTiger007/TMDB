@@ -11,14 +11,9 @@ const tmdb = new TMDB(process.env.API_KEY, 'de');
 
 async function init() {
 	try {
-		await tmdb.genres
-			.movieList('de')
-			.then(() => console.log('Test Passed: Genres Movie'))
-			.catch((e) => console.error(e));
-
-		await tmdb.genres
-			.tvList('de')
-			.then(() => console.log('Test Passed: Genres TV'))
+		await tmdb.keywords
+			.details(3588)
+			.then(() => console.log('Test Passed: Keywords'))
 			.catch((e) => console.error(e));
 	} catch (error) {
 		console.error('Error during tests:', error);

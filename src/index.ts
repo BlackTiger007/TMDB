@@ -1,6 +1,7 @@
 import { api } from './api';
 import { CreditsService } from './api/CreditsService';
 import { GenresService } from './api/GenresService';
+import { KeywordsService } from './api/KeywordsService';
 import { MovieService } from './api/MovieService';
 
 export default class TMDB {
@@ -9,6 +10,7 @@ export default class TMDB {
 	public movie: MovieService;
 	public credits: CreditsService;
 	public genres: GenresService;
+	public keywords: KeywordsService;
 
 	constructor(apiKey: string, language: string = 'en-US') {
 		this.apiInstance = new api(apiKey, language);
@@ -16,5 +18,6 @@ export default class TMDB {
 		this.movie = new MovieService(this.apiInstance);
 		this.credits = new CreditsService(this.apiInstance);
 		this.genres = new GenresService(this.apiInstance);
+		this.keywords = new KeywordsService(this.apiInstance);
 	}
 }
