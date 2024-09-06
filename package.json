@@ -6,11 +6,10 @@
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"scripts": {
-		"compile": "rm -rf dist && tsc -d",
 		"lint": "prettier src --check && eslint src/**/*.{js,ts}",
 		"format": "prettier --write src",
-		"pre-commit": "npm run lint",
-		"test": "ts-node src/tests/index.ts"
+		"test": "ts-node src/tests/index.ts",
+		"build": "tsup"
 	},
 	"repository": {
 		"type": "git",
@@ -38,6 +37,7 @@
 		"globals": "^15.4.0",
 		"prettier": "^3.3.1",
 		"ts-node": "^10.9.2",
+		"tsup": "^8.2.4",
 		"typescript": "^5.5.4",
 		"typescript-eslint": "^7.12.0"
 	}
