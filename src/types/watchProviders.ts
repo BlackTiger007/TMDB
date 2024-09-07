@@ -7,3 +7,19 @@ type results = {
 	english_name: string;
 	native_name: string;
 };
+
+export type WatchProvidersResponse = {
+	results: Provider[];
+};
+
+type DisplayPriorities = {
+	[countryCode: string]: number;
+};
+
+type Provider = {
+	display_priorities: DisplayPriorities;
+	display_priority: number;
+	logo_path: string;
+	provider_name: string;
+	provider_id: number;
+};
