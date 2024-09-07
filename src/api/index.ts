@@ -1,3 +1,4 @@
+import { post } from '../types';
 import type { Url, ValidateKeyResponse } from '../types/movie';
 
 export class api {
@@ -88,6 +89,41 @@ export class api {
 			}
 
 			return (await response.json()) as T;
+		} catch (error) {
+			console.error('Failed to fetch:', error);
+			throw error;
+		}
+	}
+
+	public async POST(
+		endpoint: string,
+		body: Record<string, any>,
+		retries = api.MAX_RETRIES
+	): Promise<post> {
+		try {
+			const headers: Record<string, string> = {
+				accept: 'application/json',
+				'Content-Type': 'application/json',
+				Authorization: `Bearer ${this.apiKey}`
+			};
+
+			const response = await fetch(this.buildUrl(endpoint), {
+				method: 'POST',
+				headers,
+				body: JSON.stringify(body)
+			});
+
+			if (response.status === 429 && retries > 0) {
+				console.warn(`Rate limit exceeded. Retrying in ${api.RETRY_DELAY}ms...`);
+				await this.delay(api.RETRY_DELAY);
+				return this.POST(endpoint, body, retries - 1);
+			}
+
+			if (!response.ok) {
+				throw new Error(`Error: ${response.status} ${response.statusText}`);
+			}
+
+			return (await response.json()) as post;
 		} catch (error) {
 			console.error('Failed to fetch:', error);
 			throw error;
