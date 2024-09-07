@@ -308,6 +308,6 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                                       | **Status** |
 | ------------------------------------------------------------------------------------------------- | ---------- |
-| [Available Regions](https://developer.themoviedb.org/reference/watch-providers-available-regions) | ❌         |
+| [Available Regions](https://developer.themoviedb.org/reference/watch-providers-available-regions) | ✅         |
 | [Movie Providers](https://developer.themoviedb.org/reference/watch-providers-movie-st)            | ❌         |
 | [TV Providers](https://developer.themoviedb.org/reference/watch-provider-tv-st)                   | ❌         |
