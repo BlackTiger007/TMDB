@@ -8,7 +8,7 @@ type results = {
 	native_name: string;
 };
 
-export type WatchProvidersResponse = {
+export type ProvidersResponse = {
 	results: Provider[];
 };
 
@@ -22,8 +22,4 @@ type Provider = {
 	logo_path: string;
 	provider_name: string;
 	provider_id: number;
-};
-
-export type TVProvidersResponse = {
-	results: Provider[];
 };

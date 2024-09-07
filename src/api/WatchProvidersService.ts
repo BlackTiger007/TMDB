@@ -1,9 +1,5 @@
 import { api } from '.';
-import {
-	AvailableRegionsResponse,
-	TVProvidersResponse,
-	WatchProvidersResponse
-} from '../types/watchProviders';
+import { AvailableRegionsResponse, ProvidersResponse } from '../types/watchProviders';
 
 export class WatchProvidersService {
 	private apiInstance: api;
@@ -23,7 +19,7 @@ export class WatchProvidersService {
 	async movieProviders(
 		language: string = 'en-US',
 		watch_region?: string
-	): Promise<WatchProvidersResponse> {
+	): Promise<ProvidersResponse> {
 		let endpoint = 'watch/providers/movie';
 
 		const queryParams = new URLSearchParams();
@@ -40,15 +36,12 @@ export class WatchProvidersService {
 			endpoint += `?${queryParams.toString()}`;
 		}
 
-		return await this.apiInstance.GET<WatchProvidersResponse>(endpoint);
+		return await this.apiInstance.GET<ProvidersResponse>(endpoint);
 	}
 
 	// Get the list of streaming providers we have for TV shows.
 	// Returns a list of the watch provider (OTT/streaming) data we have available for TV shows. You can specify a `watch_region` param if you want to further filter the list by country.
-	async tvProviders(
-		language: string = 'en-US',
-		watch_region?: string
-	): Promise<TVProvidersResponse> {
+	async tvProviders(language: string = 'en-US', watch_region?: string): Promise<ProvidersResponse> {
 		let endpoint = 'watch/providers/tv';
 
 		const queryParams = new URLSearchParams();
@@ -65,6 +58,6 @@ export class WatchProvidersService {
 			endpoint += `?${queryParams.toString()}`;
 		}
 
-		return await this.apiInstance.GET<TVProvidersResponse>(endpoint);
+		return await this.apiInstance.GET<ProvidersResponse>(endpoint);
 	}
 }
