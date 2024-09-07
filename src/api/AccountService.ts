@@ -27,4 +27,24 @@ export class AccountService {
 
 		return this.apiInstance.GET<DetailsResponse>(endpoint);
 	}
+
+	public async addFavorite(
+		account_id: number,
+		raw_body: { media_type: 'movie' | 'tv'; media_id: number; favorite: boolean },
+		session_id?: string
+	) {
+		let endpoint = `account/${account_id}/favorite`;
+
+		if (session_id) {
+			endpoint += `?session_id=${session_id}`;
+		}
+
+		const body = {
+			media_type: raw_body.media_type,
+			media_id: raw_body.media_id,
+			favorite: raw_body.favorite
+		};
+
+		return await this.apiInstance.POST(`${endpoint}`, body);
+	}
 }

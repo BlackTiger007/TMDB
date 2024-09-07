@@ -23,7 +23,7 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 | **Feature**                                                                               | **Status** |
 | ----------------------------------------------------------------------------------------- | ---------- |
 | [Details](https://developer.themoviedb.org/reference/account-details)                     | ✅         |
-| [Add Favorite](https://developer.themoviedb.org/reference/account-add-favorite)           | ❌         |
+| [Add Favorite](https://developer.themoviedb.org/reference/account-add-favorite)           | ✅         |
 | [Add To Watchlist](https://developer.themoviedb.org/reference/account-add-to-watchlist)   | ❌         |
 | [Favorite Movies](https://developer.themoviedb.org/reference/account-get-favorites)       | ❌         |
 | [Favorite TV](https://developer.themoviedb.org/reference/account-favorite-tv)             | ❌         |
