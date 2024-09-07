@@ -11,8 +11,8 @@ const tmdb = new TMDB(process.env.API_KEY, 'de');
 
 async function init() {
 	try {
-		await tmdb.watchProviders
-			.movieProviders()
+		await tmdb.account
+			.details(16965906)
 			.then(() => console.log('Test Passed'))
 			.catch((e) => console.error(e));
 	} catch (error) {

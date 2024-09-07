@@ -1,4 +1,5 @@
 import { api } from './api';
+import { AccountService } from './api/AccountService';
 import { CreditsService } from './api/CreditsService';
 import { GenresService } from './api/GenresService';
 import { KeywordsService } from './api/KeywordsService';
@@ -15,6 +16,7 @@ export default class TMDB {
 	public keywords: KeywordsService;
 	public peopleLists: PeopleListsService;
 	public watchProviders: WatchProvidersService;
+	public account: AccountService;
 
 	constructor(apiKey: string, language: string = 'en-US') {
 		this.apiInstance = new api(apiKey, language);
@@ -25,5 +27,6 @@ export default class TMDB {
 		this.keywords = new KeywordsService(this.apiInstance);
 		this.peopleLists = new PeopleListsService(this.apiInstance);
 		this.watchProviders = new WatchProvidersService(this.apiInstance);
+		this.account = new AccountService(this.apiInstance);
 	}
 }
