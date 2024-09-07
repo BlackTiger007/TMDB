@@ -14,7 +14,7 @@ export default class TMDB {
 	public genres: GenresService;
 	public keywords: KeywordsService;
 	public peopleLists: PeopleListsService;
-	public watchProviders: WatchProvidersService
+	public watchProviders: WatchProvidersService;
 
 	constructor(apiKey: string, language: string = 'en-US') {
 		this.apiInstance = new api(apiKey, language);

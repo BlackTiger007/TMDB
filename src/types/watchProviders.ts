@@ -23,3 +23,7 @@ type Provider = {
 	provider_name: string;
 	provider_id: number;
 };
+
+export type TVProvidersResponse = {
+	results: Provider[];
+};
