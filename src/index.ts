@@ -60,7 +60,16 @@ export default class TMDB {
 	 */
 	public account: AccountService;
 
+	/**
+	 * Service for certifications-related API operations.
+	 * @type {CertificationsService}
+	 */
 	public certifications: CertificationsService;
+
+	/**
+	 * Service for changes-related API operations.
+	 * @type {ChangesService}
+	 */
 	public changes: ChangesService;
 
 	/**

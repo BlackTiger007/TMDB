@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.10.1
+
+added JS Docs
+
 ## 0.10.0
 
 added TV List
