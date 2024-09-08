@@ -55,7 +55,7 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 | **Feature**                                                                                 | **Status** |
 | ------------------------------------------------------------------------------------------- | ---------- |
 | [Movie Certifications](https://developer.themoviedb.org/reference/certification-movie-list) | ✅         |
-| [TV Certifications](https://developer.themoviedb.org/reference/certifications-tv-list)      | ❌         |
+| [TV Certifications](https://developer.themoviedb.org/reference/certifications-tv-list)      | ✅         |
 
 ### Changes
 

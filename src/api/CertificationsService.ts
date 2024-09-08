@@ -23,4 +23,16 @@ export class CertificationsService {
 	async movieCertifications(): Promise<CertificationsResponse> {
 		return this.apiInstance.GET<CertificationsResponse>('certification/movie/list');
 	}
+
+	/**
+	 * Retrieves the list of TV show certifications.
+	 *
+	 * This method fetches the list of available certifications for TV shows. The response contains
+	 * the certification name, certification value, and optional notes for each certification.
+	 *
+	 * @returns A promise that resolves to the list of TV show certifications.
+	 */
+	async tvCertifications(): Promise<CertificationsResponse> {
+		return this.apiInstance.GET<CertificationsResponse>('certification/tv/list');
+	}
 }
