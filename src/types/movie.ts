@@ -355,7 +355,6 @@ export type GenreID =
 	| 10751 // Family
 	| 14; // Fantasy
 
-// Film Typ 2
 export type Movie = {
 	backdrop_path: string;
 	id: number;
@@ -372,6 +371,7 @@ export type Movie = {
 	video: boolean;
 	vote_average: number;
 	vote_count: number;
+	rating?: number;
 };
 
 export type RecommendationsResponse = {
