@@ -58,3 +58,10 @@ export type ListsResponse = {
 	total_pages: number;
 	total_results: number;
 };
+
+export type RatedResponse = {
+	page: number;
+	results: TVShow[];
+	total_pages: number;
+	total_results: number;
+};

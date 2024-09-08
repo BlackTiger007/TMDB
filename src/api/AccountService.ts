@@ -1,5 +1,10 @@
 import { api } from '.';
-import { DetailsResponse, FavoriteTvResponse, ListsResponse } from '../types/account';
+import {
+	DetailsResponse,
+	FavoriteTvResponse,
+	ListsResponse,
+	RatedResponse
+} from '../types/account';
 import { Movie } from '../types/movie';
 
 export class AccountService {
@@ -189,5 +194,39 @@ export class AccountService {
 		}
 
 		return await this.apiInstance.GET<Movie>(endpoint);
+	}
+
+	async ratedTv(
+		account_id: number,
+		language?: string,
+		page?: number,
+		session_id?: string,
+		sort_by?: 'created_at.asc' | 'created_at.desc'
+	): Promise<RatedResponse> {
+		let endpoint = `account/${account_id}/rated/movies`;
+
+		const queryParams = new URLSearchParams();
+
+		if (language) {
+			queryParams.append('language', language);
+		}
+
+		if (page) {
+			queryParams.append('page', page.toString());
+		}
+
+		if (session_id) {
+			queryParams.append('session_id', session_id);
+		}
+
+		if (sort_by) {
+			queryParams.append('sort_by', sort_by);
+		}
+
+		if (queryParams.toString()) {
+			endpoint += `?${queryParams.toString()}`;
+		}
+
+		return await this.apiInstance.GET<RatedResponse>(endpoint);
 	}
 }
