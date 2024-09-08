@@ -3,3 +3,7 @@
 .env
 tsconfig.json
 tsup.config.ts
+.github
+.vscode
+.env.example
+.prettierrc
