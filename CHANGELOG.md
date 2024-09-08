@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.10.0
+
+added TV List
+
 ## 0.9.0
 
 added People List

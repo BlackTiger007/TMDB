@@ -63,7 +63,7 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 | ----------------------------------------------------------------------------- | ---------- |
 | [Movie List](https://developer.themoviedb.org/reference/changes-movie-list)   | ✅         |
 | [People List](https://developer.themoviedb.org/reference/changes-people-list) | ✅         |
-| [TV List](https://developer.themoviedb.org/reference/changes-tv-list)         | ❌         |
+| [TV List](https://developer.themoviedb.org/reference/changes-tv-list)         | ✅         |
 
 ### Collections
 
