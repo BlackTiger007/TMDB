@@ -1,6 +1,6 @@
 import { api } from '.';
 import { DetailsResponse, FavoriteTvResponse } from '../types/account';
-import { Movie2 } from '../types/movie';
+import { Movie } from '../types/movie';
 
 export class AccountService {
 	private apiInstance: api;
@@ -75,7 +75,7 @@ export class AccountService {
 		page?: number,
 		session_id?: string,
 		sort_by?: 'created_at.asc' | 'created_at.desc'
-	): Promise<Movie2> {
+	): Promise<Movie> {
 		let endpoint = `account/${account_id}/favorite/movies`;
 
 		const queryParams = new URLSearchParams();
@@ -100,7 +100,7 @@ export class AccountService {
 			endpoint += `?${queryParams.toString()}`;
 		}
 
-		return await this.apiInstance.GET<Movie2>(endpoint);
+		return await this.apiInstance.GET<Movie>(endpoint);
 	}
 
 	async favoriteTv(

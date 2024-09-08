@@ -356,7 +356,7 @@ export type GenreID =
 	| 14; // Fantasy
 
 // Film Typ 2
-export type Movie2 = {
+export type Movie = {
 	backdrop_path: string;
 	id: number;
 	title: string;
@@ -376,7 +376,7 @@ export type Movie2 = {
 
 export type RecommendationsResponse = {
 	page: number;
-	results: Movie2[];
+	results: Movie[];
 	total_pages: number;
 	total_results: number;
 };
