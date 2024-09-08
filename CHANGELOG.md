@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.8.0
+
+added Changes and Movie List
+
 ## 0.7.0
 
 added TV Certifications

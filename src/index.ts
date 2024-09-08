@@ -1,6 +1,7 @@
 import { api } from './api';
 import { AccountService } from './api/AccountService';
 import { CertificationsService } from './api/CertificationsService';
+import { ChangesService } from './api/ChangesService';
 import { CreditsService } from './api/CreditsService';
 import { GenresService } from './api/GenresService';
 import { KeywordsService } from './api/KeywordsService';
@@ -60,6 +61,7 @@ export default class TMDB {
 	public account: AccountService;
 
 	public certifications: CertificationsService;
+	public changes: ChangesService;
 
 	/**
 	 * Creates an instance of the TMDB class.
@@ -77,5 +79,6 @@ export default class TMDB {
 		this.watchProviders = new WatchProvidersService(this.apiInstance);
 		this.account = new AccountService(this.apiInstance);
 		this.certifications = new CertificationsService(this.apiInstance);
+		this.changes = new ChangesService(this.apiInstance);
 	}
 }
