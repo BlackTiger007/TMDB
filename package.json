@@ -1,5 +1,5 @@
 {
-	"name": "tmdb",
+	"name": "@blacktiger007/tmdb",
 	"description": "",
 	"version": "0.1.0",
 	"main": "./dist/index.js",
@@ -9,7 +9,7 @@
 		"lint": "prettier src --check && eslint src/**/*.{js,ts}",
 		"format": "prettier --write src",
 		"test": "ts-node src/tests/index.ts",
-		"build": "tsup"
+		"build": "rm -rf dist && tsup"
 	},
 	"repository": {
 		"type": "git",
