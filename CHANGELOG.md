@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.6.0
+
+added Certifications and Movie Certifications
+
 ## 0.5.0
 
 added Watchlist TV

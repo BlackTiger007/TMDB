@@ -11,8 +11,8 @@ const tmdb = new TMDB(process.env.API_KEY, 'de');
 
 async function init() {
 	try {
-		await tmdb.account
-			.ratedTv(16965906, 'de')
+		await tmdb.certifications
+			.movieCertifications()
 			.then((e) => console.log('Test Passed', e))
 			.catch((e) => console.error(e));
 	} catch (error) {
