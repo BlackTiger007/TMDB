@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.1.2
+
+Optimize code and add JSDoc comments
+
 ## 0.1.1
 
 - Createt CHANGELOG.md
@@ -11,22 +15,22 @@ Release
 
 ### Current Features
 
-| **Feature**                                                                       | **Status** |
-| --------------------------------------------------------------------------------- | ---------- |
-| [Details](https://developer.themoviedb.org/reference/account-details)             | ✅         |
-| [Add Favorite](https://developer.themoviedb.org/reference/account-add-favorite)   | ✅         |
+| **Feature**                                                                             | **Status** |
+| --------------------------------------------------------------------------------------- | ---------- |
+| [Details](https://developer.themoviedb.org/reference/account-details)                   | ✅         |
+| [Add Favorite](https://developer.themoviedb.org/reference/account-add-favorite)         | ✅         |
 | [Add To Watchlist](https://developer.themoviedb.org/reference/account-add-to-watchlist) | ✅         |
-| [Favorite Movies](https://developer.themoviedb.org/reference/account-get-favorites) | ✅         |
-| [Favorite TV](https://developer.themoviedb.org/reference/account-favorite-tv)       | ✅         |
-| [Lists](https://developer.themoviedb.org/reference/account-lists)                   | ✅         |
-| [Rated Movies](https://developer.themoviedb.org/reference/account-rated-movies)     | ✅         |
-| [Rated TV](https://developer.themoviedb.org/reference/account-rated-tv)             | ✅         |
+| [Favorite Movies](https://developer.themoviedb.org/reference/account-get-favorites)     | ✅         |
+| [Favorite TV](https://developer.themoviedb.org/reference/account-favorite-tv)           | ✅         |
+| [Lists](https://developer.themoviedb.org/reference/account-lists)                       | ✅         |
+| [Rated Movies](https://developer.themoviedb.org/reference/account-rated-movies)         | ✅         |
+| [Rated TV](https://developer.themoviedb.org/reference/account-rated-tv)                 | ✅         |
 
 ### Credits
 
-| **Feature**                                                             | **Status** |
-| ----------------------------------------------------------------------- | ---------- |
-| [Details](https://developer.themoviedb.org/reference/credit-details)   | ✅         |
+| **Feature**                                                          | **Status** |
+| -------------------------------------------------------------------- | ---------- |
+| [Details](https://developer.themoviedb.org/reference/credit-details) | ✅         |
 
 ### Genres
 

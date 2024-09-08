@@ -4,13 +4,26 @@ import { KeywordResponse } from '../types/keywords';
 export class KeywordsService {
 	private apiInstance: api;
 
+	/**
+	 * Initializes the KeywordsService with the provided API instance.
+	 * @param apiInstance - An instance of the API handler.
+	 */
 	constructor(apiInstance: api) {
 		this.apiInstance = apiInstance;
 	}
 
-	async details(keywordId: number): Promise<KeywordResponse> {
-		return await this.apiInstance.GET<KeywordResponse>(`keyword/${keywordId}`);
+	/**
+	 * Retrieves details for a specific keyword by its ID.
+	 *
+	 * This method fetches the details for a given keyword using its ID.
+	 *
+	 * @param keywordId - The ID of the keyword to retrieve details for.
+	 * @param language - Optional. The language code for the keyword details. If omitted, defaults to the API instance's language.
+	 * @returns A promise that resolves to the keyword details.
+	 */
+	async details(keywordId: number, language?: string): Promise<KeywordResponse> {
+		const queryParams = this.apiInstance.buildQueryParams({ language });
+		const endpoint = `keyword/${keywordId}${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
+		return await this.apiInstance.GET<KeywordResponse>(endpoint);
 	}
-
-	// Movies are not added!
 }

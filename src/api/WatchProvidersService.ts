@@ -4,59 +4,62 @@ import { AvailableRegionsResponse, ProvidersResponse } from '../types/watchProvi
 export class WatchProvidersService {
 	private apiInstance: api;
 
+	/**
+	 * Initializes the WatchProvidersService with the provided API instance.
+	 * @param apiInstance - An instance of the API handler.
+	 */
 	constructor(apiInstance: api) {
 		this.apiInstance = apiInstance;
 	}
 
-	async availableRegions(language: string = 'en-US'): Promise<AvailableRegionsResponse> {
-		return await this.apiInstance.GET<AvailableRegionsResponse>(
-			`watch/providers/regions?language=${language}`
-		);
+	/**
+	 * Retrieves the list of available regions for watch providers.
+	 *
+	 * This method fetches a list of available regions for watch providers. The `language` parameter can be used to specify
+	 * the language for the response. If omitted, the default language set in the API instance will be used.
+	 *
+	 * @param language - Optional. The language code for the response. Defaults to 'en-US' if not provided.
+	 * @returns A promise that resolves to an object containing the available regions for watch providers.
+	 */
+	async availableRegions(language?: string): Promise<AvailableRegionsResponse> {
+		const queryParams = this.apiInstance.buildQueryParams({ language });
+		const endpoint = `watch/providers/regions${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
+
+		return await this.apiInstance.GET<AvailableRegionsResponse>(endpoint);
 	}
 
-	// Get the list of streaming providers we have for movies.
-	// Returns a list of the watch provider (OTT/streaming) data we have available for movies. You can specify a `watch_region` param if you want to further filter the list by country.
-	async movieProviders(
-		language: string = 'en-US',
-		watch_region?: string
-	): Promise<ProvidersResponse> {
-		let endpoint = 'watch/providers/movie';
-
-		const queryParams = new URLSearchParams();
-
-		if (language) {
-			queryParams.append('language', language);
-		}
-
-		if (watch_region) {
-			queryParams.append('watch_region', watch_region);
-		}
-
-		if (queryParams.toString()) {
-			endpoint += `?${queryParams.toString()}`;
-		}
+	/**
+	 * Retrieves the list of streaming providers for movies.
+	 *
+	 * This method fetches a list of streaming providers for movies. The `language` parameter can be used to specify the language
+	 * for the response. If omitted, the default language set in the API instance will be used. The `watch_region` parameter
+	 * specifies a region to filter the list by country. If omitted, the list is not filtered by region.
+	 *
+	 * @param language - Optional. The language code for the response. Defaults to 'en-US' if not provided.
+	 * @param watch_region - Optional. The region to filter the list by country.
+	 * @returns A promise that resolves to an object containing the list of streaming providers for movies.
+	 */
+	async movieProviders(language?: string, watch_region?: string): Promise<ProvidersResponse> {
+		const queryParams = this.apiInstance.buildQueryParams({ language, watch_region });
+		const endpoint = `watch/providers/movie${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
 
 		return await this.apiInstance.GET<ProvidersResponse>(endpoint);
 	}
 
-	// Get the list of streaming providers we have for TV shows.
-	// Returns a list of the watch provider (OTT/streaming) data we have available for TV shows. You can specify a `watch_region` param if you want to further filter the list by country.
-	async tvProviders(language: string = 'en-US', watch_region?: string): Promise<ProvidersResponse> {
-		let endpoint = 'watch/providers/tv';
-
-		const queryParams = new URLSearchParams();
-
-		if (language) {
-			queryParams.append('language', language);
-		}
-
-		if (watch_region) {
-			queryParams.append('watch_region', watch_region);
-		}
-
-		if (queryParams.toString()) {
-			endpoint += `?${queryParams.toString()}`;
-		}
+	/**
+	 * Retrieves the list of streaming providers for TV shows.
+	 *
+	 * This method fetches a list of streaming providers for TV shows. The `language` parameter can be used to specify the language
+	 * for the response. If omitted, the default language set in the API instance will be used. The `watch_region` parameter
+	 * specifies a region to filter the list by country. If omitted, the list is not filtered by region.
+	 *
+	 * @param language - Optional. The language code for the response. Defaults to 'en-US' if not provided.
+	 * @param watch_region - Optional. The region to filter the list by country.
+	 * @returns A promise that resolves to an object containing the list of streaming providers for TV shows.
+	 */
+	async tvProviders(language?: string, watch_region?: string): Promise<ProvidersResponse> {
+		const queryParams = this.apiInstance.buildQueryParams({ language, watch_region });
+		const endpoint = `watch/providers/tv${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
 
 		return await this.apiInstance.GET<ProvidersResponse>(endpoint);
 	}
