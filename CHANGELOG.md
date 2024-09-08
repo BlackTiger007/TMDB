@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.2
+
+fixed Bug and formating code
+
 ## 0.2.1
 
 Update movie.ts - ListsResponse types

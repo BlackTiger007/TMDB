@@ -1,6 +1,5 @@
 import { api } from '.';
 import { KeywordResponse, MovieResponse } from '../types/keywords';
-import { Movie } from '../types/movie';
 
 export class KeywordsService {
 	private apiInstance: api;
