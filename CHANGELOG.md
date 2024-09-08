@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.3
+
+Update workflow to deploy on main branch
+
 ## 0.2.2
 
 fixed Bug and formating code
