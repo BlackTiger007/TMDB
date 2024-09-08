@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.9.0
+
+added People List
+
 ## 0.8.0
 
 added Changes and Movie List
