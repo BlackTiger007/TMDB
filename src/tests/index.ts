@@ -12,7 +12,7 @@ const tmdb = new TMDB(process.env.API_KEY, 'de');
 async function init() {
 	try {
 		await tmdb.account
-			.addToWatchlist(16965906, { media_type: 'movie', media_id: 67890, watchlist: false })
+			.favoriteMovies(16965906)
 			.then((e) => console.log('Test Passed', e))
 			.catch((e) => console.error(e));
 	} catch (error) {

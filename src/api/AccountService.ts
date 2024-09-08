@@ -1,5 +1,6 @@
 import { api } from '.';
 import { DetailsResponse } from '../types/account';
+import { Movie2 } from '../types/movie';
 
 export class AccountService {
 	private apiInstance: api;
@@ -28,7 +29,7 @@ export class AccountService {
 		return this.apiInstance.GET<DetailsResponse>(endpoint);
 	}
 
-	public async addFavorite(
+	async addFavorite(
 		account_id: number,
 		raw_body: { media_type: 'movie' | 'tv'; media_id: number; favorite: boolean },
 		session_id?: string
@@ -48,7 +49,7 @@ export class AccountService {
 		return await this.apiInstance.POST(`${endpoint}`, body);
 	}
 
-	public async addToWatchlist(
+	async addToWatchlist(
 		account_id: number,
 		raw_body: { media_type: 'movie' | 'tv'; media_id: number; watchlist: boolean },
 		session_id?: string
@@ -66,5 +67,39 @@ export class AccountService {
 		};
 
 		return await this.apiInstance.POST(`${endpoint}`, body);
+	}
+
+	async favoriteMovies(
+		account_id: number,
+		language?: string,
+		page?: number,
+		session_id?: string,
+		sort_by?: 'created_at.asc' | 'created_at.desc'
+	): Promise<Movie2> {
+		let endpoint = `account/${account_id}/favorite/movies`;
+
+		const queryParams = new URLSearchParams();
+
+		if (language) {
+			queryParams.append('language', language);
+		}
+
+		if (page) {
+			queryParams.append('page', page.toString());
+		}
+
+		if (session_id) {
+			queryParams.append('session_id', session_id);
+		}
+
+		if (sort_by) {
+			queryParams.append('sort_by', sort_by);
+		}
+
+		if (queryParams.toString()) {
+			endpoint += `?${queryParams.toString()}`;
+		}
+
+		return await this.apiInstance.GET<Movie2>(endpoint);
 	}
 }

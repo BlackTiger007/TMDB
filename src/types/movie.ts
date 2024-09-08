@@ -377,4 +377,6 @@ export type Movie2 = {
 export type RecommendationsResponse = {
 	page: number;
 	results: Movie2[];
+	total_pages: number;
+	total_results: number;
 };
