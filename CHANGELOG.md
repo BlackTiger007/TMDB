@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.0
+
+added Movies (Keywords)
+
 ## 0.1.3
 
 Update README.md

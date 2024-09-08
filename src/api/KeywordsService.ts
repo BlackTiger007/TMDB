@@ -1,5 +1,6 @@
 import { api } from '.';
-import { KeywordResponse } from '../types/keywords';
+import { KeywordResponse, MovieResponse } from '../types/keywords';
+import { Movie } from '../types/movie';
 
 export class KeywordsService {
 	private apiInstance: api;
@@ -25,5 +26,26 @@ export class KeywordsService {
 		const queryParams = this.apiInstance.buildQueryParams({ language });
 		const endpoint = `keyword/${keywordId}${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
 		return await this.apiInstance.GET<KeywordResponse>(endpoint);
+	}
+
+	/**
+	 * Retrieves the list of movies associated with a specific keyword.
+	 *
+	 * This method fetches the movies related to a specific keyword using the keyword's ID.
+	 *
+	 * @param keywordId - The ID of the keyword to retrieve associated movies for.
+	 * @param language - Optional. The language code for the movie titles. If omitted, defaults to the API instance's language.
+	 * @param page - Optional. The page number for the results. Defaults to 1.
+	 * @returns A promise that resolves to a list of movies associated with the keyword.
+	 */
+	async movies(
+		keywordId: number,
+		includeAdult?: boolean,
+		language?: string,
+		page: number = 1
+	): Promise<MovieResponse> {
+		const queryParams = this.apiInstance.buildQueryParams({ includeAdult, language, page });
+		const endpoint = `keyword/${keywordId}/movies${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
+		return await this.apiInstance.GET<MovieResponse>(endpoint);
 	}
 }

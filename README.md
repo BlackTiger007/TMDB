@@ -128,10 +128,10 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 ### Keywords
 
-| **Feature**                                                           | **Status**                                                            |
-| --------------------------------------------------------------------- | --------------------------------------------------------------------- |
-| [Details](https://developer.themoviedb.org/reference/keyword-details) | ✅                                                                    |
-| [Movies](https://developer.themoviedb.org/reference/keyword-movies)   | [Outdated](https://developer.themoviedb.org/reference/discover-movie) |
+| **Feature**                                                           | **Status**                                                               |
+| --------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [Details](https://developer.themoviedb.org/reference/keyword-details) | ✅                                                                       |
+| [Movies](https://developer.themoviedb.org/reference/keyword-movies)   | ☑️ [Outdated](https://developer.themoviedb.org/reference/discover-movie) |
 
 ### Lists
 
