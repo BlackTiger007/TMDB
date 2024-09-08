@@ -3,7 +3,8 @@ import {
 	DetailsResponse,
 	FavoriteTvResponse,
 	ListsResponse,
-	RatedResponse
+	RatedResponse,
+	ratedTvEpisodesResponse
 } from '../types/account';
 import { Movie } from '../types/movie';
 
@@ -160,5 +161,26 @@ export class AccountService {
 		const queryParams = this.apiInstance.buildQueryParams({ language, page, session_id, sort_by });
 		const endpoint = `account/${account_id}/rated/tv${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
 		return await this.apiInstance.GET<RatedResponse>(endpoint);
+	}
+
+	/**
+	 * Retrieves the list of rated TV episodes for the specified account.
+	 * @param account_id - The ID of the account.
+	 * @param language - Optional language parameter.
+	 * @param page - Optional page number for pagination.
+	 * @param session_id - Optional session ID for the request.
+	 * @param sort_by - Optional sort order of the results.
+	 * @returns A promise that resolves to the list of rated TV episodes.
+	 */
+	async ratedTvEpisodes(
+		account_id: number,
+		language?: string,
+		page?: number,
+		session_id?: string,
+		sort_by?: 'created_at.asc' | 'created_at.desc'
+	): Promise<ratedTvEpisodesResponse> {
+		const queryParams = this.apiInstance.buildQueryParams({ language, page, session_id, sort_by });
+		const endpoint = `account/${account_id}/rated/tv/episodes${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
+		return await this.apiInstance.GET<ratedTvEpisodesResponse>(endpoint);
 	}
 }

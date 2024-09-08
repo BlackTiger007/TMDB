@@ -65,3 +65,26 @@ export type RatedResponse = {
 	total_pages: number;
 	total_results: number;
 };
+
+type Episode = {
+	air_date: string;
+	episode_number: number;
+	id: number;
+	name: string;
+	overview: string;
+	production_code: string;
+	runtime: number;
+	season_number: number;
+	show_id: number;
+	still_path: string;
+	vote_average: number;
+	vote_count: number;
+	rating: number;
+};
+
+export type ratedTvEpisodesResponse = {
+	page: number;
+	results: Episode[];
+	total_pages: number;
+	total_results: number;
+};

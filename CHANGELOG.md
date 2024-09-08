@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.3.0
+
+added Rated TV Episodes
+
 ## 0.2.5
 
 Update package-lock.json
