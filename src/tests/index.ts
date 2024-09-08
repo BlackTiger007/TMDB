@@ -12,7 +12,7 @@ const tmdb = new TMDB(process.env.API_KEY, 'de');
 async function init() {
 	try {
 		await tmdb.account
-			.favoriteMovies(16965906)
+			.favoriteTv(16965906)
 			.then((e) => console.log('Test Passed', e))
 			.catch((e) => console.error(e));
 	} catch (error) {
