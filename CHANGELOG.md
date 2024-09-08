@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.5
+
+Update package-lock.json
+
 ## 0.2.4
 
 Created package-lock.json
