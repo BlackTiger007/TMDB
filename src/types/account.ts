@@ -1,3 +1,5 @@
+import { Movie } from './movie';
+
 type Avatar = {
 	gravatar: {
 		hash: string | null;
@@ -85,6 +87,13 @@ type Episode = {
 export type ratedTvEpisodesResponse = {
 	page: number;
 	results: Episode[];
+	total_pages: number;
+	total_results: number;
+};
+
+export type MovieResponse = {
+	page: number;
+	results: Movie[];
 	total_pages: number;
 	total_results: number;
 };

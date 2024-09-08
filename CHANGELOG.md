@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.4.0
+
+added Watchlist Movies
+
 ## 0.3.0
 
 added Rated TV Episodes
