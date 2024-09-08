@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.2.1
+
+Update movie.ts - ListsResponse types
+
 ## 0.2.0
 
 added Movies (Keywords)

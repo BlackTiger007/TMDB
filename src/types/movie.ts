@@ -345,6 +345,8 @@ export type ListsResponse = {
 	id: number;
 	page: number;
 	results: MovieList[];
+	total_pages: number;
+	total_results: number;
 };
 
 export type GenreID =
