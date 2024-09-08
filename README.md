@@ -36,7 +36,7 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 | [Rated TV](https://developer.themoviedb.org/reference/account-rated-tv)                   | ✅         |
 | [Rated TV Episodes](https://developer.themoviedb.org/reference/account-rated-tv-episodes) | ✅         |
 | [Watchlist Movies](https://developer.themoviedb.org/reference/account-watchlist-movies)   | ✅         |
-| [Watchlist TV](https://developer.themoviedb.org/reference/account-watchlist-tv)           | ❌         |
+| [Watchlist TV](https://developer.themoviedb.org/reference/account-watchlist-tv)           | ✅         |
 
 ### Authentication
 
