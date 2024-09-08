@@ -47,4 +47,24 @@ export class AccountService {
 
 		return await this.apiInstance.POST(`${endpoint}`, body);
 	}
+
+	public async addToWatchlist(
+		account_id: number,
+		raw_body: { media_type: 'movie' | 'tv'; media_id: number; watchlist: boolean },
+		session_id?: string
+	) {
+		let endpoint = `account/${account_id}/watchlist`;
+
+		if (session_id) {
+			endpoint += `?session_id=${session_id}`;
+		}
+
+		const body = {
+			media_type: raw_body.media_type,
+			media_id: raw_body.media_id,
+			watchlist: raw_body.watchlist
+		};
+
+		return await this.apiInstance.POST(`${endpoint}`, body);
+	}
 }
