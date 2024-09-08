@@ -1,9 +1,13 @@
 # TMDB
 
-<!-- ## Install
+[![release](https://github.com/BlackTiger007/TMDB/actions/workflows/publish.yml/badge.svg?event=release)](https://github.com/BlackTiger007/TMDB/actions/workflows/publish.yml)
+[![NPM version](https://img.shields.io/npm/v/@blacktiger/tmdb.svg)](https://www.npmjs.com/package/@blacktiger/tmdb)
+[![wakatime](https://wakatime.com/badge/github/BlackTiger007/TMDB.svg)](https://wakatime.com/badge/github/BlackTiger007/TMDB)
+
+## Install
 
 ```bash
-npm i tmdb-api
+npm i @blacktiger/tmdb
 ```
 
 ## Usage
@@ -11,12 +15,12 @@ npm i tmdb-api
 The API key is validated when the instance is created.
 
 ```ts
-import TMDB from 'tmdb-api';
+import TMDB from '@blacktiger/tmdb';
 
 const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */);
-``` -->
+```
 
-## Status
+## Features
 
 ### Account
 
