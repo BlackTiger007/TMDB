@@ -1,72 +1,76 @@
 # Change Log
 
+## 0.10.2
+
+- Update CHANGELOG
+
 ## 0.10.1
 
-added JS Docs
+- added JS Docs
 
 ## 0.10.0
 
-added TV List
+- added TV List
 
 ## 0.9.0
 
-added People List
+- added People List
 
 ## 0.8.0
 
-added Changes and Movie List
+- added Changes and Movie List
 
 ## 0.7.0
 
-added TV Certifications
+- added TV Certifications
 
 ## 0.6.0
 
-added Certifications and Movie Certifications
+- added Certifications and Movie Certifications
 
 ## 0.5.0
 
-added Watchlist TV
+- added Watchlist TV
 
 ## 0.4.0
 
-added Watchlist Movies
+- added Watchlist Movies
 
 ## 0.3.0
 
-added Rated TV Episodes
+- added Rated TV Episodes
 
 ## 0.2.5
 
-Update package-lock.json
+- Update package-lock.json
 
 ## 0.2.4
 
-Created package-lock.json
+- Created package-lock.json
 
 ## 0.2.3
 
-Update workflow to deploy on main branch
+- Update workflow to deploy on main branch
 
 ## 0.2.2
 
-fixed Bug and formating code
+- fixed Bug and formating code
 
 ## 0.2.1
 
-Update movie.ts - ListsResponse types
+- Update movie.ts - ListsResponse types
 
 ## 0.2.0
 
-added Movies (Keywords)
+- added Movies (Keywords)
 
 ## 0.1.3
 
-Update README.md
+- Update README.md
 
 ## 0.1.2
 
-Optimize code and add JSDoc comments
+- Optimize code and add JSDoc comments
 
 ## 0.1.1
 
