@@ -24,3 +24,22 @@ export type DetailsResponse = {
 	backdrop_path: string;
 	parts: MoviePart[];
 };
+
+type TranslationData = {
+	title: string;
+	overview: string;
+	homepage: string;
+};
+
+type Translation = {
+	iso_3166_1: string;
+	iso_639_1: string;
+	name: string;
+	english_name: string;
+	data: TranslationData;
+};
+
+export type TranslationsResponse = {
+	id: number;
+	translations: Translation[];
+};

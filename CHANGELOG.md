@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.12.0
+
+- added Translations (Collections)
+
 ## 0.11.0
 
 - added Collections and Details

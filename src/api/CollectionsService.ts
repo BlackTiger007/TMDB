@@ -1,5 +1,5 @@
 import { api } from '.';
-import { DetailsResponse } from '../types/collections';
+import { DetailsResponse, TranslationsResponse } from '../types/collections';
 
 export class CollectionsService {
 	private apiInstance: api;
@@ -23,5 +23,9 @@ export class CollectionsService {
 		const queryParams = this.apiInstance.buildQueryParams({ language });
 		const endpoint = `collection/${collection_id}${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
 		return this.apiInstance.GET<DetailsResponse>(endpoint);
+	}
+
+	async translations(collection_id: number): Promise<TranslationsResponse> {
+		return this.apiInstance.GET<TranslationsResponse>(`collection/${collection_id}/translations`);
 	}
 }

@@ -71,7 +71,7 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 | ---------------------------------------------------------------------------------- | ---------- |
 | [Details](https://developer.themoviedb.org/reference/collection-details)           | ✅         |
 | [Images](https://developer.themoviedb.org/reference/collection-images)             | ❌         |
-| [Translations](https://developer.themoviedb.org/reference/collection-translations) | ❌         |
+| [Translations](https://developer.themoviedb.org/reference/collection-translations) | ✅         |
 
 ### Companies
 
