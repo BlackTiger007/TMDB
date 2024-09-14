@@ -68,12 +68,6 @@ export type AlternativeTitlesResponse = {
 	titles: AlternativeTitle[];
 };
 
-export type ValidateKeyResponse = {
-	success: boolean;
-	status_code: number;
-	status_message: string;
-};
-
 export type ChangesResponse = {
 	changes: Array<{
 		key: string;

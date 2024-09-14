@@ -1,5 +1,5 @@
-import { post } from '../types';
-import type { Url, ValidateKeyResponse } from '../types/movie';
+import { DELETE, post } from '../types';
+import type { Url } from '../types/movie';
 
 export class api {
 	protected apiKey: string;
@@ -36,10 +36,7 @@ export class api {
 		return new Promise((resolve) => setTimeout(resolve, ms));
 	}
 
-	protected async validateKey(
-		apiKey: string,
-		retries = api.MAX_RETRIES
-	): Promise<ValidateKeyResponse> {
+	protected async validateKey(apiKey: string, retries = api.MAX_RETRIES): Promise<post> {
 		try {
 			const headers: Record<string, string> = {
 				accept: 'application/json',
@@ -61,7 +58,7 @@ export class api {
 				throw new Error(`Error: ${response.status} ${response.statusText}`);
 			}
 
-			return (await response.json()) as ValidateKeyResponse;
+			return (await response.json()) as post;
 		} catch (error) {
 			console.error('Failed to fetch:', error);
 			throw error;
@@ -83,7 +80,7 @@ export class api {
 
 	private async fetchRequest<T>(
 		endpoint: string,
-		method: 'GET' | 'POST',
+		method: 'GET' | 'POST' | 'DELETE',
 		body?: Record<string, any>,
 		retries = api.MAX_RETRIES
 	): Promise<T> {
@@ -130,5 +127,9 @@ export class api {
 		retries = api.MAX_RETRIES
 	): Promise<post> {
 		return this.fetchRequest<post>(endpoint, 'POST', body, retries);
+	}
+
+	public async DELETE<T = DELETE>(endpoint: string, retries = api.MAX_RETRIES): Promise<T> {
+		return this.fetchRequest<T>(endpoint, 'DELETE', undefined, retries);
 	}
 }

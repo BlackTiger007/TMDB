@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.13.1
+
+- Implemented `DELETE` method in the API class.
+- Removed the `ValidateKeyResponse` type from the types directory.
+
 ## 0.13.0
 
 - added Images (Collections)
