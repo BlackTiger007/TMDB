@@ -25,6 +25,11 @@ export class CollectionsService {
 		return this.apiInstance.GET<DetailsResponse>(endpoint);
 	}
 
+	/**
+	 * Retrieves translations available for a specific movie collection.
+	 * @param collection_id - The ID of the movie collection to retrieve translations for.
+	 * @returns A promise that resolves to the translations.
+	 */
 	async translations(collection_id: number): Promise<TranslationsResponse> {
 		return this.apiInstance.GET<TranslationsResponse>(`collection/${collection_id}/translations`);
 	}

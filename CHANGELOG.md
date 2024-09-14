@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.12.1
+
+- added JS Docs to Translations (Collections)
+
 ## 0.12.0
 
 - added Translations (Collections)
