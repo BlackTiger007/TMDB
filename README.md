@@ -1,6 +1,5 @@
 # TMDB
 
-[![release](https://github.com/BlackTiger007/TMDB/actions/workflows/publish.yml/badge.svg?event=release)](https://github.com/BlackTiger007/TMDB/actions/workflows/publish.yml)
 [![NPM version](https://img.shields.io/npm/v/@blacktiger/tmdb.svg)](https://www.npmjs.com/package/@blacktiger/tmdb)
 [![wakatime](https://wakatime.com/badge/github/BlackTiger007/TMDB.svg)](https://wakatime.com/badge/github/BlackTiger007/TMDB)
 

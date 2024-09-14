@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.16.1
+
+### Documentation
+
+- **docs**: Removed outdated GitHub Actions release badge from README.
+
 ## 0.16.0
 
 ### Continuous Integration
