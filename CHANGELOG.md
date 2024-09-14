@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.17.2
+
+### Continuous Integration
+
+- **ci**: Renamed GitHub Actions workflow from 'Node.js Package' to 'Publish NPM Package' for better clarity.
+
 ## 0.17.1
 
 ### Continuous Integration
