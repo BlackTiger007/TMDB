@@ -1,5 +1,17 @@
 # Change Log
 
+## 0.18.0
+
+### Features
+
+- **feat**: Added support for various configuration features:
+  - Details
+  - Countries
+  - Jobs
+  - Languages
+  - Primary Translations
+  - Timezones
+
 ## 0.17.2
 
 ### Continuous Integration

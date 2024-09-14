@@ -84,12 +84,12 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                                           | **Status** |
 | ----------------------------------------------------------------------------------------------------- | ---------- |
-| [Details](https://developer.themoviedb.org/reference/configuration-details)                           | ❌         |
-| [Countries](https://developer.themoviedb.org/reference/configuration-countries)                       | ❌         |
-| [Jobs](https://developer.themoviedb.org/reference/configuration-jobs)                                 | ❌         |
-| [Languages](https://developer.themoviedb.org/reference/configuration-languages)                       | ❌         |
-| [Primary Translations](https://developer.themoviedb.org/reference/configuration-primary-translations) | ❌         |
-| [Timezones](https://developer.themoviedb.org/reference/configuration-timezones)                       | ❌         |
+| [Details](https://developer.themoviedb.org/reference/configuration-details)                           | ✅         |
+| [Countries](https://developer.themoviedb.org/reference/configuration-countries)                       | ✅         |
+| [Jobs](https://developer.themoviedb.org/reference/configuration-jobs)                                 | ✅         |
+| [Languages](https://developer.themoviedb.org/reference/configuration-languages)                       | ✅         |
+| [Primary Translations](https://developer.themoviedb.org/reference/configuration-primary-translations) | ✅         |
+| [Timezones](https://developer.themoviedb.org/reference/configuration-timezones)                       | ✅         |
 
 ### Credits
 
