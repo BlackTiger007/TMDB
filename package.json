@@ -1,7 +1,7 @@
 {
 	"name": "@blacktiger/tmdb",
 	"description": "TMDB SDK",
-	"version": "0.20.0",
+	"version": "0.20.1",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
@@ -9,7 +9,7 @@
 		"lint": "prettier src --check && eslint src/**/*.{js,ts}",
 		"format": "prettier --write src",
 		"test": "ts-node src/tests/index.ts",
-		"build": "rm -rf dist && tsup"
+		"build": "prettier --write . && rm -rf dist && tsup"
 	},
 	"repository": {
 		"type": "git",

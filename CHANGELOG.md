@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.20.1
+
+### Build Script
+
+- **build**: Updated build script to format code with Prettier before cleaning and building
+
 ## 0.20.0
 
 ### Features
