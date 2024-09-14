@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.16.0
+
+### Continuous Integration
+
+- **ci**: Added a new GitHub Actions workflow to improve automation and deployment processes.
+
 ## 0.15.2
 
 ### Changed
