@@ -4,6 +4,7 @@ import { AuthenticationService } from './api/AuthenticationService';
 import { CertificationsService } from './api/CertificationsService';
 import { ChangesService } from './api/ChangesService';
 import { CollectionsService } from './api/CollectionsService';
+import { CompaniesService } from './api/CompaniesService';
 import { CreditsService } from './api/CreditsService';
 import { GenresService } from './api/GenresService';
 import { KeywordsService } from './api/KeywordsService';
@@ -78,6 +79,8 @@ export default class TMDB {
 
 	public authentication: AuthenticationService;
 
+	public companies: CompaniesService;
+
 	/**
 	 * Creates an instance of the TMDB class.
 	 * @param apiKey - The API key used for authenticating requests.
@@ -97,5 +100,6 @@ export default class TMDB {
 		this.changes = new ChangesService(this.apiInstance);
 		this.collections = new CollectionsService(this.apiInstance);
 		this.authentication = new AuthenticationService(this.apiInstance);
+		this.companies = new CompaniesService(this.apiInstance);
 	}
 }

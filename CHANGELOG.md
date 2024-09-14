@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.15.0
+
+- Added support for `Companies`:
+  - **Details**: Fetch company details by ID.
+  - **Alternative Names**: Retrieve alternative names for a company.
+  - **Images**: Get company logos by ID.
+
 ## 0.14.0
 
 - Added support for creating and managing authentication sessions:
