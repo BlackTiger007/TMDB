@@ -1,5 +1,5 @@
 import { api } from '.';
-import { DetailsResponse, TranslationsResponse } from '../types/collections';
+import { DetailsResponse, ImagesResponse, TranslationsResponse } from '../types/collections';
 
 export class CollectionsService {
 	private apiInstance: api;
@@ -23,6 +23,24 @@ export class CollectionsService {
 		const queryParams = this.apiInstance.buildQueryParams({ language });
 		const endpoint = `collection/${collection_id}${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
 		return this.apiInstance.GET<DetailsResponse>(endpoint);
+	}
+
+	/**
+	 * Fetches images related to a specific movie collection.
+	 *
+	 * @param collection_id - The ID of the movie collection to retrieve images for.
+	 * @param language - Optional. The language filter for the images.
+	 * @param include_image_language - Optional. A comma-separated list of ISO-639-1 codes to include additional languages (e.g., 'en,null').
+	 * @returns A promise that resolves to the images of the collection.
+	 */
+	async images(
+		collection_id: number,
+		language?: string,
+		include_image_language?: string
+	): Promise<ImagesResponse> {
+		const queryParams = this.apiInstance.buildQueryParams({ language, include_image_language });
+		const endpoint = `collection/${collection_id}/images${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
+		return this.apiInstance.GET<ImagesResponse>(endpoint);
 	}
 
 	/**

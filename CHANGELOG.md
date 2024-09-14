@@ -1,5 +1,9 @@
 # Change Log
 
+## 0.13.0
+
+- added Images (Collections)
+
 ## 0.12.1
 
 - added JS Docs to Translations (Collections)

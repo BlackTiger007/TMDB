@@ -43,3 +43,18 @@ export type TranslationsResponse = {
 	id: number;
 	translations: Translation[];
 };
+
+type Backdrop = {
+	aspect_ratio: number;
+	height: number;
+	iso_639_1: string | null;
+	file_path: string;
+	vote_average: number;
+	vote_count: number;
+	width: number;
+};
+
+export type ImagesResponse = {
+	id: number;
+	backdrops: Backdrop[];
+};
