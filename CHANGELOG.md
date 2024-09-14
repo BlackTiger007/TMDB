@@ -1,5 +1,16 @@
 # Change Log
 
+## 0.14.0
+
+- Added support for creating and managing authentication sessions:
+  - Create Guest Session
+  - Create Request Token
+  - Create Session
+  - Create Session (from v4 token)
+  - Create Session (with login)
+  - Delete Session
+  - Validate Key
+
 ## 0.13.2
 
 - Enhanced the `POST` function to better handle type support.

@@ -42,13 +42,13 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                                                              | **Status** |
 | ------------------------------------------------------------------------------------------------------------------------ | ---------- |
-| [Create Guest Session](https://developer.themoviedb.org/reference/authentication-create-guest-session)                   | ❌         |
-| [Create Request Token](https://developer.themoviedb.org/reference/authentication-create-request-token)                   | ❌         |
-| [Create Session](https://developer.themoviedb.org/reference/authentication-create-session)                               | ❌         |
-| [Create Session (from v4 token)](https://developer.themoviedb.org/reference/authentication-create-session-from-v4-token) | ❌         |
-| [Create Session (with login)](https://developer.themoviedb.org/reference/authentication-create-session-from-login)       | ❌         |
-| [Delete Session](https://developer.themoviedb.org/reference/authentication-delete-session)                               | ❌         |
-| [Validate Key](https://developer.themoviedb.org/reference/authentication-validate-key)                                   | ❌         |
+| [Create Guest Session](https://developer.themoviedb.org/reference/authentication-create-guest-session)                   | ✅         |
+| [Create Request Token](https://developer.themoviedb.org/reference/authentication-create-request-token)                   | ✅         |
+| [Create Session](https://developer.themoviedb.org/reference/authentication-create-session)                               | ✅         |
+| [Create Session (from v4 token)](https://developer.themoviedb.org/reference/authentication-create-session-from-v4-token) | ✅         |
+| [Create Session (with login)](https://developer.themoviedb.org/reference/authentication-create-session-from-login)       | ✅         |
+| [Delete Session](https://developer.themoviedb.org/reference/authentication-delete-session)                               | ✅         |
+| [Validate Key](https://developer.themoviedb.org/reference/authentication-validate-key)                                   | ✅         |
 
 ### Certifications
 
