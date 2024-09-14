@@ -248,28 +248,28 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                                         | **Status** |
 | --------------------------------------------------------------------------------------------------- | ---------- |
-| [Details](https://developer.themoviedb.org/reference/tv-series-details)                             | ❌         |
-| [Account States](https://developer.themoviedb.org/reference/tv-series-account-states)               | ❌         |
-| [Aggregate Credits](https://developer.themoviedb.org/reference/tv-series-aggregate-credits)         | ❌         |
-| [Alternative Titles](https://developer.themoviedb.org/reference/tv-series-alternative-titles)       | ❌         |
-| [Changes](https://developer.themoviedb.org/reference/tv-series-changes)                             | ❌         |
-| [Content Ratings](https://developer.themoviedb.org/reference/tv-series-content-ratings)             | ❌         |
-| [Credits](https://developer.themoviedb.org/reference/tv-series-credits)                             | ❌         |
-| [Episode Groups](https://developer.themoviedb.org/reference/tv-series-episode-groups)               | ❌         |
-| [External IDs](https://developer.themoviedb.org/reference/tv-series-external-ids)                   | ❌         |
-| [Images](https://developer.themoviedb.org/reference/tv-series-images)                               | ❌         |
-| [Keywords](https://developer.themoviedb.org/reference/tv-series-keywords)                           | ❌         |
-| [Latest](https://developer.themoviedb.org/reference/tv-series-latest-id)                            | ❌         |
-| [Lists](https://developer.themoviedb.org/reference/lists-copy)                                      | ❌         |
-| [Recommendations](https://developer.themoviedb.org/reference/tv-series-recommendations)             | ❌         |
-| [Reviews](https://developer.themoviedb.org/reference/tv-series-reviews)                             | ❌         |
-| [Screened Theatrically](https://developer.themoviedb.org/reference/tv-series-screened-theatrically) | ❌         |
-| [Similar](https://developer.themoviedb.org/reference/tv-series-similar)                             | ❌         |
-| [Translations](https://developer.themoviedb.org/reference/tv-series-translations)                   | ❌         |
-| [Videos](https://developer.themoviedb.org/reference/tv-series-videos)                               | ❌         |
-| [Watch Providers](https://developer.themoviedb.org/reference/tv-series-watch-providers)             | ❌         |
-| [Add Rating](https://developer.themoviedb.org/reference/tv-series-add-rating)                       | ❌         |
-| [Delete Rating](https://developer.themoviedb.org/reference/tv-series-delete-rating)                 | ❌         |
+| [Details](https://developer.themoviedb.org/reference/tv-series-details)                             | ✅         |
+| [Account States](https://developer.themoviedb.org/reference/tv-series-account-states)               | ✅         |
+| [Aggregate Credits](https://developer.themoviedb.org/reference/tv-series-aggregate-credits)         | ✅         |
+| [Alternative Titles](https://developer.themoviedb.org/reference/tv-series-alternative-titles)       | ✅         |
+| [Changes](https://developer.themoviedb.org/reference/tv-series-changes)                             | ✅         |
+| [Content Ratings](https://developer.themoviedb.org/reference/tv-series-content-ratings)             | ✅         |
+| [Credits](https://developer.themoviedb.org/reference/tv-series-credits)                             | ✅         |
+| [Episode Groups](https://developer.themoviedb.org/reference/tv-series-episode-groups)               | ✅         |
+| [External IDs](https://developer.themoviedb.org/reference/tv-series-external-ids)                   | ✅         |
+| [Images](https://developer.themoviedb.org/reference/tv-series-images)                               | ✅         |
+| [Keywords](https://developer.themoviedb.org/reference/tv-series-keywords)                           | ✅         |
+| [Latest](https://developer.themoviedb.org/reference/tv-series-latest-id)                            | ✅         |
+| [Lists](https://developer.themoviedb.org/reference/lists-copy)                                      | ✅         |
+| [Recommendations](https://developer.themoviedb.org/reference/tv-series-recommendations)             | ✅         |
+| [Reviews](https://developer.themoviedb.org/reference/tv-series-reviews)                             | ✅         |
+| [Screened Theatrically](https://developer.themoviedb.org/reference/tv-series-screened-theatrically) | ✅         |
+| [Similar](https://developer.themoviedb.org/reference/tv-series-similar)                             | ✅         |
+| [Translations](https://developer.themoviedb.org/reference/tv-series-translations)                   | ✅         |
+| [Videos](https://developer.themoviedb.org/reference/tv-series-videos)                               | ✅         |
+| [Watch Providers](https://developer.themoviedb.org/reference/tv-series-watch-providers)             | ✅         |
+| [Add Rating](https://developer.themoviedb.org/reference/tv-series-add-rating)                       | ✅         |
+| [Delete Rating](https://developer.themoviedb.org/reference/tv-series-delete-rating)                 | ✅         |
 
 ### TV Seasons
 

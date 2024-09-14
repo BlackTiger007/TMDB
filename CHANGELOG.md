@@ -1,5 +1,33 @@
 # Change Log
 
+## 0.20.0
+
+### Features
+
+- **feat**: Added support for TV Series endpoints:
+  - Details
+  - Account States
+  - Aggregate Credits
+  - Alternative Titles
+  - Changes
+  - Content Ratings
+  - Credits
+  - Episode Groups
+  - External IDs
+  - Images
+  - Keywords
+  - Latest
+  - Lists
+  - Recommendations
+  - Reviews
+  - Screened Theatrically
+  - Similar
+  - Translations
+  - Videos
+  - Watch Providers
+  - Add Rating
+  - Delete Rating
+
 ## 0.19.1
 
 ### Bug Fixes

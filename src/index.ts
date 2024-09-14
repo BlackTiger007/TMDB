@@ -11,6 +11,7 @@ import { GenresService } from './api/GenresService';
 import { KeywordsService } from './api/KeywordsService';
 import { MovieService } from './api/MovieService';
 import { PeopleListsService } from './api/PeopleListsService';
+import { TVSeriesService } from './api/TVSeriesService';
 import { WatchProvidersService } from './api/WatchProvidersService';
 
 /**
@@ -84,6 +85,8 @@ export default class TMDB {
 
 	public configuration: ConfigurationService;
 
+	public tvseries: TVSeriesService;
+
 	/**
 	 * Creates an instance of the TMDB class.
 	 * @param apiKey - The API key used for authenticating requests.
@@ -105,5 +108,6 @@ export default class TMDB {
 		this.authentication = new AuthenticationService(this.apiInstance);
 		this.companies = new CompaniesService(this.apiInstance);
 		this.configuration = new ConfigurationService(this.apiInstance);
+		this.tvseries = new TVSeriesService(this.apiInstance);
 	}
 }
