@@ -1,5 +1,20 @@
 # Change Log
 
+## 0.15.2
+
+### Changed
+
+- Split the single workflow job into two distinct jobs: `build` and `publish-npm`.
+  - **`build`**: Handles code checkout, Node.js setup, dependency installation, and project build.
+  - **`publish-npm`**: Depends on the `build` job and performs npm publishing.
+- Renamed workflow file from `publish.yml` to `npm-publish.yml`.
+
+**Benefits:**
+
+- Improved job separation for better clarity and maintainability.
+- `publish-npm` now runs only after a successful `build` job.
+- More descriptive file name for better understanding of workflow purpose.
+
 ## 0.15.1
 
 - Updated CHANGELOG.md:
