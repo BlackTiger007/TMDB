@@ -1,5 +1,10 @@
 # Change Log
 
+## 0.13.2
+
+- Enhanced the `POST` function to better handle type support.
+- Renamed the `post` type to `POST` for consistency and clarity.
+
 ## 0.13.1
 
 - Implemented `DELETE` method in the API class.
