@@ -1,5 +1,16 @@
 # Change Log
 
+## 0.20.2
+
+### Semantic Release
+
+### Configuration and Workflow Updates
+
+- **chore**: Updated `package.json` to include `files` and `publishConfig` for publishing.
+- **chore**: Renamed `release.config.ts` to `release.config.cjs` for compatibility.
+- **chore**: Modified `release.yml` to include `npm audit signatures` and use `NPM_TOKEN` for `semantic-release`.
+- **chore**: Removed `npm-publish.yml` since `semantic-release` now handles publishing automatically.
+
 ## 0.20.1
 
 ### Build Script

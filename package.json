@@ -1,10 +1,17 @@
 {
 	"name": "@blacktiger/tmdb",
 	"description": "TMDB SDK",
-	"version": "0.20.1",
+	"version": "0.20.2",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
+	"files": [
+		"dist",
+		"README.md"
+	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"lint": "prettier src --check && eslint src/**/*.{js,ts}",
 		"format": "prettier --write src",
