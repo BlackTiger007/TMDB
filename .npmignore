@@ -7,3 +7,5 @@ tsup.config.ts
 .vscode
 .env.example
 .prettierrc
+release.config.ts
+CHANGELOG.md

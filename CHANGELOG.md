@@ -1,5 +1,15 @@
 # Change Log
 
+## 0.17.1
+
+### Continuous Integration
+
+- **ci**: Combined the build and publish steps into a single job in the GitHub Actions workflow to ensure the build files are properly included in the npm release.
+
+### Build System
+
+- **build**: Added `release.config.ts` and `CHANGELOG.md` to `.npmignore` to exclude them from the npm package.
+
 ## 0.17.0
 
 ### Build System
