@@ -1,15 +1,21 @@
 # Change Log
 
+## 0.15.1
+
+- Updated CHANGELOG.md:
+  - Reformatted entries for improved readability and consistency
+  - Enhanced descriptions and markdown formatting
+
 ## 0.15.0
 
-- Added support for `Companies`:
-  - **Details**: Fetch company details by ID.
-  - **Alternative Names**: Retrieve alternative names for a company.
-  - **Images**: Get company logos by ID.
+- **Added support for `Companies` endpoints:**
+  - **Details**: Retrieve detailed information about a company using its ID.
+  - **Alternative Names**: Fetch a list of alternative names for a company.
+  - **Images**: Access company logos by ID. Supports both PNG and SVG formats, with a preference for SVG due to its resolution independence.
 
 ## 0.14.0
 
-- Added support for creating and managing authentication sessions:
+- **Enhanced authentication session management:**
   - Create Guest Session
   - Create Request Token
   - Create Session
@@ -20,73 +26,76 @@
 
 ## 0.13.2
 
-- Enhanced the `POST` function to better handle type support.
-- Renamed the `post` type to `POST` for consistency and clarity.
+- Improved `POST` method for better type handling.
+- Standardized `post` type to `POST` for consistency.
 
 ## 0.13.1
 
-- Implemented `DELETE` method in the API class.
-- Removed the `ValidateKeyResponse` type from the types directory.
+- Added `DELETE` method to API class.
+- Removed `ValidateKeyResponse` type from types directory.
 
 ## 0.13.0
 
-- added Images (Collections)
+- **Added support for Images in Collections:**
+  - Fetch images related to specific collections.
 
 ## 0.12.1
 
-- added JS Docs to Translations (Collections)
+- Added JSDoc comments for Translations endpoint in Collections.
 
 ## 0.12.0
 
-- added Translations (Collections)
+- **Added support for Translations in Collections:**
+  - Retrieve available translations for movie collections.
 
 ## 0.11.0
 
-- added Collections and Details
+- **Introduced Collections and Details endpoints:**
+  - Fetch details and manage movie collections.
 
 ## 0.10.2
 
-- Update CHANGELOG
+- Updated CHANGELOG
 
 ## 0.10.1
 
-- added JS Docs
+- Added JSDoc comments
 
 ## 0.10.0
 
-- added TV List
+- Added TV List
 
 ## 0.9.0
 
-- added People List
+- Added People List
 
 ## 0.8.0
 
-- added Changes and Movie List
+- Added Changes and Movie List
 
 ## 0.7.0
 
-- added TV Certifications
+- Added TV Certifications
 
 ## 0.6.0
 
-- added Certifications and Movie Certifications
+- Added Certifications and Movie Certifications
 
 ## 0.5.0
 
-- added Watchlist TV
+- Added Watchlist TV
 
 ## 0.4.0
 
-- added Watchlist Movies
+- Added Watchlist Movies
 
 ## 0.3.0
 
-- added Rated TV Episodes
+- Added Rated TV Episodes
 
 ## 0.2.5
 
-- Update package-lock.json
+- Updated package-lock.json
 
 ## 0.2.4
 
@@ -94,32 +103,32 @@
 
 ## 0.2.3
 
-- Update workflow to deploy on main branch
+- Updated workflow to deploy on main branch
 
 ## 0.2.2
 
-- fixed Bug and formating code
+- Fixed bug and formatted code
 
 ## 0.2.1
 
-- Update movie.ts - ListsResponse types
+- Updated movie.ts - ListsResponse types
 
 ## 0.2.0
 
-- added Movies (Keywords)
+- Added Movies (Keywords)
 
 ## 0.1.3
 
-- Update README.md
+- Updated README.md
 
 ## 0.1.2
 
-- Optimize code and add JSDoc comments
+- Optimized code and added JSDoc comments
 
 ## 0.1.1
 
-- Createt CHANGELOG.md
-- Update Github Workflow and package.json
+- Created CHANGELOG.md
+- Updated Github Workflow and package.json
 
 ## 0.1.0
 
