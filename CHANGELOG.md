@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.16.2
+
+### Continuous Integration
+
+- **ci**: Removed `push` trigger from GitHub Actions workflow. The workflow will now only execute on release events.
+
 ## 0.16.1
 
 ### Documentation
