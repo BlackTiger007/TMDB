@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.19.1
+
+### Bug Fixes
+
+- **fix**: Ensure that the `Content-Type` header is only set for `POST` and `DELETE` methods.
+
 ## 0.19.0
 
 ### Features

@@ -90,8 +90,8 @@ export class api {
 				Authorization: `Bearer ${this.apiKey}`
 			};
 
-			if (method === 'POST') {
-				headers['Content-Type'] = 'application/json';
+			if (method === 'POST' || method === 'DELETE') {
+				headers['Content-Type'] = 'application/json;charset=utf-8';
 			}
 
 			const response = await fetch(this.buildUrl(endpoint), {
