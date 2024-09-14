@@ -108,7 +108,7 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                         | **Status** |
 | ------------------------------------------------------------------- | ---------- |
-| [Find By ID](https://developer.themoviedb.org/reference/find-by-id) | ❌         |
+| [Find By ID](https://developer.themoviedb.org/reference/find-by-id) | ✅         |
 
 ### Genres
 

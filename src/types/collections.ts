@@ -1,4 +1,4 @@
-type MoviePart = {
+export type MoviePart = {
 	adult: boolean;
 	backdrop_path: string;
 	id: number;

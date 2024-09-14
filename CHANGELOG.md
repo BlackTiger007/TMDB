@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.19.0
+
+### Features
+
+- **feat**: Added support for Find By ID (Find) feature.
+
 ## 0.18.0
 
 ### Features
