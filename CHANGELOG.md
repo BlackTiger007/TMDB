@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.17.0
+
+### Build System
+
+- **build**: Updated `release.config.ts` to use ES module syntax (`export default`) instead of CommonJS (`module.exports`).
+
 ## 0.16.2
 
 ### Continuous Integration
