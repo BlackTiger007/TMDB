@@ -34,21 +34,21 @@
 	},
 	"homepage": "https://github.com/BlackTiger007/tmdb#readme",
 	"devDependencies": {
-		"@eslint/js": "^9.4.0",
+		"@eslint/js": "^9.10.0",
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/git": "^10.0.1",
 		"@types/eslint__js": "^8.42.3",
-		"@types/node": "^20.14.2",
+		"@types/node": "^22.5.5",
 		"@types/node-fetch": "^3.0.3",
 		"dotenv": "^16.4.5",
 		"eslint-config-prettier": "^9.1.0",
-		"eslint-plugin-prettier": "^5.1.3",
-		"globals": "^15.4.0",
-		"prettier": "^3.3.1",
+		"eslint-plugin-prettier": "^5.2.1",
+		"globals": "^15.9.0",
+		"prettier": "^3.3.3",
 		"semantic-release": "^24.1.1",
 		"ts-node": "^10.9.2",
 		"tsup": "^8.2.4",
-		"typescript": "^5.5.4",
-		"typescript-eslint": "^7.12.0"
+		"typescript": "^5.6.2",
+		"typescript-eslint": "^8.5.0"
 	}
 }
