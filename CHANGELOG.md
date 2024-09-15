@@ -1,5 +1,11 @@
 # Change Log
 
+## 0.20.4
+
+### Fixes
+
+- Fixed `semantic-release` configuration to correctly define branches and channels, resolving errors related to invalid branch settings.
+
 ## 0.20.3
 
 - **chore**: Updated Semantic Release configuration:

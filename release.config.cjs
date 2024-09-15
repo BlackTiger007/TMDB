@@ -3,14 +3,9 @@
  */
 module.exports = {
 	branches: [
-		{
-			name: 'main',
-			range: '>=0.1.0 <1.0.0',
-			channel: 'latest'
-		},
+		'main',
 		{
 			name: 'next',
-			range: '>=1.0.0 <2.0.0',
 			prerelease: true,
 			channel: 'next'
 		}
