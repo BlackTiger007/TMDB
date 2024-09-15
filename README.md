@@ -171,13 +171,13 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 | [Lists](https://developer.themoviedb.org/reference/movie-lists)                           | ✅         |
 | [Recommendations](https://developer.themoviedb.org/reference/movie-recommendations)       | ✅         |
 | [Release Dates](https://developer.themoviedb.org/reference/movie-release-dates)           | ✅         |
-| [Reviews](https://developer.themoviedb.org/reference/movie-reviews)                       | ❌         |
-| [Similar](https://developer.themoviedb.org/reference/movie-similar)                       | ❌         |
+| [Reviews](https://developer.themoviedb.org/reference/movie-reviews)                       | ✅         |
+| [Similar](https://developer.themoviedb.org/reference/movie-similar)                       | ✅         |
 | [Translations](https://developer.themoviedb.org/reference/movie-translations)             | ✅         |
 | [Videos](https://developer.themoviedb.org/reference/movie-videos)                         | ✅         |
 | [Watch Providers](https://developer.themoviedb.org/reference/movie-watch-providers)       | ✅         |
-| [Add Rating](https://developer.themoviedb.org/reference/movie-add-rating)                 | ❌         |
-| [Delete Rating](https://developer.themoviedb.org/reference/movie-delete-rating)           | ❌         |
+| [Add Rating](https://developer.themoviedb.org/reference/movie-add-rating)                 | ✅         |
+| [Delete Rating](https://developer.themoviedb.org/reference/movie-delete-rating)           | ✅         |
 
 ### Network
 

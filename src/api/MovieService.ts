@@ -14,8 +14,10 @@ import {
 	VideosResponse,
 	WatchProvidersResponse,
 	ListsResponse,
-	RecommendationsResponse
+	RecommendationsResponse,
+	SimilarResponse
 } from '../types/movie';
+import { ReviewsResponse } from '../types/tvseries';
 
 export class MovieService {
 	private apiInstance: api;
@@ -185,9 +187,37 @@ export class MovieService {
 		return this.apiInstance.GET<ReleaseDatesResponse>(`movie/${movieId}/release_dates`);
 	}
 
-	// @TODO Reviews
+	/**
+	 * Get the user reviews for a movie.
+	 *
+	 * Retrieve user-generated reviews for a specific movie. The results can be filtered by language and pagination.
+	 *
+	 * @param movie_id - The ID of the movie.
+	 * @param language - Optional language code. Defaults to 'en-US'.
+	 * @param page - Optional page number. Defaults to 1.
+	 * @returns A promise that resolves to the reviews response.
+	 */
+	reviews(movie_id: number, language?: string, page?: number): Promise<ReviewsResponse> {
+		const queryParams = this.apiInstance.buildQueryParams({ language, page });
+		const endpoint = `movie/${movie_id}/reviews${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
+		return this.apiInstance.GET<ReviewsResponse>(endpoint);
+	}
 
-	// @TODO Similar
+	/**
+	 * Get the similar movies based on genres and keywords.
+	 *
+	 * This method retrieves movies that are similar to the specified movie based on genres and plot keywords. Note that the results may not always be 100% accurate.
+	 *
+	 * @param movie_id - The ID of the movie.
+	 * @param language - Optional language code. Defaults to 'en-US'.
+	 * @param page - Optional page number. Defaults to 1.
+	 * @returns A promise that resolves to the similar movies response.
+	 */
+	similar(movie_id: number, language?: string, page?: number): Promise<SimilarResponse> {
+		const queryParams = this.apiInstance.buildQueryParams({ language, page });
+		const endpoint = `movie/${movie_id}/similar${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
+		return this.apiInstance.GET<SimilarResponse>(endpoint);
+	}
 
 	/**
 	 * Retrieves translations available for a movie.
@@ -219,7 +249,36 @@ export class MovieService {
 		return this.apiInstance.GET<WatchProvidersResponse>(`movie/${movieId}/watch/providers`);
 	}
 
-	// @TODO Add Rating
+	/**
+	 * Rate a movie and save it to your rated list.
+	 *
+	 * This method allows you to rate a movie and add it to your rated list. By default, if the movie is present in your watchlist, it will be removed to keep your lists tidy.
+	 *
+	 * @param movie_id - The ID of the movie.
+	 * @param rating - The rating value to be submitted (e.g., `8.5`).
+	 * @param guest_session_id - Optional guest session ID for anonymous users.
+	 * @param session_id - Optional session ID for authenticated users.
+	 * @returns A promise that resolves when the rating has been successfully submitted.
+	 */
+	addRating(movie_id: number, rating: number, guest_session_id?: string, session_id?: string) {
+		const queryParams = this.apiInstance.buildQueryParams({ guest_session_id, session_id });
+		const endpoint = `movie/${movie_id}/rating${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
+		return this.apiInstance.POST(endpoint, { value: rating });
+	}
 
-	// @TODO Delete Rating
+	/**
+	 * Delete a user rating for a movie.
+	 *
+	 * This method allows you to remove a previously submitted rating for a movie. It is useful for managing or updating ratings as needed.
+	 *
+	 * @param movie_id - The ID of the movie.
+	 * @param guest_session_id - Optional guest session ID for anonymous users.
+	 * @param session_id - Optional session ID for authenticated users.
+	 * @returns A promise that resolves when the rating has been successfully deleted.
+	 */
+	deleteRating(movie_id: number, guest_session_id?: string, session_id?: string) {
+		const queryParams = this.apiInstance.buildQueryParams({ guest_session_id, session_id });
+		const endpoint = `movie/${movie_id}/rating${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
+		return this.apiInstance.DELETE(endpoint);
+	}
 }
