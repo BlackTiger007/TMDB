@@ -1,3 +1,10 @@
+# [0.21.0-next.4](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.3...v0.21.0-next.4) (2024-09-15)
+
+
+### Bug Fixes
+
+* update GitHub Actions workflow for semantic-release ([aeb4f4c](https://github.com/BlackTiger007/tmdb/commit/aeb4f4c34eb7c8273156cc2d65e5f05cb0d76737))
+
 # [0.21.0-next.3](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.2...v0.21.0-next.3) (2024-09-15)
 
 
