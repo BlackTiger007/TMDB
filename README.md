@@ -121,9 +121,9 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                                     | **Status** |
 | ----------------------------------------------------------------------------------------------- | ---------- |
-| [Rated Movies](https://developer.themoviedb.org/reference/guest-session-rated-movies)           | ❌         |
-| [Rated TV](https://developer.themoviedb.org/reference/guest-session-rated-tv)                   | ❌         |
-| [Rated TV Episodes](https://developer.themoviedb.org/reference/guest-session-rated-tv-episodes) | ❌         |
+| [Rated Movies](https://developer.themoviedb.org/reference/guest-session-rated-movies)           | ✅         |
+| [Rated TV](https://developer.themoviedb.org/reference/guest-session-rated-tv)                   | ✅         |
+| [Rated TV Episodes](https://developer.themoviedb.org/reference/guest-session-rated-tv-episodes) | ✅         |
 
 ### Keywords
 
