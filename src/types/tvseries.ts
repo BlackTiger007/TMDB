@@ -52,12 +52,12 @@ type SpokenLanguage = {
 
 export type DetailsResponse = {
 	adult: boolean;
-	backdrop_path: string;
+	backdrop_path: string | null;
 	created_by: Creator[];
 	episode_run_time: number[];
 	first_air_date: string;
 	genres: Genre[];
-	homepage: string;
+	homepage: string | null;
 	id: number;
 	in_production: boolean;
 	languages: string[];
@@ -73,7 +73,7 @@ export type DetailsResponse = {
 	original_name: string;
 	overview: string;
 	popularity: number;
-	poster_path: string;
+	poster_path: string | null;
 	production_companies: {
 		id: number;
 		logo_path: string | null;
@@ -280,7 +280,7 @@ export type LatestResponse = {
 	episode_run_time: number[];
 	first_air_date: string;
 	genres: any[];
-	homepage: string;
+	homepage: string | null;
 	id: number;
 	in_production: boolean;
 	languages: any[];
@@ -444,7 +444,7 @@ export type TranslationsResponse = {
 		data: {
 			name: string;
 			overview: string;
-			homepage: string;
+			homepage: string | null;
 			tagline: string;
 		};
 	}[];
@@ -472,13 +472,13 @@ export type WatchProvidersResponse = {
 		[countryCode: string]: {
 			link: string;
 			flatrate?: {
-				logo_path: string;
+				logo_path: string | null;
 				provider_id: number;
 				provider_name: string;
 				display_priority: number;
 			}[];
 			buy?: {
-				logo_path: string;
+				logo_path: string | null;
 				provider_id: number;
 				provider_name: string;
 				display_priority: number;

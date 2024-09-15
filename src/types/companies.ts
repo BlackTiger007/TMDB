@@ -2,8 +2,8 @@ export type DetailsResponse = {
 	id: number;
 	name: string;
 	headquarters: string;
-	homepage: string;
-	logo_path: string;
+	homepage: string | null;
+	logo_path: string | null;
 	origin_country: string;
 	parent_company: string | null;
 	description: string;

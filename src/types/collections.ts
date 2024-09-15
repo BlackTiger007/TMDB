@@ -1,12 +1,12 @@
 export type MoviePart = {
 	adult: boolean;
-	backdrop_path: string;
+	backdrop_path: string | null;
 	id: number;
 	title: string;
 	original_language: string;
 	original_title: string;
 	overview: string;
-	poster_path: string;
+	poster_path: string | null;
 	media_type: string;
 	genre_ids: number[];
 	popularity: number;
@@ -20,15 +20,15 @@ export type DetailsResponse = {
 	id: number;
 	name: string;
 	overview: string;
-	poster_path: string;
-	backdrop_path: string;
+	poster_path: string | null;
+	backdrop_path: string | null;
 	parts: MoviePart[];
 };
 
 type TranslationData = {
 	title: string;
 	overview: string;
-	homepage: string;
+	homepage: string | null;
 };
 
 type Translation = {

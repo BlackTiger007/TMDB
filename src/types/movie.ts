@@ -221,7 +221,7 @@ export interface LatestResponse {
 	};
 	budget: number;
 	genres: Genre[];
-	homepage: string;
+	homepage: string | null;
 	id: number;
 	imdb_id: string;
 	origin_country: string[];
@@ -264,7 +264,7 @@ export type ReleaseDatesResponse = {
 };
 
 export type MovieData = {
-	homepage: string;
+	homepage: string | null;
 	overview: string;
 	runtime: number;
 	tagline: string;
@@ -303,7 +303,7 @@ export type VideosResponse = {
 };
 
 export type StreamingProvider = {
-	logo_path: string;
+	logo_path: string | null;
 	provider_id: number;
 	provider_name: string;
 	display_priority: number;
@@ -352,12 +352,12 @@ export type GenreID =
 	| 14; // Fantasy
 
 export type Movie = {
-	backdrop_path: string;
+	backdrop_path: string | null;
 	id: number;
 	title: string;
 	original_title: string;
 	overview: string;
-	poster_path: string;
+	poster_path: string | null;
 	media_type: string;
 	adult: boolean;
 	original_language: string;
