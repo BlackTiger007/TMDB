@@ -1,14 +1,25 @@
-# [0.21.0-next.1](https://github.com/BlackTiger007/tmdb/compare/v0.20.3...v0.21.0-next.1) (2024-09-15)
+# [0.21.0-next.2](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.1...v0.21.0-next.2) (2024-09-15)
 
 
 ### Bug Fixes
 
-* Update `package-lock.json` and include it in release config ([e5308d3](https://github.com/BlackTiger007/tmdb/commit/e5308d3fdc488f7b2a49c34ad5cdbc189b823db1))
+* add | null to types where applicable and format code with Prettier ([8da949f](https://github.com/BlackTiger007/tmdb/commit/8da949f3eab941eabcd25236b46a3fd8fd96f25b))
 
 
 ### Features
 
-* **movies:** add support for Reviews, Similar, Add Rating, and Delete Rating endpoints ([1140638](https://github.com/BlackTiger007/tmdb/commit/11406388ac595c4503495f6388d6bb663c95e2ef))
+* add support for Guest Sessions features (Rated Movies, Rated TV, Rated TV Episodes) ([a65b272](https://github.com/BlackTiger007/tmdb/commit/a65b272cc9c2ee43bb7660b767e68a01b7753993))
+* **discover:** add support for movie and TV discover endpoints ([92f7bed](https://github.com/BlackTiger007/tmdb/commit/92f7bed487d44f72c532b40713fd61e10d84326c))
+
+# [0.21.0-next.1](https://github.com/BlackTiger007/tmdb/compare/v0.20.3...v0.21.0-next.1) (2024-09-15)
+
+### Bug Fixes
+
+- Update `package-lock.json` and include it in release config ([e5308d3](https://github.com/BlackTiger007/tmdb/commit/e5308d3fdc488f7b2a49c34ad5cdbc189b823db1))
+
+### Features
+
+- **movies:** add support for Reviews, Similar, Add Rating, and Delete Rating endpoints ([1140638](https://github.com/BlackTiger007/tmdb/commit/11406388ac595c4503495f6388d6bb663c95e2ef))
 
 ## [0.20.3](https://github.com/BlackTiger007/tmdb/compare/v0.20.2...v0.20.3) (2024-09-15)
 
