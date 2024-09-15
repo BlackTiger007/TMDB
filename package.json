@@ -10,7 +10,9 @@
 		"README.md"
 	],
 	"publishConfig": {
-		"access": "public"
+		"access": "public",
+		"registry": "https://registry.npmjs.org/",
+		"provenance": true
 	},
 	"scripts": {
 		"lint": "prettier src --check && eslint src/**/*.{js,ts}",
