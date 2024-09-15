@@ -101,8 +101,8 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                        | **Status** |
 | ------------------------------------------------------------------ | ---------- |
-| [Movie](https://developer.themoviedb.org/reference/discover-movie) | ❌         |
-| [TV](https://developer.themoviedb.org/reference/discover-tv)       | ❌         |
+| [Movie](https://developer.themoviedb.org/reference/discover-movie) | ✅         |
+| [TV](https://developer.themoviedb.org/reference/discover-tv)       | ✅         |
 
 ### Find
 
