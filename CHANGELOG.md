@@ -1,3 +1,10 @@
+## [0.20.3](https://github.com/BlackTiger007/tmdb/compare/v0.20.2...v0.20.3) (2024-09-15)
+
+
+### Bug Fixes
+
+* update semantic-release configuration to fix branch issues ([6cbd488](https://github.com/BlackTiger007/tmdb/commit/6cbd488ce9fb9b7e0e74cd2d13835baf98850b7e))
+
 # Change Log
 
 ## 0.20.4
