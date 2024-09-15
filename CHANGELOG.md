@@ -1,15 +1,20 @@
-# [0.21.0-next.2](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.1...v0.21.0-next.2) (2024-09-15)
-
-
-### Bug Fixes
-
-* add | null to types where applicable and format code with Prettier ([8da949f](https://github.com/BlackTiger007/tmdb/commit/8da949f3eab941eabcd25236b46a3fd8fd96f25b))
+# [0.21.0-next.3](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.2...v0.21.0-next.3) (2024-09-15)
 
 
 ### Features
 
-* add support for Guest Sessions features (Rated Movies, Rated TV, Rated TV Episodes) ([a65b272](https://github.com/BlackTiger007/tmdb/commit/a65b272cc9c2ee43bb7660b767e68a01b7753993))
-* **discover:** add support for movie and TV discover endpoints ([92f7bed](https://github.com/BlackTiger007/tmdb/commit/92f7bed487d44f72c532b40713fd61e10d84326c))
+* **Lists:** add support for Lists features (Add Movie, Check Item Status, Clear, Create, Delete, Details, Remove Movie) ([50f4755](https://github.com/BlackTiger007/tmdb/commit/50f475541fe49b989f01e7360000f91a4cd13bb8))
+
+# [0.21.0-next.2](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.1...v0.21.0-next.2) (2024-09-15)
+
+### Bug Fixes
+
+- add | null to types where applicable and format code with Prettier ([8da949f](https://github.com/BlackTiger007/tmdb/commit/8da949f3eab941eabcd25236b46a3fd8fd96f25b))
+
+### Features
+
+- add support for Guest Sessions features (Rated Movies, Rated TV, Rated TV Episodes) ([a65b272](https://github.com/BlackTiger007/tmdb/commit/a65b272cc9c2ee43bb7660b767e68a01b7753993))
+- **discover:** add support for movie and TV discover endpoints ([92f7bed](https://github.com/BlackTiger007/tmdb/commit/92f7bed487d44f72c532b40713fd61e10d84326c))
 
 # [0.21.0-next.1](https://github.com/BlackTiger007/tmdb/compare/v0.20.3...v0.21.0-next.1) (2024-09-15)
 
