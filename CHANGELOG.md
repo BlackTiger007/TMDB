@@ -1,9 +1,15 @@
-# [0.21.0-next.5](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.4...v0.21.0-next.5) (2024-09-15)
+# [0.21.0-next.6](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.5...v0.21.0-next.6) (2024-09-15)
 
 
 ### Features
 
-* **movie-lists:** add support for Now Playing, Popular, Top Rated, and Upcoming endpoints ([2c61b09](https://github.com/BlackTiger007/tmdb/commit/2c61b093292a825775c6bc921518b907d38e7453))
+* **network:** add support for Details, Alternative Names, and Images endpoints ([b297883](https://github.com/BlackTiger007/tmdb/commit/b297883d370a1d901e46e36c2110d2edceb33d87))
+
+# [0.21.0-next.5](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.4...v0.21.0-next.5) (2024-09-15)
+
+### Features
+
+- **movie-lists:** add support for Now Playing, Popular, Top Rated, and Upcoming endpoints ([2c61b09](https://github.com/BlackTiger007/tmdb/commit/2c61b093292a825775c6bc921518b907d38e7453))
 
 # [0.21.0-next.4](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.3...v0.21.0-next.4) (2024-09-15)
 
