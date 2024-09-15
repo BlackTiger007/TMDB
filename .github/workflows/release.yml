@@ -2,6 +2,10 @@ name: Release
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+      - next
 
 jobs:
   release:
@@ -21,5 +25,5 @@ jobs:
       - name: Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release

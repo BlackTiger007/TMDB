@@ -1,7 +1,7 @@
 {
 	"name": "@blacktiger/tmdb",
 	"description": "TMDB SDK",
-	"version": "0.20.2",
+	"version": "0.20.3",
 	"main": "./dist/index.js",
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
@@ -35,8 +35,8 @@
 	"homepage": "https://github.com/BlackTiger007/tmdb#readme",
 	"devDependencies": {
 		"@eslint/js": "^9.4.0",
+		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/git": "^10.0.1",
-		"@semantic-release/github": "^10.3.3",
 		"@types/eslint__js": "^8.42.3",
 		"@types/node": "^20.14.2",
 		"@types/node-fetch": "^3.0.3",

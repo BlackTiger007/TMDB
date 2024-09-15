@@ -1,5 +1,12 @@
 # Change Log
 
+## 0.20.3
+
+- **chore**: Updated Semantic Release configuration:
+  - Added support for `next` branch with pre-release configuration
+  - Included additional plugins: `@semantic-release/npm` and `@semantic-release/changelog`
+  - Adjusted GitHub Actions workflow to trigger on `push` events to `main` and `next` branches
+
 ## 0.20.2
 
 ### Semantic Release
