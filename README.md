@@ -138,13 +138,13 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                            | **Status** |
 | -------------------------------------------------------------------------------------- | ---------- |
-| [Add Movie](https://developer.themoviedb.org/reference/list-add-movie)                 | ❌         |
-| [Check Item Status](https://developer.themoviedb.org/reference/list-check-item-status) | ❌         |
-| [Clear](https://developer.themoviedb.org/reference/list-clear)                         | ❌         |
-| [Create](https://developer.themoviedb.org/reference/list-create)                       | ❌         |
-| [Delete](https://developer.themoviedb.org/reference/list-delete)                       | ❌         |
-| [Details](https://developer.themoviedb.org/reference/list-details)                     | ❌         |
-| [Remove Movie](https://developer.themoviedb.org/reference/list-remove-movie)           | ❌         |
+| [Add Movie](https://developer.themoviedb.org/reference/list-add-movie)                 | ✅         |
+| [Check Item Status](https://developer.themoviedb.org/reference/list-check-item-status) | ✅         |
+| [Clear](https://developer.themoviedb.org/reference/list-clear)                         | ✅         |
+| [Create](https://developer.themoviedb.org/reference/list-create)                       | ✅         |
+| [Delete](https://developer.themoviedb.org/reference/list-delete)                       | ✅         |
+| [Details](https://developer.themoviedb.org/reference/list-details)                     | ✅         |
+| [Remove Movie](https://developer.themoviedb.org/reference/list-remove-movie)           | ✅         |
 
 ### Movie Lists
 
