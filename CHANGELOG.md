@@ -1,16 +1,21 @@
-# [0.21.0-next.4](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.3...v0.21.0-next.4) (2024-09-15)
-
-
-### Bug Fixes
-
-* update GitHub Actions workflow for semantic-release ([aeb4f4c](https://github.com/BlackTiger007/tmdb/commit/aeb4f4c34eb7c8273156cc2d65e5f05cb0d76737))
-
-# [0.21.0-next.3](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.2...v0.21.0-next.3) (2024-09-15)
+# [0.21.0-next.5](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.4...v0.21.0-next.5) (2024-09-15)
 
 
 ### Features
 
-* **Lists:** add support for Lists features (Add Movie, Check Item Status, Clear, Create, Delete, Details, Remove Movie) ([50f4755](https://github.com/BlackTiger007/tmdb/commit/50f475541fe49b989f01e7360000f91a4cd13bb8))
+* **movie-lists:** add support for Now Playing, Popular, Top Rated, and Upcoming endpoints ([2c61b09](https://github.com/BlackTiger007/tmdb/commit/2c61b093292a825775c6bc921518b907d38e7453))
+
+# [0.21.0-next.4](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.3...v0.21.0-next.4) (2024-09-15)
+
+### Bug Fixes
+
+- update GitHub Actions workflow for semantic-release ([aeb4f4c](https://github.com/BlackTiger007/tmdb/commit/aeb4f4c34eb7c8273156cc2d65e5f05cb0d76737))
+
+# [0.21.0-next.3](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.2...v0.21.0-next.3) (2024-09-15)
+
+### Features
+
+- **Lists:** add support for Lists features (Add Movie, Check Item Status, Clear, Create, Delete, Details, Remove Movie) ([50f4755](https://github.com/BlackTiger007/tmdb/commit/50f475541fe49b989f01e7360000f91a4cd13bb8))
 
 # [0.21.0-next.2](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.1...v0.21.0-next.2) (2024-09-15)
 
