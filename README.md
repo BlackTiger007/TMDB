@@ -195,18 +195,18 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 ### People
 
-| **Feature**                                                                            | **Status** |
-| -------------------------------------------------------------------------------------- | ---------- |
-| [Details](https://developer.themoviedb.org/reference/person-details)                   | ❌         |
-| [Changes](https://developer.themoviedb.org/reference/person-changes)                   | ❌         |
-| [Combined Credits](https://developer.themoviedb.org/reference/person-combined-credits) | ❌         |
-| [External IDs](https://developer.themoviedb.org/reference/person-external-ids)         | ❌         |
-| [Images](https://developer.themoviedb.org/reference/person-images)                     | ❌         |
-| [Latest](https://developer.themoviedb.org/reference/person-latest-id)                  | ❌         |
-| [Movie Credits](https://developer.themoviedb.org/reference/person-movie-credits)       | ❌         |
-| [TV Credits](https://developer.themoviedb.org/reference/person-tv-credits)             | ❌         |
-| [Tagged Images](https://developer.themoviedb.org/reference/person-tagged-images)       | Outdated   |
-| [Translations](https://developer.themoviedb.org/reference/translations)                | ❌         |
+| **Feature**                                                                            | **Status**  |
+| -------------------------------------------------------------------------------------- | ----------- |
+| [Details](https://developer.themoviedb.org/reference/person-details)                   | ✅          |
+| [Changes](https://developer.themoviedb.org/reference/person-changes)                   | ✅          |
+| [Combined Credits](https://developer.themoviedb.org/reference/person-combined-credits) | ✅          |
+| [External IDs](https://developer.themoviedb.org/reference/person-external-ids)         | ✅          |
+| [Images](https://developer.themoviedb.org/reference/person-images)                     | ✅          |
+| [Latest](https://developer.themoviedb.org/reference/person-latest-id)                  | ✅          |
+| [Movie Credits](https://developer.themoviedb.org/reference/person-movie-credits)       | ✅          |
+| [TV Credits](https://developer.themoviedb.org/reference/person-tv-credits)             | ✅          |
+| [Tagged Images](https://developer.themoviedb.org/reference/person-tagged-images)       | ☑️ Outdated |
+| [Translations](https://developer.themoviedb.org/reference/translations)                | ✅          |
 
 ### Reviews
 
