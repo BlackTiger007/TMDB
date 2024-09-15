@@ -305,7 +305,7 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                    | **Status** |
 | ------------------------------------------------------------------------------ | ---------- |
-| [Details](https://developer.themoviedb.org/reference/tv-episode-group-details) | ❌         |
+| [Details](https://developer.themoviedb.org/reference/tv-episode-group-details) | ✅         |
 
 ### Watch Providers
 

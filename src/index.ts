@@ -17,6 +17,7 @@ import { MovieService } from './api/MovieService';
 import { NetworkService } from './api/NetworkService';
 import { PeopleListsService } from './api/PeopleListsService';
 import { ReviewsService } from './api/ReviewsService';
+import { TvEpisodeGroupsService } from './api/TvEpisodeGroupsService';
 import { TVSeriesService } from './api/TVSeriesService';
 import { WatchProvidersService } from './api/WatchProvidersService';
 
@@ -105,6 +106,8 @@ export default class TMDB {
 
 	public reviews: ReviewsService;
 
+	public tvEpisodeGroups: TvEpisodeGroupsService;
+
 	/**
 	 * Creates an instance of the TMDB class.
 	 * @param apiKey - The API key used for authenticating requests.
@@ -133,5 +136,6 @@ export default class TMDB {
 		this.movieLists = new MovieListsService(this.apiInstance);
 		this.network = new NetworkService(this.apiInstance);
 		this.reviews = new ReviewsService(this.apiInstance);
+		this.tvEpisodeGroups = new TvEpisodeGroupsService(this.apiInstance);
 	}
 }
