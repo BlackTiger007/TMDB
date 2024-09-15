@@ -150,10 +150,10 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                      | **Status** |
 | -------------------------------------------------------------------------------- | ---------- |
-| [Now Playing](https://developer.themoviedb.org/reference/movie-now-playing-list) | ❌         |
-| [Popular](https://developer.themoviedb.org/reference/movie-popular-list)         | ❌         |
-| [Top Rated](https://developer.themoviedb.org/reference/movie-top-rated-list)     | ❌         |
-| [Upcoming](https://developer.themoviedb.org/reference/movie-upcoming-list)       | ❌         |
+| [Now Playing](https://developer.themoviedb.org/reference/movie-now-playing-list) | ✅         |
+| [Popular](https://developer.themoviedb.org/reference/movie-popular-list)         | ✅         |
+| [Top Rated](https://developer.themoviedb.org/reference/movie-top-rated-list)     | ✅         |
+| [Upcoming](https://developer.themoviedb.org/reference/movie-upcoming-list)       | ✅         |
 
 ### Movies
 

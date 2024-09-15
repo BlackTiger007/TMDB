@@ -12,6 +12,7 @@ import { GenresService } from './api/GenresService';
 import { GuestSessionsService } from './api/GuestSessionsService';
 import { KeywordsService } from './api/KeywordsService';
 import { ListsService } from './api/ListsService';
+import { MovieListsService } from './api/MovieListsService';
 import { MovieService } from './api/MovieService';
 import { PeopleListsService } from './api/PeopleListsService';
 import { TVSeriesService } from './api/TVSeriesService';
@@ -96,6 +97,8 @@ export default class TMDB {
 
 	public lists: ListsService;
 
+	public movieLists: MovieListsService;
+
 	/**
 	 * Creates an instance of the TMDB class.
 	 * @param apiKey - The API key used for authenticating requests.
@@ -121,5 +124,6 @@ export default class TMDB {
 		this.discover = new DiscoverService(this.apiInstance);
 		this.guestSessions = new GuestSessionsService(this.apiInstance);
 		this.lists = new ListsService(this.apiInstance);
+		this.movieLists = new MovieListsService(this.apiInstance);
 	}
 }
