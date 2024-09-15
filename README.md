@@ -218,13 +218,13 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                | **Status** |
 | -------------------------------------------------------------------------- | ---------- |
-| [Collection](https://developer.themoviedb.org/reference/search-collection) | ❌         |
-| [Company](https://developer.themoviedb.org/reference/search-company)       | ❌         |
-| [Keyword](https://developer.themoviedb.org/reference/search-keyword)       | ❌         |
-| [Movie](https://developer.themoviedb.org/reference/search-movie)           | ❌         |
-| [Multi](https://developer.themoviedb.org/reference/search-multi)           | ❌         |
-| [Person](https://developer.themoviedb.org/reference/search-person)         | ❌         |
-| [TV](https://developer.themoviedb.org/reference/search-tv)                 | ❌         |
+| [Collection](https://developer.themoviedb.org/reference/search-collection) | ✅         |
+| [Company](https://developer.themoviedb.org/reference/search-company)       | ✅         |
+| [Keyword](https://developer.themoviedb.org/reference/search-keyword)       | ✅         |
+| [Movie](https://developer.themoviedb.org/reference/search-movie)           | ✅         |
+| [Multi](https://developer.themoviedb.org/reference/search-multi)           | ✅         |
+| [Person](https://developer.themoviedb.org/reference/search-person)         | ✅         |
+| [TV](https://developer.themoviedb.org/reference/search-tv)                 | ✅         |
 
 ### Trending
 
