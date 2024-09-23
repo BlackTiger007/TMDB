@@ -43,8 +43,8 @@ export type DetailsResponse = {
 	overview: string | null;
 	popularity: number;
 	poster_path: ImagePath;
-	production_companies: ProductionCompany;
-	production_countries: ProductionCountry;
+	production_companies: ProductionCompany[];
+	production_countries: ProductionCountry[];
 	release_date: string;
 	revenue: number;
 	runtime: number | null;
