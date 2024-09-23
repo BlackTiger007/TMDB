@@ -88,21 +88,23 @@ export class SearchService {
 	 */
 	movie(
 		query: string,
-		includeAdult: boolean = false,
-		language: string = 'en-US',
-		primaryReleaseYear?: string,
-		page: number = 1,
-		region?: string,
-		year?: string
+		queryParam: {
+			includeAdult: boolean;
+			language: string;
+			primaryReleaseYear?: string;
+			page: number;
+			region?: string;
+			year?: string;
+		}
 	): Promise<MoviesResponse> {
 		const queryParams = this.apiInstance.buildQueryParams({
 			query,
-			include_adult: includeAdult,
-			language,
-			primary_release_year: primaryReleaseYear,
-			page,
-			region,
-			year
+			include_adult: queryParam.includeAdult,
+			language: queryParam.language,
+			primary_release_year: queryParam.primaryReleaseYear,
+			page: queryParam.page,
+			region: queryParam.region,
+			year: queryParam.year
 		});
 		const endpoint = `search/movie${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
 		return this.apiInstance.GET<MoviesResponse>(endpoint);
