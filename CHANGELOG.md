@@ -1,12 +1,19 @@
-# [0.21.0-next.7](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.6...v0.21.0-next.7) (2024-09-15)
+# [0.21.0-next.8](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.7...v0.21.0-next.8) (2024-09-23)
 
+
+### Bug Fixes
+
+* preserve JSDoc comments by setting "removeComments" to false in tsconfig.json ([d0c0ed7](https://github.com/BlackTiger007/tmdb/commit/d0c0ed75785f313957d96c71a0255e887532c7a8))
+* **types:** correct Movies DetailsResponse to match TMDB API field names ([8956eef](https://github.com/BlackTiger007/tmdb/commit/8956eefe69baf031a61aee78e9306afe07fed921))
+
+# [0.21.0-next.7](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.6...v0.21.0-next.7) (2024-09-15)
 
 ### Features
 
-* **people:** add support for Details endpoints ([29b7916](https://github.com/BlackTiger007/tmdb/commit/29b7916b3cb95ac7202fbaf1239ae87605b0945f))
-* **reviews:** add support for Details endpoints ([ee06b7e](https://github.com/BlackTiger007/tmdb/commit/ee06b7ec7bef4eb7bfe2fb81708d78800cdae967))
-* **search:** add support for Collection, Company, Keyword, Movie, Multi, Person and TV endpoints ([ad1986c](https://github.com/BlackTiger007/tmdb/commit/ad1986c33db0ec9e7846f546de86a1dc6986359d))
-* **tv-episode-groups:** add support for Details endpoints ([8fb2481](https://github.com/BlackTiger007/tmdb/commit/8fb2481b0895ac335d81d47241e39acc89b6c099))
+- **people:** add support for Details endpoints ([29b7916](https://github.com/BlackTiger007/tmdb/commit/29b7916b3cb95ac7202fbaf1239ae87605b0945f))
+- **reviews:** add support for Details endpoints ([ee06b7e](https://github.com/BlackTiger007/tmdb/commit/ee06b7ec7bef4eb7bfe2fb81708d78800cdae967))
+- **search:** add support for Collection, Company, Keyword, Movie, Multi, Person and TV endpoints ([ad1986c](https://github.com/BlackTiger007/tmdb/commit/ad1986c33db0ec9e7846f546de86a1dc6986359d))
+- **tv-episode-groups:** add support for Details endpoints ([8fb2481](https://github.com/BlackTiger007/tmdb/commit/8fb2481b0895ac335d81d47241e39acc89b6c099))
 
 # [0.21.0-next.6](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.5...v0.21.0-next.6) (2024-09-15)
 
