@@ -26,35 +26,35 @@ export interface SpokenLanguage {
 
 export type DetailsResponse = {
 	adult: boolean;
-	backdropPath: ImagePath;
-	belongsToCollection: null | {
+	backdrop_path: ImagePath;
+	belongs_to_collection: null | {
 		id: number;
 		name: string;
-		posterPath: string | null;
-		backdropPath: string | null;
+		poster_path: string | null;
+		backdrop_path: string | null;
 	};
 	budget: number;
-	genres: ReadonlyArray<Genre>;
+	genres: Genre;
 	homepage: string | null;
 	id: number;
-	imdbId: string | null;
-	originalLanguage: string;
-	originalTitle: string;
+	imdb_id: string | null;
+	original_language: string;
+	original_title: string;
 	overview: string | null;
 	popularity: number;
-	posterPath: ImagePath;
-	productionCompanies: ReadonlyArray<ProductionCompany>;
-	productionCountries: ReadonlyArray<ProductionCountry>;
-	releaseDate: string;
+	poster_path: ImagePath;
+	production_companies: ProductionCompany;
+	production_countries: ProductionCountry;
+	release_date: string;
 	revenue: number;
 	runtime: number | null;
-	spokenLanguages: ReadonlyArray<SpokenLanguage>;
+	spoken_languages: ReadonlyArray<SpokenLanguage>;
 	status: string;
 	tagline: string | null;
 	title: string;
 	video: boolean;
-	voteAverage: number;
-	voteCount: number;
+	vote_average: number;
+	vote_count: number;
 };
 
 export type AlternativeTitle = {
