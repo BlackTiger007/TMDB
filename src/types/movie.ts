@@ -34,7 +34,7 @@ export type DetailsResponse = {
 		backdrop_path: string | null;
 	};
 	budget: number;
-	genres: Genre;
+	genres: Genre[];
 	homepage: string | null;
 	id: number;
 	imdb_id: string | null;
