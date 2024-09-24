@@ -20,6 +20,7 @@ export interface ProductionCountry {
 }
 
 export interface SpokenLanguage {
+	english_name: string;
 	iso_639_1: string;
 	name: string;
 }
@@ -48,7 +49,7 @@ export type DetailsResponse = {
 	release_date: string;
 	revenue: number;
 	runtime: number | null;
-	spoken_languages: ReadonlyArray<SpokenLanguage>;
+	spoken_languages: SpokenLanguage[];
 	status: string;
 	tagline: string | null;
 	title: string;
