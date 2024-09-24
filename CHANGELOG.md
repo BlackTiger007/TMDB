@@ -1,11 +1,17 @@
-# [0.21.0-next.9](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.8...v0.21.0-next.9) (2024-09-24)
+# [0.21.0-next.10](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.9...v0.21.0-next.10) (2024-09-24)
 
 
 ### Bug Fixes
 
-* **docs:** update JSDoc comments for query parameters in SearchService methods ([4c4a482](https://github.com/BlackTiger007/tmdb/commit/4c4a482e1128404b603d9ba3b0af93bf62b91234))
-* **types:** update Genre type to be an array ([8f064ce](https://github.com/BlackTiger007/tmdb/commit/8f064cec42b14f1b6fdbea2acf6833913a4dd1c4))
-* **types:** update production_companies and production_countries to be arrays ([1e593df](https://github.com/BlackTiger007/tmdb/commit/1e593df73551b739fcc60f2c6ef29c6c7e111265))
+* **types:** add english_name to SpokenLanguage type ([0aec31f](https://github.com/BlackTiger007/tmdb/commit/0aec31fb6851b1438c2baae6f49f95f1f0ac6d79))
+
+# [0.21.0-next.9](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.8...v0.21.0-next.9) (2024-09-24)
+
+### Bug Fixes
+
+- **docs:** update JSDoc comments for query parameters in SearchService methods ([4c4a482](https://github.com/BlackTiger007/tmdb/commit/4c4a482e1128404b603d9ba3b0af93bf62b91234))
+- **types:** update Genre type to be an array ([8f064ce](https://github.com/BlackTiger007/tmdb/commit/8f064cec42b14f1b6fdbea2acf6833913a4dd1c4))
+- **types:** update production_companies and production_countries to be arrays ([1e593df](https://github.com/BlackTiger007/tmdb/commit/1e593df73551b739fcc60f2c6ef29c6c7e111265))
 
 # [0.21.0-next.8](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.7...v0.21.0-next.8) (2024-09-23)
 
