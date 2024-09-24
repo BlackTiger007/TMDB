@@ -1,10 +1,18 @@
-# [0.21.0-next.8](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.7...v0.21.0-next.8) (2024-09-23)
+# [0.21.0-next.9](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.8...v0.21.0-next.9) (2024-09-24)
 
 
 ### Bug Fixes
 
-* preserve JSDoc comments by setting "removeComments" to false in tsconfig.json ([d0c0ed7](https://github.com/BlackTiger007/tmdb/commit/d0c0ed75785f313957d96c71a0255e887532c7a8))
-* **types:** correct Movies DetailsResponse to match TMDB API field names ([8956eef](https://github.com/BlackTiger007/tmdb/commit/8956eefe69baf031a61aee78e9306afe07fed921))
+* **docs:** update JSDoc comments for query parameters in SearchService methods ([4c4a482](https://github.com/BlackTiger007/tmdb/commit/4c4a482e1128404b603d9ba3b0af93bf62b91234))
+* **types:** update Genre type to be an array ([8f064ce](https://github.com/BlackTiger007/tmdb/commit/8f064cec42b14f1b6fdbea2acf6833913a4dd1c4))
+* **types:** update production_companies and production_countries to be arrays ([1e593df](https://github.com/BlackTiger007/tmdb/commit/1e593df73551b739fcc60f2c6ef29c6c7e111265))
+
+# [0.21.0-next.8](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.7...v0.21.0-next.8) (2024-09-23)
+
+### Bug Fixes
+
+- preserve JSDoc comments by setting "removeComments" to false in tsconfig.json ([d0c0ed7](https://github.com/BlackTiger007/tmdb/commit/d0c0ed75785f313957d96c71a0255e887532c7a8))
+- **types:** correct Movies DetailsResponse to match TMDB API field names ([8956eef](https://github.com/BlackTiger007/tmdb/commit/8956eefe69baf031a61aee78e9306afe07fed921))
 
 # [0.21.0-next.7](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.6...v0.21.0-next.7) (2024-09-15)
 
