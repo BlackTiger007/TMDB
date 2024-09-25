@@ -7,7 +7,7 @@ on:
       - next
 
 permissions:
-  contents: read # for checkout
+  contents: read
 
 jobs:
   release:

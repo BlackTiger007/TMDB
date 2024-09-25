@@ -1,0 +1,24 @@
+name: Auto-merge PRs after successful review and checks
+
+on:
+  pull_request:
+    types:
+      - ready_for_review
+  check_suite:
+    types:
+      - completed
+
+jobs:
+  automerge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Auto-merge
+        uses: pascalgn/automerge-action@v0.14.3
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          merge-method: 'merge'
+          require-approval: true
+          check-statuses: 'all'
+          allow-fork: false
