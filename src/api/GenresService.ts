@@ -23,7 +23,6 @@ export class GenresService {
 	 * @returns A promise that resolves to an object containing the list of movie genres.
 	 */
 	async movieList(language?: string): Promise<GenreList> {
-		// Use buildQueryParams to construct query string
 		const queryParams = this.apiInstance.buildQueryParams({ language });
 		const endpoint = `genre/movie/list${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
 		return this.apiInstance.GET<GenreList>(endpoint);
@@ -40,7 +39,6 @@ export class GenresService {
 	 * @returns A promise that resolves to an object containing the list of TV genres.
 	 */
 	async tvList(language?: string): Promise<GenreList> {
-		// Use buildQueryParams to construct query string
 		const queryParams = this.apiInstance.buildQueryParams({ language });
 		const endpoint = `genre/tv/list${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
 		return this.apiInstance.GET<GenreList>(endpoint);

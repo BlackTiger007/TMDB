@@ -1,12 +1,10 @@
 export type DetailsResponse = {
-	id: number;
-	name: string;
 	headquarters: string;
-	homepage: string | null;
+	homepage: string;
+	id: number;
 	logo_path: string | null;
+	name: string;
 	origin_country: string;
-	parent_company: string | null;
-	description: string;
 };
 
 export type AlternativeNamesResponse = {

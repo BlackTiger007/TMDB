@@ -7,10 +7,19 @@ import { CollectionsService } from './api/CollectionsService';
 import { CompaniesService } from './api/CompaniesService';
 import { ConfigurationService } from './api/ConfigurationService';
 import { CreditsService } from './api/CreditsService';
+import { DiscoverService } from './api/DiscoverService';
 import { GenresService } from './api/GenresService';
+import { GuestSessionsService } from './api/GuestSessionsService';
 import { KeywordsService } from './api/KeywordsService';
+import { ListsService } from './api/ListsService';
+import { MovieListsService } from './api/MovieListsService';
 import { MovieService } from './api/MovieService';
+import { NetworkService } from './api/NetworkService';
 import { PeopleListsService } from './api/PeopleListsService';
+import { PeopleService } from './api/PeopleService';
+import { ReviewsService } from './api/ReviewsService';
+import { SearchService } from './api/SearchService';
+import { TvEpisodeGroupsService } from './api/TvEpisodeGroupsService';
 import { TVSeriesService } from './api/TVSeriesService';
 import { WatchProvidersService } from './api/WatchProvidersService';
 
@@ -87,6 +96,24 @@ export default class TMDB {
 
 	public tvseries: TVSeriesService;
 
+	public discover: DiscoverService;
+
+	public guestSessions: GuestSessionsService;
+
+	public lists: ListsService;
+
+	public movieLists: MovieListsService;
+
+	public network: NetworkService;
+
+	public reviews: ReviewsService;
+
+	public tvEpisodeGroups: TvEpisodeGroupsService;
+
+	public people: PeopleService;
+
+	public search: SearchService;
+
 	/**
 	 * Creates an instance of the TMDB class.
 	 * @param apiKey - The API key used for authenticating requests.
@@ -109,5 +136,14 @@ export default class TMDB {
 		this.companies = new CompaniesService(this.apiInstance);
 		this.configuration = new ConfigurationService(this.apiInstance);
 		this.tvseries = new TVSeriesService(this.apiInstance);
+		this.discover = new DiscoverService(this.apiInstance);
+		this.guestSessions = new GuestSessionsService(this.apiInstance);
+		this.lists = new ListsService(this.apiInstance);
+		this.movieLists = new MovieListsService(this.apiInstance);
+		this.network = new NetworkService(this.apiInstance);
+		this.reviews = new ReviewsService(this.apiInstance);
+		this.tvEpisodeGroups = new TvEpisodeGroupsService(this.apiInstance);
+		this.people = new PeopleService(this.apiInstance);
+		this.search = new SearchService(this.apiInstance);
 	}
 }

@@ -1,9 +1,84 @@
-## [0.20.3](https://github.com/BlackTiger007/tmdb/compare/v0.20.2...v0.20.3) (2024-09-15)
+# [0.21.0-next.10](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.9...v0.21.0-next.10) (2024-09-24)
 
 
 ### Bug Fixes
 
-* update semantic-release configuration to fix branch issues ([6cbd488](https://github.com/BlackTiger007/tmdb/commit/6cbd488ce9fb9b7e0e74cd2d13835baf98850b7e))
+* **types:** add english_name to SpokenLanguage type ([0aec31f](https://github.com/BlackTiger007/tmdb/commit/0aec31fb6851b1438c2baae6f49f95f1f0ac6d79))
+
+# [0.21.0-next.9](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.8...v0.21.0-next.9) (2024-09-24)
+
+### Bug Fixes
+
+- **docs:** update JSDoc comments for query parameters in SearchService methods ([4c4a482](https://github.com/BlackTiger007/tmdb/commit/4c4a482e1128404b603d9ba3b0af93bf62b91234))
+- **types:** update Genre type to be an array ([8f064ce](https://github.com/BlackTiger007/tmdb/commit/8f064cec42b14f1b6fdbea2acf6833913a4dd1c4))
+- **types:** update production_companies and production_countries to be arrays ([1e593df](https://github.com/BlackTiger007/tmdb/commit/1e593df73551b739fcc60f2c6ef29c6c7e111265))
+
+# [0.21.0-next.8](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.7...v0.21.0-next.8) (2024-09-23)
+
+### Bug Fixes
+
+- preserve JSDoc comments by setting "removeComments" to false in tsconfig.json ([d0c0ed7](https://github.com/BlackTiger007/tmdb/commit/d0c0ed75785f313957d96c71a0255e887532c7a8))
+- **types:** correct Movies DetailsResponse to match TMDB API field names ([8956eef](https://github.com/BlackTiger007/tmdb/commit/8956eefe69baf031a61aee78e9306afe07fed921))
+
+# [0.21.0-next.7](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.6...v0.21.0-next.7) (2024-09-15)
+
+### Features
+
+- **people:** add support for Details endpoints ([29b7916](https://github.com/BlackTiger007/tmdb/commit/29b7916b3cb95ac7202fbaf1239ae87605b0945f))
+- **reviews:** add support for Details endpoints ([ee06b7e](https://github.com/BlackTiger007/tmdb/commit/ee06b7ec7bef4eb7bfe2fb81708d78800cdae967))
+- **search:** add support for Collection, Company, Keyword, Movie, Multi, Person and TV endpoints ([ad1986c](https://github.com/BlackTiger007/tmdb/commit/ad1986c33db0ec9e7846f546de86a1dc6986359d))
+- **tv-episode-groups:** add support for Details endpoints ([8fb2481](https://github.com/BlackTiger007/tmdb/commit/8fb2481b0895ac335d81d47241e39acc89b6c099))
+
+# [0.21.0-next.6](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.5...v0.21.0-next.6) (2024-09-15)
+
+### Features
+
+- **network:** add support for Details, Alternative Names, and Images endpoints ([b297883](https://github.com/BlackTiger007/tmdb/commit/b297883d370a1d901e46e36c2110d2edceb33d87))
+
+# [0.21.0-next.5](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.4...v0.21.0-next.5) (2024-09-15)
+
+### Features
+
+- **movie-lists:** add support for Now Playing, Popular, Top Rated, and Upcoming endpoints ([2c61b09](https://github.com/BlackTiger007/tmdb/commit/2c61b093292a825775c6bc921518b907d38e7453))
+
+# [0.21.0-next.4](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.3...v0.21.0-next.4) (2024-09-15)
+
+### Bug Fixes
+
+- update GitHub Actions workflow for semantic-release ([aeb4f4c](https://github.com/BlackTiger007/tmdb/commit/aeb4f4c34eb7c8273156cc2d65e5f05cb0d76737))
+
+# [0.21.0-next.3](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.2...v0.21.0-next.3) (2024-09-15)
+
+### Features
+
+- **Lists:** add support for Lists features (Add Movie, Check Item Status, Clear, Create, Delete, Details, Remove Movie) ([50f4755](https://github.com/BlackTiger007/tmdb/commit/50f475541fe49b989f01e7360000f91a4cd13bb8))
+
+# [0.21.0-next.2](https://github.com/BlackTiger007/tmdb/compare/v0.21.0-next.1...v0.21.0-next.2) (2024-09-15)
+
+### Bug Fixes
+
+- add | null to types where applicable and format code with Prettier ([8da949f](https://github.com/BlackTiger007/tmdb/commit/8da949f3eab941eabcd25236b46a3fd8fd96f25b))
+
+### Features
+
+- add support for Guest Sessions features (Rated Movies, Rated TV, Rated TV Episodes) ([a65b272](https://github.com/BlackTiger007/tmdb/commit/a65b272cc9c2ee43bb7660b767e68a01b7753993))
+- **discover:** add support for movie and TV discover endpoints ([92f7bed](https://github.com/BlackTiger007/tmdb/commit/92f7bed487d44f72c532b40713fd61e10d84326c))
+
+# [0.21.0-next.1](https://github.com/BlackTiger007/tmdb/compare/v0.20.3...v0.21.0-next.1) (2024-09-15)
+
+### Bug Fixes
+
+- Update `package-lock.json` and include it in release config ([e5308d3](https://github.com/BlackTiger007/tmdb/commit/e5308d3fdc488f7b2a49c34ad5cdbc189b823db1))
+
+### Features
+
+- **movies:** add support for Reviews, Similar, Add Rating, and Delete Rating endpoints ([1140638](https://github.com/BlackTiger007/tmdb/commit/11406388ac595c4503495f6388d6bb663c95e2ef))
+
+## [0.20.3](https://github.com/BlackTiger007/tmdb/compare/v0.20.2...v0.20.3) (2024-09-15)
+
+### Bug Fixes
+
+- update semantic-release configuration to fix branch issues ([6cbd488](https://github.com/BlackTiger007/tmdb/commit/6cbd488ce9fb9b7e0e74cd2d13835baf98850b7e))
 
 # Change Log
 

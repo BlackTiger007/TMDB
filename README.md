@@ -101,8 +101,8 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                        | **Status** |
 | ------------------------------------------------------------------ | ---------- |
-| [Movie](https://developer.themoviedb.org/reference/discover-movie) | ❌         |
-| [TV](https://developer.themoviedb.org/reference/discover-tv)       | ❌         |
+| [Movie](https://developer.themoviedb.org/reference/discover-movie) | ✅         |
+| [TV](https://developer.themoviedb.org/reference/discover-tv)       | ✅         |
 
 ### Find
 
@@ -121,9 +121,9 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                                     | **Status** |
 | ----------------------------------------------------------------------------------------------- | ---------- |
-| [Rated Movies](https://developer.themoviedb.org/reference/guest-session-rated-movies)           | ❌         |
-| [Rated TV](https://developer.themoviedb.org/reference/guest-session-rated-tv)                   | ❌         |
-| [Rated TV Episodes](https://developer.themoviedb.org/reference/guest-session-rated-tv-episodes) | ❌         |
+| [Rated Movies](https://developer.themoviedb.org/reference/guest-session-rated-movies)           | ✅         |
+| [Rated TV](https://developer.themoviedb.org/reference/guest-session-rated-tv)                   | ✅         |
+| [Rated TV Episodes](https://developer.themoviedb.org/reference/guest-session-rated-tv-episodes) | ✅         |
 
 ### Keywords
 
@@ -138,22 +138,22 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                            | **Status** |
 | -------------------------------------------------------------------------------------- | ---------- |
-| [Add Movie](https://developer.themoviedb.org/reference/list-add-movie)                 | ❌         |
-| [Check Item Status](https://developer.themoviedb.org/reference/list-check-item-status) | ❌         |
-| [Clear](https://developer.themoviedb.org/reference/list-clear)                         | ❌         |
-| [Create](https://developer.themoviedb.org/reference/list-create)                       | ❌         |
-| [Delete](https://developer.themoviedb.org/reference/list-delete)                       | ❌         |
-| [Details](https://developer.themoviedb.org/reference/list-details)                     | ❌         |
-| [Remove Movie](https://developer.themoviedb.org/reference/list-remove-movie)           | ❌         |
+| [Add Movie](https://developer.themoviedb.org/reference/list-add-movie)                 | ✅         |
+| [Check Item Status](https://developer.themoviedb.org/reference/list-check-item-status) | ✅         |
+| [Clear](https://developer.themoviedb.org/reference/list-clear)                         | ✅         |
+| [Create](https://developer.themoviedb.org/reference/list-create)                       | ✅         |
+| [Delete](https://developer.themoviedb.org/reference/list-delete)                       | ✅         |
+| [Details](https://developer.themoviedb.org/reference/list-details)                     | ✅         |
+| [Remove Movie](https://developer.themoviedb.org/reference/list-remove-movie)           | ✅         |
 
 ### Movie Lists
 
 | **Feature**                                                                      | **Status** |
 | -------------------------------------------------------------------------------- | ---------- |
-| [Now Playing](https://developer.themoviedb.org/reference/movie-now-playing-list) | ❌         |
-| [Popular](https://developer.themoviedb.org/reference/movie-popular-list)         | ❌         |
-| [Top Rated](https://developer.themoviedb.org/reference/movie-top-rated-list)     | ❌         |
-| [Upcoming](https://developer.themoviedb.org/reference/movie-upcoming-list)       | ❌         |
+| [Now Playing](https://developer.themoviedb.org/reference/movie-now-playing-list) | ✅         |
+| [Popular](https://developer.themoviedb.org/reference/movie-popular-list)         | ✅         |
+| [Top Rated](https://developer.themoviedb.org/reference/movie-top-rated-list)     | ✅         |
+| [Upcoming](https://developer.themoviedb.org/reference/movie-upcoming-list)       | ✅         |
 
 ### Movies
 
@@ -171,21 +171,21 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 | [Lists](https://developer.themoviedb.org/reference/movie-lists)                           | ✅         |
 | [Recommendations](https://developer.themoviedb.org/reference/movie-recommendations)       | ✅         |
 | [Release Dates](https://developer.themoviedb.org/reference/movie-release-dates)           | ✅         |
-| [Reviews](https://developer.themoviedb.org/reference/movie-reviews)                       | ❌         |
-| [Similar](https://developer.themoviedb.org/reference/movie-similar)                       | ❌         |
+| [Reviews](https://developer.themoviedb.org/reference/movie-reviews)                       | ✅         |
+| [Similar](https://developer.themoviedb.org/reference/movie-similar)                       | ✅         |
 | [Translations](https://developer.themoviedb.org/reference/movie-translations)             | ✅         |
 | [Videos](https://developer.themoviedb.org/reference/movie-videos)                         | ✅         |
 | [Watch Providers](https://developer.themoviedb.org/reference/movie-watch-providers)       | ✅         |
-| [Add Rating](https://developer.themoviedb.org/reference/movie-add-rating)                 | ❌         |
-| [Delete Rating](https://developer.themoviedb.org/reference/movie-delete-rating)           | ❌         |
+| [Add Rating](https://developer.themoviedb.org/reference/movie-add-rating)                 | ✅         |
+| [Delete Rating](https://developer.themoviedb.org/reference/movie-delete-rating)           | ✅         |
 
 ### Network
 
 | **Feature**                                                                  | **Status** |
 | ---------------------------------------------------------------------------- | ---------- |
-| [Details](https://developer.themoviedb.org/reference/network-details)        | ❌         |
-| [Alternative Names](https://developer.themoviedb.org/reference/details-copy) | ❌         |
-| [Images](https://developer.themoviedb.org/reference/alternative-names-copy)  | ❌         |
+| [Details](https://developer.themoviedb.org/reference/network-details)        | ✅         |
+| [Alternative Names](https://developer.themoviedb.org/reference/details-copy) | ✅         |
+| [Images](https://developer.themoviedb.org/reference/alternative-names-copy)  | ✅         |
 
 ### People Lists
 
@@ -195,36 +195,36 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 ### People
 
-| **Feature**                                                                            | **Status** |
-| -------------------------------------------------------------------------------------- | ---------- |
-| [Details](https://developer.themoviedb.org/reference/person-details)                   | ❌         |
-| [Changes](https://developer.themoviedb.org/reference/person-changes)                   | ❌         |
-| [Combined Credits](https://developer.themoviedb.org/reference/person-combined-credits) | ❌         |
-| [External IDs](https://developer.themoviedb.org/reference/person-external-ids)         | ❌         |
-| [Images](https://developer.themoviedb.org/reference/person-images)                     | ❌         |
-| [Latest](https://developer.themoviedb.org/reference/person-latest-id)                  | ❌         |
-| [Movie Credits](https://developer.themoviedb.org/reference/person-movie-credits)       | ❌         |
-| [TV Credits](https://developer.themoviedb.org/reference/person-tv-credits)             | ❌         |
-| [Tagged Images](https://developer.themoviedb.org/reference/person-tagged-images)       | Outdated   |
-| [Translations](https://developer.themoviedb.org/reference/translations)                | ❌         |
+| **Feature**                                                                            | **Status**  |
+| -------------------------------------------------------------------------------------- | ----------- |
+| [Details](https://developer.themoviedb.org/reference/person-details)                   | ✅          |
+| [Changes](https://developer.themoviedb.org/reference/person-changes)                   | ✅          |
+| [Combined Credits](https://developer.themoviedb.org/reference/person-combined-credits) | ✅          |
+| [External IDs](https://developer.themoviedb.org/reference/person-external-ids)         | ✅          |
+| [Images](https://developer.themoviedb.org/reference/person-images)                     | ✅          |
+| [Latest](https://developer.themoviedb.org/reference/person-latest-id)                  | ✅          |
+| [Movie Credits](https://developer.themoviedb.org/reference/person-movie-credits)       | ✅          |
+| [TV Credits](https://developer.themoviedb.org/reference/person-tv-credits)             | ✅          |
+| [Tagged Images](https://developer.themoviedb.org/reference/person-tagged-images)       | ☑️ Outdated |
+| [Translations](https://developer.themoviedb.org/reference/translations)                | ✅          |
 
 ### Reviews
 
 | **Feature**                                                          | **Status** |
 | -------------------------------------------------------------------- | ---------- |
-| [Details](https://developer.themoviedb.org/reference/review-details) | ❌         |
+| [Details](https://developer.themoviedb.org/reference/review-details) | ✅         |
 
 ### Search
 
 | **Feature**                                                                | **Status** |
 | -------------------------------------------------------------------------- | ---------- |
-| [Collection](https://developer.themoviedb.org/reference/search-collection) | ❌         |
-| [Company](https://developer.themoviedb.org/reference/search-company)       | ❌         |
-| [Keyword](https://developer.themoviedb.org/reference/search-keyword)       | ❌         |
-| [Movie](https://developer.themoviedb.org/reference/search-movie)           | ❌         |
-| [Multi](https://developer.themoviedb.org/reference/search-multi)           | ❌         |
-| [Person](https://developer.themoviedb.org/reference/search-person)         | ❌         |
-| [TV](https://developer.themoviedb.org/reference/search-tv)                 | ❌         |
+| [Collection](https://developer.themoviedb.org/reference/search-collection) | ✅         |
+| [Company](https://developer.themoviedb.org/reference/search-company)       | ✅         |
+| [Keyword](https://developer.themoviedb.org/reference/search-keyword)       | ✅         |
+| [Movie](https://developer.themoviedb.org/reference/search-movie)           | ✅         |
+| [Multi](https://developer.themoviedb.org/reference/search-multi)           | ✅         |
+| [Person](https://developer.themoviedb.org/reference/search-person)         | ✅         |
+| [TV](https://developer.themoviedb.org/reference/search-tv)                 | ✅         |
 
 ### Trending
 
@@ -305,7 +305,7 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 
 | **Feature**                                                                    | **Status** |
 | ------------------------------------------------------------------------------ | ---------- |
-| [Details](https://developer.themoviedb.org/reference/tv-episode-group-details) | ❌         |
+| [Details](https://developer.themoviedb.org/reference/tv-episode-group-details) | ✅         |
 
 ### Watch Providers
 

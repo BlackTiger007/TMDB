@@ -19,7 +19,7 @@ type DisplayPriorities = {
 type Provider = {
 	display_priorities: DisplayPriorities;
 	display_priority: number;
-	logo_path: string;
+	logo_path: string | null;
 	provider_name: string;
 	provider_id: number;
 };

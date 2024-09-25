@@ -20,41 +20,42 @@ export interface ProductionCountry {
 }
 
 export interface SpokenLanguage {
+	english_name: string;
 	iso_639_1: string;
 	name: string;
 }
 
 export type DetailsResponse = {
 	adult: boolean;
-	backdropPath: ImagePath;
-	belongsToCollection: null | {
+	backdrop_path: ImagePath;
+	belongs_to_collection: null | {
 		id: number;
 		name: string;
-		posterPath: string | null;
-		backdropPath: string | null;
+		poster_path: string | null;
+		backdrop_path: string | null;
 	};
 	budget: number;
-	genres: ReadonlyArray<Genre>;
+	genres: Genre[];
 	homepage: string | null;
 	id: number;
-	imdbId: string | null;
-	originalLanguage: string;
-	originalTitle: string;
+	imdb_id: string | null;
+	original_language: string;
+	original_title: string;
 	overview: string | null;
 	popularity: number;
-	posterPath: ImagePath;
-	productionCompanies: ReadonlyArray<ProductionCompany>;
-	productionCountries: ReadonlyArray<ProductionCountry>;
-	releaseDate: string;
+	poster_path: ImagePath;
+	production_companies: ProductionCompany[];
+	production_countries: ProductionCountry[];
+	release_date: string;
 	revenue: number;
 	runtime: number | null;
-	spokenLanguages: ReadonlyArray<SpokenLanguage>;
+	spoken_languages: SpokenLanguage[];
 	status: string;
 	tagline: string | null;
 	title: string;
 	video: boolean;
-	voteAverage: number;
-	voteCount: number;
+	vote_average: number;
+	vote_count: number;
 };
 
 export type AlternativeTitle = {
@@ -221,7 +222,7 @@ export interface LatestResponse {
 	};
 	budget: number;
 	genres: Genre[];
-	homepage: string;
+	homepage: string | null;
 	id: number;
 	imdb_id: string;
 	origin_country: string[];
@@ -264,7 +265,7 @@ export type ReleaseDatesResponse = {
 };
 
 export type MovieData = {
-	homepage: string;
+	homepage: string | null;
 	overview: string;
 	runtime: number;
 	tagline: string;
@@ -303,7 +304,7 @@ export type VideosResponse = {
 };
 
 export type StreamingProvider = {
-	logo_path: string;
+	logo_path: string | null;
 	provider_id: number;
 	provider_name: string;
 	display_priority: number;
@@ -352,12 +353,12 @@ export type GenreID =
 	| 14; // Fantasy
 
 export type Movie = {
-	backdrop_path: string;
+	backdrop_path: string | null;
 	id: number;
 	title: string;
 	original_title: string;
 	overview: string;
-	poster_path: string;
+	poster_path: string | null;
 	media_type: string;
 	adult: boolean;
 	original_language: string;
@@ -373,6 +374,28 @@ export type Movie = {
 export type RecommendationsResponse = {
 	page: number;
 	results: Movie[];
+	total_pages: number;
+	total_results: number;
+};
+
+export type SimilarResponse = {
+	page: number;
+	results: {
+		adult: boolean;
+		backdrop_path: string | null;
+		genre_ids: number[];
+		id: number;
+		original_language: string;
+		original_title: string;
+		overview: string;
+		popularity: number;
+		poster_path: string | null;
+		release_date: string;
+		title: string;
+		video: boolean;
+		vote_average: number;
+		vote_count: number;
+	}[];
 	total_pages: number;
 	total_results: number;
 };
