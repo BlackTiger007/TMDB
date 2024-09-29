@@ -172,3 +172,26 @@ export interface WatchlistTVResult {
 	vote_average: number;
 	vote_count: number;
 }
+
+export interface AuthenticationCreateGuestSessionResponse {
+	success: boolean;
+	expires_at: string;
+	guest_session_id: string;
+}
+
+export interface AuthenticationTokenResponse {
+	success: boolean;
+	expires_at: string;
+	request_token: string;
+}
+
+export interface AuthenticationPostResponse {
+	success: boolean;
+	session_id: string;
+}
+
+export interface AuthenticationCreateSessionWithLoginResponse {
+	success: boolean;
+	expires_at: string;
+	request_token: string;
+}

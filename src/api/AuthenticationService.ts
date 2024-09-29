@@ -1,12 +1,11 @@
 import { api } from '.';
-import { POST } from '../types';
-import {
-	CreateGuestSessionResponse,
-	CreateRequestTokenResponse,
-	CreateSessionResponse,
-	CreateSessionFromV4TokenResponse,
-	CreateSessionWithLoginResponse
-} from '../types/authentication';
+import type {
+	AuthenticationCreateGuestSessionResponse,
+	AuthenticationTokenResponse,
+	AuthenticationPostResponse,
+	AuthenticationCreateSessionWithLoginResponse,
+	POST
+} from '../newTypes';
 
 export class AuthenticationService {
 	private apiInstance: api;
@@ -23,8 +22,8 @@ export class AuthenticationService {
 	 * Creates a guest session. Guest sessions allow users to perform actions like maintaining a rated list, a watchlist, and a favorite list. Guest sessions will expire if not used within 60 minutes.
 	 * @returns A promise that resolves to the response containing the guest session details.
 	 */
-	async createGuestSession(): Promise<CreateGuestSessionResponse> {
-		return this.apiInstance.POST<CreateGuestSessionResponse>(
+	async createGuestSession(): Promise<AuthenticationCreateGuestSessionResponse> {
+		return this.apiInstance.POST<AuthenticationCreateGuestSessionResponse>(
 			'authentication/guest_session/new',
 			{}
 		);
@@ -34,8 +33,8 @@ export class AuthenticationService {
 	 * Creates a request token used to validate a TMDB user login. This is the first step in generating a session ID.
 	 * @returns A promise that resolves to the response containing the request token details.
 	 */
-	async createRequestToken(): Promise<CreateRequestTokenResponse> {
-		return this.apiInstance.GET<CreateRequestTokenResponse>('authentication/token/new');
+	async createRequestToken(): Promise<AuthenticationTokenResponse> {
+		return this.apiInstance.GET<AuthenticationTokenResponse>('authentication/token/new');
 	}
 
 	/**
@@ -43,8 +42,8 @@ export class AuthenticationService {
 	 * @param requestToken - The request token obtained from the createRequestToken method.
 	 * @returns A promise that resolves to the response containing the session ID details.
 	 */
-	async createSession(requestToken: string): Promise<CreateSessionResponse> {
-		return this.apiInstance.POST<CreateSessionResponse>('authentication/session/new', {
+	async createSession(requestToken: string): Promise<AuthenticationPostResponse> {
+		return this.apiInstance.POST<AuthenticationPostResponse>('authentication/session/new', {
 			request_token: requestToken
 		});
 	}
@@ -54,11 +53,10 @@ export class AuthenticationService {
 	 * @param v4Token - The v4 access token obtained from user authentication.
 	 * @returns A promise that resolves to the response containing the session ID details.
 	 */
-	async createSessionFromV4Token(v4Token: string): Promise<CreateSessionFromV4TokenResponse> {
-		return this.apiInstance.POST<CreateSessionFromV4TokenResponse>(
-			'authentication/session/convert/4',
-			{ access_token: v4Token }
-		);
+	async createSessionFromV4Token(v4Token: string): Promise<AuthenticationPostResponse> {
+		return this.apiInstance.POST<AuthenticationPostResponse>('authentication/session/convert/4', {
+			access_token: v4Token
+		});
 	}
 
 	/**
@@ -72,8 +70,8 @@ export class AuthenticationService {
 		requestToken: string,
 		username: string,
 		password: string
-	): Promise<CreateSessionWithLoginResponse> {
-		return this.apiInstance.POST<CreateSessionWithLoginResponse>(
+	): Promise<AuthenticationCreateSessionWithLoginResponse> {
+		return this.apiInstance.POST<AuthenticationCreateSessionWithLoginResponse>(
 			'authentication/token/validate_with_login',
 			{
 				username: username,
