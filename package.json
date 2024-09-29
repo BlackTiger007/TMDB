@@ -6,14 +6,8 @@
 	"module": "./dist/index.mjs",
 	"types": "./dist/index.d.ts",
 	"files": [
-		"dist",
-		"README.md"
+		"dist"
 	],
-	"publishConfig": {
-		"access": "public",
-		"registry": "https://registry.npmjs.org/",
-		"provenance": true
-	},
 	"scripts": {
 		"lint": "prettier src --check && eslint src/**/*.{js,ts}",
 		"format": "prettier --write src",
