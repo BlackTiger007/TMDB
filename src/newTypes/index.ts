@@ -1,14 +1,5 @@
 import { ISO639_1 } from './ISO639_1';
-
-export interface POST {
-	status_code: number;
-	status_message: string;
-	success: boolean;
-}
-
-export interface DELETE {
-	success: boolean;
-}
+export * from './http-methods';
 
 export interface AccountDetailsResponse {
 	avatar: Avatar;

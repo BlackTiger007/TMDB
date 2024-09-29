@@ -1,4 +1,4 @@
-import { DELETE, POST } from '../types';
+import { DELETE, POST } from '../newTypes';
 import type { Url } from '../types/movie';
 
 export class api {
