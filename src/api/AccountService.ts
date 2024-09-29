@@ -1,13 +1,15 @@
 import { api } from '.';
-import {
-	DetailsResponse,
-	FavoriteTvResponse,
-	ListsResponse,
-	MovieResponse,
-	RatedResponse,
-	ratedTvEpisodesResponse
-} from '../types/account';
-import { Movie } from '../types/movie';
+import type {
+	AccountDetailsResponse,
+	AccountFavoriteMoviesResponse,
+	AccountFavoriteTVResponse,
+	AccountListsResponse,
+	AccountRatedMoviesResponse,
+	AccountRatedTVEpisodesResponse,
+	AccountRatedTVResponse,
+	AccountWatchlistMoviesResponse,
+	AccountWatchlistTVResponse
+} from '../newTypes';
 
 /**
  * Service class for interacting with account-related endpoints of the TMDB API.
@@ -29,10 +31,10 @@ export class AccountService {
 	 * @param session_id - Optional session ID for the request.
 	 * @returns A promise that resolves to the account details.
 	 */
-	async details(account_id: number, session_id?: string): Promise<DetailsResponse> {
+	async details(account_id: number, session_id?: string): Promise<AccountDetailsResponse> {
 		const queryParams = this.apiInstance.buildQueryParams({ account_id, session_id });
 		const endpoint = `account${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
-		return this.apiInstance.GET<DetailsResponse>(endpoint);
+		return this.apiInstance.GET<AccountDetailsResponse>(endpoint);
 	}
 
 	/**
@@ -82,10 +84,10 @@ export class AccountService {
 		page?: number,
 		session_id?: string,
 		sort_by?: 'created_at.asc' | 'created_at.desc'
-	): Promise<Movie> {
+	): Promise<AccountFavoriteMoviesResponse> {
 		const queryParams = this.apiInstance.buildQueryParams({ language, page, session_id, sort_by });
 		const endpoint = `account/${account_id}/favorite/movies${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
-		return await this.apiInstance.GET<Movie>(endpoint);
+		return await this.apiInstance.GET<AccountFavoriteMoviesResponse>(endpoint);
 	}
 
 	/**
@@ -103,10 +105,10 @@ export class AccountService {
 		page?: number,
 		session_id?: string,
 		sort_by?: 'created_at.asc' | 'created_at.desc'
-	): Promise<FavoriteTvResponse> {
+	): Promise<AccountFavoriteTVResponse> {
 		const queryParams = this.apiInstance.buildQueryParams({ language, page, session_id, sort_by });
 		const endpoint = `account/${account_id}/favorite/tv${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
-		return await this.apiInstance.GET<FavoriteTvResponse>(endpoint);
+		return await this.apiInstance.GET<AccountFavoriteTVResponse>(endpoint);
 	}
 
 	/**
@@ -116,10 +118,14 @@ export class AccountService {
 	 * @param session_id - Optional session ID for the request.
 	 * @returns A promise that resolves to the list of lists created by the account.
 	 */
-	async lists(account_id: number, page?: number, session_id?: string): Promise<ListsResponse> {
+	async lists(
+		account_id: number,
+		page?: number,
+		session_id?: string
+	): Promise<AccountListsResponse> {
 		const queryParams = this.apiInstance.buildQueryParams({ page, session_id });
 		const endpoint = `account/${account_id}/lists${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
-		return await this.apiInstance.GET<ListsResponse>(endpoint);
+		return await this.apiInstance.GET<AccountListsResponse>(endpoint);
 	}
 
 	/**
@@ -137,10 +143,10 @@ export class AccountService {
 		page?: number,
 		session_id?: string,
 		sort_by?: 'created_at.asc' | 'created_at.desc'
-	): Promise<Movie> {
+	): Promise<AccountRatedMoviesResponse> {
 		const queryParams = this.apiInstance.buildQueryParams({ language, page, session_id, sort_by });
 		const endpoint = `account/${account_id}/rated/movies${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
-		return await this.apiInstance.GET<Movie>(endpoint);
+		return await this.apiInstance.GET<AccountRatedMoviesResponse>(endpoint);
 	}
 
 	/**
@@ -158,10 +164,10 @@ export class AccountService {
 		page?: number,
 		session_id?: string,
 		sort_by?: 'created_at.asc' | 'created_at.desc'
-	): Promise<RatedResponse> {
+	): Promise<AccountRatedTVResponse> {
 		const queryParams = this.apiInstance.buildQueryParams({ language, page, session_id, sort_by });
 		const endpoint = `account/${account_id}/rated/tv${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
-		return await this.apiInstance.GET<RatedResponse>(endpoint);
+		return await this.apiInstance.GET<AccountRatedTVResponse>(endpoint);
 	}
 
 	/**
@@ -179,10 +185,10 @@ export class AccountService {
 		page?: number,
 		session_id?: string,
 		sort_by?: 'created_at.asc' | 'created_at.desc'
-	): Promise<ratedTvEpisodesResponse> {
+	): Promise<AccountRatedTVEpisodesResponse> {
 		const queryParams = this.apiInstance.buildQueryParams({ language, page, session_id, sort_by });
 		const endpoint = `account/${account_id}/rated/tv/episodes${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
-		return await this.apiInstance.GET<ratedTvEpisodesResponse>(endpoint);
+		return await this.apiInstance.GET<AccountRatedTVEpisodesResponse>(endpoint);
 	}
 
 	/**
@@ -200,10 +206,10 @@ export class AccountService {
 		page?: number,
 		session_id?: string,
 		sort_by?: 'created_at.asc' | 'created_at.desc'
-	): Promise<MovieResponse> {
+	): Promise<AccountWatchlistMoviesResponse> {
 		const queryParams = this.apiInstance.buildQueryParams({ language, page, session_id, sort_by });
 		const endpoint = `account/${account_id}/watchlist/movies${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
-		return await this.apiInstance.GET<MovieResponse>(endpoint);
+		return await this.apiInstance.GET<AccountWatchlistMoviesResponse>(endpoint);
 	}
 
 	/**
@@ -221,9 +227,9 @@ export class AccountService {
 		page?: number,
 		session_id?: string,
 		sort_by?: 'created_at.asc' | 'created_at.desc'
-	): Promise<FavoriteTvResponse> {
+	): Promise<AccountWatchlistTVResponse> {
 		const queryParams = this.apiInstance.buildQueryParams({ language, page, session_id, sort_by });
 		const endpoint = `account/${account_id}/watchlist/tv${queryParams.toString() ? `?${queryParams.toString()}` : ''}`;
-		return await this.apiInstance.GET<FavoriteTvResponse>(endpoint);
+		return await this.apiInstance.GET<AccountWatchlistTVResponse>(endpoint);
 	}
 }
