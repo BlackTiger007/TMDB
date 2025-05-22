@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { tmdb } from '.';
+import { tmdb } from './index.test';
 
 describe('TMDB Collection Tests', () => {
 	it('should fetch collection details successfully', async () => {
