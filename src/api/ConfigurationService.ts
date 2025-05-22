@@ -1,4 +1,4 @@
-import { api } from '.';
+import { API } from '.';
 import {
 	DetailsResponse,
 	CountriesResponse,
@@ -9,13 +9,13 @@ import {
 } from '../types/configuration';
 
 export class ConfigurationService {
-	private apiInstance: api;
+	private apiInstance: API;
 
 	/**
 	 * Initializes the ConfigurationService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

@@ -1,14 +1,14 @@
-import { api } from '.';
+import { API } from '.';
 import { ChangesResponse } from '../types/changes';
 
 export class ChangesService {
-	private apiInstance: api;
+	private apiInstance: API;
 
 	/**
 	 * Initializes the ChangesService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

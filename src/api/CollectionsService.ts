@@ -1,14 +1,14 @@
-import { api } from '.';
+import { API } from '.';
 import { DetailsResponse, ImagesResponse, TranslationsResponse } from '../types/collections';
 
 export class CollectionsService {
-	private apiInstance: api;
+	private apiInstance: API;
 
 	/**
 	 * Initializes the CollectionsService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

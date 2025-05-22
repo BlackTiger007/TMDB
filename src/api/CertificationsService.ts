@@ -1,14 +1,14 @@
-import { api } from '.';
+import { API } from '.';
 import { CertificationsResponse } from '../types/certifications';
 
 export class CertificationsService {
-	private apiInstance: api;
+	private apiInstance: API;
 
 	/**
 	 * Initializes the CertificationsService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

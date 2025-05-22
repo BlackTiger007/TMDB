@@ -1,14 +1,14 @@
-import { api } from '.';
+import { API } from '.';
 import { FindByIDResponse } from '../types/find';
 
 export class FindService {
-	private apiInstance: api;
+	private apiInstance: API;
 
 	/**
 	 * Initializes the FindService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

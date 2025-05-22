@@ -1,14 +1,14 @@
-import { api } from '.';
+import { API } from '.';
 import { PersonListResponse } from '../types/peopleLists';
 
 export class PeopleListsService {
-	private apiInstance: api;
+	private apiInstance: API;
 
 	/**
 	 * Initializes the PeopleListsService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

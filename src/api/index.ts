@@ -1,7 +1,7 @@
 import { DELETE, POST } from '../newTypes';
 import type { Url } from '../types/movie';
 
-export class api {
+export class API {
 	protected apiKey: string;
 	protected language: string;
 	protected url: Url = 'https://api.themoviedb.org/3';
@@ -36,7 +36,7 @@ export class api {
 		return new Promise((resolve) => setTimeout(resolve, ms));
 	}
 
-	protected async validateKey(apiKey: string, retries = api.MAX_RETRIES): Promise<POST> {
+	protected async validateKey(apiKey: string, retries = API.MAX_RETRIES): Promise<POST> {
 		try {
 			const headers: Record<string, string> = {
 				accept: 'application/json',
@@ -49,8 +49,8 @@ export class api {
 			});
 
 			if (response.status === 429 && retries > 0) {
-				console.warn(`Rate limit exceeded. Retrying in ${api.RETRY_DELAY}ms...`);
-				await this.delay(api.RETRY_DELAY);
+				console.warn(`Rate limit exceeded. Retrying in ${API.RETRY_DELAY}ms...`);
+				await this.delay(API.RETRY_DELAY);
 				return this.validateKey(apiKey, retries - 1);
 			}
 
@@ -82,7 +82,7 @@ export class api {
 		endpoint: string,
 		method: 'GET' | 'POST' | 'DELETE',
 		body?: Record<string, any>,
-		retries = api.MAX_RETRIES
+		retries = API.MAX_RETRIES
 	): Promise<T> {
 		try {
 			const headers: Record<string, string> = {
@@ -101,8 +101,8 @@ export class api {
 			});
 
 			if (response.status === 429 && retries > 0) {
-				console.warn(`Rate limit exceeded. Retrying in ${api.RETRY_DELAY}ms...`);
-				await this.delay(api.RETRY_DELAY);
+				console.warn(`Rate limit exceeded. Retrying in ${API.RETRY_DELAY}ms...`);
+				await this.delay(API.RETRY_DELAY);
 				return this.fetchRequest<T>(endpoint, method, body, retries - 1);
 			}
 
@@ -117,19 +117,19 @@ export class api {
 		}
 	}
 
-	public async GET<T>(endpoint: string, retries = api.MAX_RETRIES): Promise<T> {
+	public async GET<T>(endpoint: string, retries = API.MAX_RETRIES): Promise<T> {
 		return this.fetchRequest<T>(endpoint, 'GET', undefined, retries);
 	}
 
 	public async POST<T = POST>(
 		endpoint: string,
 		body: Record<string, any>,
-		retries = api.MAX_RETRIES
+		retries = API.MAX_RETRIES
 	): Promise<T> {
 		return this.fetchRequest<T>(endpoint, 'POST', body, retries);
 	}
 
-	public async DELETE<T = DELETE>(endpoint: string, retries = api.MAX_RETRIES): Promise<T> {
+	public async DELETE<T = DELETE>(endpoint: string, retries = API.MAX_RETRIES): Promise<T> {
 		return this.fetchRequest<T>(endpoint, 'DELETE', undefined, retries);
 	}
 }
