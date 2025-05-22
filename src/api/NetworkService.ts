@@ -2,7 +2,7 @@ import { API } from '.';
 import { AlternativeNamesResponse, DetailsResponse, ImagesResponse } from '../types/network';
 
 export class NetworkService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the PeopleListsService with the provided API instance.

@@ -2,7 +2,7 @@ import { API } from '.';
 import { AvailableRegionsResponse, ProvidersResponse } from '../types/watchProviders';
 
 export class WatchProvidersService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the WatchProvidersService with the provided API instance.

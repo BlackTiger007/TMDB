@@ -13,7 +13,7 @@ import {
 } from '../types/people';
 
 export class PeopleService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the PeopleListsService with the provided API instance.

@@ -2,7 +2,7 @@ import { API } from '.';
 import { KeywordResponse, MovieResponse } from '../types/keywords';
 
 export class KeywordsService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the KeywordsService with the provided API instance.

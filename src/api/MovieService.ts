@@ -20,7 +20,7 @@ import {
 import { ReviewsResponse } from '../types/tvseries';
 
 export class MovieService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the MovieService with the provided API instance.

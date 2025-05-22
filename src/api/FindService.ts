@@ -2,7 +2,7 @@ import { API } from '.';
 import { FindByIDResponse } from '../types/find';
 
 export class FindService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the FindService with the provided API instance.

@@ -5,7 +5,7 @@ import { CreditsResponse } from '../types/credits';
  * Service class for interacting with credit-related endpoints of the TMDB API.
  */
 export class CreditsService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Creates an instance of CreditsService.

@@ -15,7 +15,7 @@ import type {
  * Service class for interacting with account-related endpoints of the TMDB API.
  */
 export class AccountService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Creates an instance of AccountService.

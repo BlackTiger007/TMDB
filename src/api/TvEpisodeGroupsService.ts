@@ -2,7 +2,7 @@ import { API } from '.';
 import { DetailsResponse } from '../types/tvEpisodeGroups';
 
 export class TvEpisodeGroupsService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the PeopleListsService with the provided API instance.

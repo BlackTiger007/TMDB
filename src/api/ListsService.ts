@@ -2,7 +2,7 @@ import { API } from '.';
 import { CheckItemStatusResponse, CreateListResponse, DetailsResponse } from '../types/lists';
 
 export class ListsService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the PeopleListsService with the provided API instance.

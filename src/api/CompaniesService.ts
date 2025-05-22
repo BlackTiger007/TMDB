@@ -2,7 +2,7 @@ import { API } from '.';
 import { DetailsResponse, AlternativeNamesResponse, ImagesResponse } from '../types/companies';
 
 export class CompaniesService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the CompaniesService with the provided API instance.

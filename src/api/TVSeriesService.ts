@@ -23,7 +23,7 @@ import {
 } from '../types/tvseries';
 
 export class TVSeriesService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the TVSeriesService with the provided API instance.

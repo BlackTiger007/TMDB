@@ -6,7 +6,7 @@ import {
 } from '../types/guestSessions';
 
 export class GuestSessionsService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the PeopleListsService with the provided API instance.

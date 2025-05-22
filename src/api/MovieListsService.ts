@@ -7,7 +7,7 @@ import {
 } from '../types/movieLists';
 
 export class MovieListsService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the PeopleListsService with the provided API instance.

@@ -2,7 +2,7 @@ import { API } from '.';
 import { ChangesResponse } from '../types/changes';
 
 export class ChangesService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the ChangesService with the provided API instance.

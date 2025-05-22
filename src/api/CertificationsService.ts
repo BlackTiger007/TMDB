@@ -2,7 +2,7 @@ import { API } from '.';
 import { CertificationsResponse } from '../types/certifications';
 
 export class CertificationsService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the CertificationsService with the provided API instance.

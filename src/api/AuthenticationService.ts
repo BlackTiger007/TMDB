@@ -8,7 +8,7 @@ import type {
 } from '../newTypes';
 
 export class AuthenticationService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the AuthenticationService with the provided API instance.

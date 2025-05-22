@@ -9,7 +9,7 @@ import {
 } from '../types/configuration';
 
 export class ConfigurationService {
-	private apiInstance: API;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the ConfigurationService with the provided API instance.
