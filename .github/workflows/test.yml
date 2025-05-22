@@ -25,3 +25,6 @@ jobs:
 
       - name: Tests ausführen
         run: npm run test
+        with:
+          env:
+            API_KEY: ${{ secrets.TMDB_KEY }}
