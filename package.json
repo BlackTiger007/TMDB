@@ -11,7 +11,8 @@
 	"scripts": {
 		"lint": "prettier src --check && eslint src/**/*.{js,ts}",
 		"format": "prettier --write src",
-		"test": "ts-node src/tests/index.ts",
+		"test": "vitest",
+		"coverage": "vitest run --coverage",
 		"build": "prettier --write . && rm -rf dist && tsup"
 	},
 	"repository": {
