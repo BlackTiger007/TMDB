@@ -5,10 +5,11 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: 'npm' # See documentation for possible values
+    directory: '/' # Location of package manifests
+    target-branch: 'next'
     schedule:
-      interval: "monthly"
-      day: "saturday"
-      time: "09:00"
-      timezone: "Europe/Berlin"
+      interval: 'monthly'
+      day: 'saturday'
+      time: '09:00'
+      timezone: 'Europe/Berlin'
