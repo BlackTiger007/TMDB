@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi, beforeEach, Mock } from 'vitest';
 import { API } from '../../api/index'; // Pfad ggf. anpassen
 
 describe('API Class', () => {
@@ -31,7 +31,7 @@ describe('API Class', () => {
 	});
 
 	it('should fail initialization with invalid API key', async () => {
-		(fetch as unknown as vi.Mock).mockResolvedValue({
+		(fetch as unknown as Mock).mockResolvedValue({
 			ok: false,
 			status: 401,
 			statusText: 'Unauthorized'
@@ -45,7 +45,7 @@ describe('API Class', () => {
 	it('should retry on 429 rate limit response', async () => {
 		let callCount = 0;
 
-		(fetch as unknown as vi.Mock).mockImplementation(() => {
+		(fetch as unknown as Mock).mockImplementation(() => {
 			callCount++;
 			return Promise.resolve({
 				ok: callCount > 1, // beim zweiten Versuch okay
