@@ -1,17 +1,17 @@
-import { api } from '.';
+import { API } from '.';
 import { CreditsResponse } from '../types/credits';
 
 /**
  * Service class for interacting with credit-related endpoints of the TMDB API.
  */
 export class CreditsService {
-	private apiInstance: api;
+	private readonly apiInstance: API;
 
 	/**
 	 * Creates an instance of CreditsService.
 	 * @param apiInstance - The instance of the API class used to make requests.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

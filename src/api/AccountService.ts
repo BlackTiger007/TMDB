@@ -1,4 +1,4 @@
-import { api } from '.';
+import { API } from '.';
 import type {
 	AccountDetailsResponse,
 	AccountFavoriteMoviesResponse,
@@ -15,13 +15,13 @@ import type {
  * Service class for interacting with account-related endpoints of the TMDB API.
  */
 export class AccountService {
-	private apiInstance: api;
+	private readonly apiInstance: API;
 
 	/**
 	 * Creates an instance of AccountService.
 	 * @param apiInstance - The instance of the API class used to make requests.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

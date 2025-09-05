@@ -1,14 +1,14 @@
-import { api } from '.';
+import { API } from '.';
 import { AvailableRegionsResponse, ProvidersResponse } from '../types/watchProviders';
 
 export class WatchProvidersService {
-	private apiInstance: api;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the WatchProvidersService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

@@ -1,14 +1,14 @@
-import { api } from '.';
+import { API } from '.';
 import { CheckItemStatusResponse, CreateListResponse, DetailsResponse } from '../types/lists';
 
 export class ListsService {
-	private apiInstance: api;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the PeopleListsService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

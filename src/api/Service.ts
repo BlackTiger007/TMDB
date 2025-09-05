@@ -1,13 +1,13 @@
-import { api } from '.';
+import { API } from '.';
 
 export class CreditsService {
-	private apiInstance: api;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the PeopleListsService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

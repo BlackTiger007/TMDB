@@ -1,4 +1,4 @@
-import { api } from '.';
+import { API } from '.';
 import {
 	AlternativeTitlesResponse,
 	ChangesResponse,
@@ -20,13 +20,13 @@ import {
 import { ReviewsResponse } from '../types/tvseries';
 
 export class MovieService {
-	private apiInstance: api;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the MovieService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

@@ -1,14 +1,14 @@
-import { api } from '.';
+import { API } from '.';
 import { KeywordResponse, MovieResponse } from '../types/keywords';
 
 export class KeywordsService {
-	private apiInstance: api;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the KeywordsService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 

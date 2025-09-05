@@ -1,4 +1,4 @@
-import { api } from './api';
+import { API } from './api';
 import { AccountService } from './api/AccountService';
 import { AuthenticationService } from './api/AuthenticationService';
 import { CertificationsService } from './api/CertificationsService';
@@ -30,7 +30,7 @@ import { WatchProvidersService } from './api/WatchProvidersService';
  * credits, genres, keywords, popular people lists, and watch providers.
  */
 export default class TMDB {
-	private apiInstance: api;
+	private apiInstance: API;
 
 	/**
 	 * Service for movie-related API operations.
@@ -120,7 +120,7 @@ export default class TMDB {
 	 * @param language - Optional. The default language for the API responses. Defaults to 'en-US' if not provided.
 	 */
 	constructor(apiKey: string, language?: string) {
-		this.apiInstance = new api(apiKey, language);
+		this.apiInstance = new API(apiKey, language);
 
 		this.movie = new MovieService(this.apiInstance);
 		this.credits = new CreditsService(this.apiInstance);

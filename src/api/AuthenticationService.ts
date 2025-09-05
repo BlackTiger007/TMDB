@@ -1,4 +1,4 @@
-import { api } from '.';
+import { API } from '.';
 import type {
 	AuthenticationCreateGuestSessionResponse,
 	AuthenticationTokenResponse,
@@ -8,13 +8,13 @@ import type {
 } from '../newTypes';
 
 export class AuthenticationService {
-	private apiInstance: api;
+	private readonly apiInstance: API;
 
 	/**
 	 * Initializes the AuthenticationService with the provided API instance.
 	 * @param apiInstance - An instance of the API handler.
 	 */
-	constructor(apiInstance: api) {
+	constructor(apiInstance: API) {
 		this.apiInstance = apiInstance;
 	}
 
