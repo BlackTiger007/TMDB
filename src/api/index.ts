@@ -17,7 +17,6 @@ export class API {
 
 		this.initialize().catch((error) => {
 			console.error('Initialization failed:', error);
-			throw new Error('Failed to initialize TMDB instance.');
 		});
 	}
 
