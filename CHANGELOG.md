@@ -1,10 +1,16 @@
-# [0.22.0](https://github.com/BlackTiger007/tmdb/compare/v0.21.0...v0.22.0) (2024-09-29)
+# [0.23.0](https://github.com/BlackTiger007/tmdb/compare/v0.22.0...v0.23.0) (2025-11-30)
 
 
 ### Features
 
-* **types:** add authentication-related response types ([5e46c3e](https://github.com/BlackTiger007/tmdb/commit/5e46c3eb8e573121dab247d7106ed99e7e6dd9c1))
-* **types:** add new account-related types and ISO 639-1 language codes ([0ba2193](https://github.com/BlackTiger007/tmdb/commit/0ba21934e8402f623924255dc14d3a84b9c794a8))
+* **ci:** add Renovate configuration for automated dependency management ([9c33702](https://github.com/BlackTiger007/tmdb/commit/9c3370248a7439de450f489c7c88f752753b8729))
+
+# [0.22.0](https://github.com/BlackTiger007/tmdb/compare/v0.21.0...v0.22.0) (2024-09-29)
+
+### Features
+
+- **types:** add authentication-related response types ([5e46c3e](https://github.com/BlackTiger007/tmdb/commit/5e46c3eb8e573121dab247d7106ed99e7e6dd9c1))
+- **types:** add new account-related types and ISO 639-1 language codes ([0ba2193](https://github.com/BlackTiger007/tmdb/commit/0ba21934e8402f623924255dc14d3a84b9c794a8))
 
 # [0.21.0](https://github.com/BlackTiger007/tmdb/compare/v0.20.3...v0.21.0) (2024-09-25)
 
