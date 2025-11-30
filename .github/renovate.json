@@ -1,0 +1,37 @@
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": ["config:recommended"],
+	"vulnerabilityAlerts": {
+		"labels": ["security"]
+	},
+	"rebaseWhen": "auto",
+	"prCreation": "not-pending",
+	"dependencyDashboard": false,
+	"rangeStrategy": "bump",
+	"schedule": ["before 5am"],
+	"minimumReleaseAge": "14 days",
+	"rollbackPrs": true,
+	"separateMajorMinor": true,
+	"timezone": "Europe/Berlin",
+	"packageRules": [
+		{
+			"matchUpdateTypes": ["minor", "patch"],
+			"groupName": "Non-breaking updates",
+			"matchFileNames": ["package.json", "npm"],
+			"labels": ["dependencies"],
+			"automerge": true
+		},
+		{
+			"matchUpdateTypes": ["major"],
+			"matchFileNames": ["package.json", "npm"],
+			"labels": ["dependencies"],
+			"automerge": false
+		},
+		{
+			"matchUpdateTypes": ["patch", "minor"],
+			"matchFileNames": [".github/workflows/*.yml"],
+			"labels": ["dependencies"],
+			"automerge": false
+		}
+	]
+}
