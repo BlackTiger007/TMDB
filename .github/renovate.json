@@ -13,6 +13,7 @@
 	"rollbackPrs": true,
 	"separateMajorMinor": true,
 	"timezone": "Europe/Berlin",
+	"baseBranches": ["next"],
 	"packageRules": [
 		{
 			"matchUpdateTypes": ["minor", "patch"],
