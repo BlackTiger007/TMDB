@@ -1,9 +1,15 @@
-# [0.23.0](https://github.com/BlackTiger007/tmdb/compare/v0.22.0...v0.23.0) (2025-11-30)
+## [0.23.1-next.1](https://github.com/BlackTiger007/tmdb/compare/v0.23.0...v0.23.1-next.1) (2025-11-30)
 
+
+### Bug Fixes
+
+* **api:** remove redundant error throw in initialization ([5ca2ae2](https://github.com/BlackTiger007/tmdb/commit/5ca2ae2f767244927347ce8b5b61ff5dac999fa4))
+
+# [0.23.0](https://github.com/BlackTiger007/tmdb/compare/v0.22.0...v0.23.0) (2025-11-30)
 
 ### Features
 
-* **ci:** add Renovate configuration for automated dependency management ([9c33702](https://github.com/BlackTiger007/tmdb/commit/9c3370248a7439de450f489c7c88f752753b8729))
+- **ci:** add Renovate configuration for automated dependency management ([9c33702](https://github.com/BlackTiger007/tmdb/commit/9c3370248a7439de450f489c7c88f752753b8729))
 
 # [0.22.0](https://github.com/BlackTiger007/tmdb/compare/v0.21.0...v0.22.0) (2024-09-29)
 
