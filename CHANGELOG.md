@@ -1,9 +1,15 @@
-## [0.23.1-next.1](https://github.com/BlackTiger007/tmdb/compare/v0.23.0...v0.23.1-next.1) (2025-11-30)
+## [0.23.1](https://github.com/BlackTiger007/tmdb/compare/v0.23.0...v0.23.1) (2025-11-30)
 
 
 ### Bug Fixes
 
 * **api:** remove redundant error throw in initialization ([5ca2ae2](https://github.com/BlackTiger007/tmdb/commit/5ca2ae2f767244927347ce8b5b61ff5dac999fa4))
+
+## [0.23.1-next.1](https://github.com/BlackTiger007/tmdb/compare/v0.23.0...v0.23.1-next.1) (2025-11-30)
+
+### Bug Fixes
+
+- **api:** remove redundant error throw in initialization ([5ca2ae2](https://github.com/BlackTiger007/tmdb/commit/5ca2ae2f767244927347ce8b5b61ff5dac999fa4))
 
 # [0.23.0](https://github.com/BlackTiger007/tmdb/compare/v0.22.0...v0.23.0) (2025-11-30)
 
