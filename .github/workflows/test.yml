@@ -18,7 +18,7 @@ jobs:
       - name: Node installieren
         uses: actions/setup-node@v4
         with:
-          node-version: '22' # oder deine aktuelle Version
+          node-version: '22.21.1' # oder deine aktuelle Version
 
       - name: Abhängigkeiten installieren
         run: npm install
