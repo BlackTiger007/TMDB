@@ -13,12 +13,12 @@ jobs:
 
     steps:
       - name: Repository auschecken
-        uses: actions/checkout@v5
+        uses: actions/checkout@v6
 
       - name: Node installieren
         uses: actions/setup-node@v6
         with:
-          node-version: 24.11.1
+          node-version: 24.12.0
 
       - name: Abhängigkeiten installieren
         run: npm install
