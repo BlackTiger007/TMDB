@@ -3,6 +3,32 @@
 [![NPM version](https://img.shields.io/npm/v/@blacktiger/tmdb.svg)](https://www.npmjs.com/package/@blacktiger/tmdb)
 [![wakatime](https://wakatime.com/badge/github/BlackTiger007/TMDB.svg)](https://wakatime.com/badge/github/BlackTiger007/TMDB)
 
+## 📌 Overview
+
+A lightweight and pragmatic TypeScript client for the TMDB API, focused on simplicity, direct API mapping, and developer control.
+
+Unlike more abstraction-heavy libraries, this client provides predictable structures and explicit endpoint access, making it suitable for backend services and controlled environments.
+
+## 📌 Maintenance
+
+This package is still maintained, but development is driven by practical needs and may not include all TMDB API features.
+
+Some missing endpoints are intentionally not implemented or replaced with alternative abstractions.
+
+## 🚀 Key Characteristics
+
+- Simple and predictable API design
+- Optional default language configuration
+- Minimal abstraction over TMDB endpoints
+- Suitable for backend services and controlled environments
+- Lightweight with no unnecessary dependencies
+
+## ⚠️ Notes on Types
+
+Type definitions are based on TMDB responses, which are not always consistent or fully accurate.
+
+Some types may be duplicated or simplified to ensure usability within TypeScript.
+
 ## Install
 
 ```bash
@@ -11,15 +37,17 @@ npm i @blacktiger/tmdb
 
 ## Usage
 
-The API key is validated when the instance is created.
+The API key is validated during instance initialization.
 
 ```ts
 import TMDB from '@blacktiger/tmdb';
 
-const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */);
+const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default: en-US */);
 ```
 
-## Features
+## 📚 Supported Endpoints
+
+The following sections list supported TMDB API endpoints grouped by category.
 
 ### Account
 
@@ -314,3 +342,19 @@ const tmdb = new TMDB(/* Your API Key */, /* Optional Language, Default en-US */
 | [Available Regions](https://developer.themoviedb.org/reference/watch-providers-available-regions) | ✅         |
 | [Movie Providers](https://developer.themoviedb.org/reference/watch-providers-movie-st)            | ✅         |
 | [TV Providers](https://developer.themoviedb.org/reference/watch-provider-tv-st)                   | ✅         |
+
+## 🤔 When to Use
+
+Use this client if you:
+
+- Prefer a simple and explicit TMDB API wrapper
+- Want control over requests and responses
+- Need a lightweight solution without heavy abstractions
+
+## 🚫 When Not to Use
+
+Consider alternatives if you:
+
+- Require full TMDB API coverage
+- Need advanced query composition (e.g. append_to_response patterns)
+- Prefer highly abstracted or auto-generated clients
