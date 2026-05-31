@@ -31,7 +31,7 @@
 	},
 	"homepage": "https://github.com/BlackTiger007/tmdb#readme",
 	"devDependencies": {
-		"@eslint/js": "^9.39.4",
+		"@eslint/js": "^10.0.1",
 		"@semantic-release/changelog": "^6.0.3",
 		"@semantic-release/git": "^10.0.1",
 		"@types/node": "^24.12.4",
