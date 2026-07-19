@@ -5,7 +5,7 @@
 		/* Language and Environment */
 		"target": "es2020" /* Modernes JavaScript-Target für bessere Unterstützung aktueller Features. */,
 		"module": "commonjs" /* CommonJS-Module für Node.js-Kompatibilität. */,
-		"lib": ["es2020"] /* Verwendung von modernen ES2020-Bibliotheken. */,
+		"lib": ["es2020", "DOM", "DOM.Iterable"] /* Verwendung von modernen ES2020-Bibliotheken. */,
 		"esModuleInterop": true /* Verbesserte Interoperabilität mit CommonJS-Modulen. */,
 		"strict": true /* Aktiviert alle strikten TypeScript-Prüfungen. */,
 		"forceConsistentCasingInFileNames": true /* Sicherstellung konsistenter Groß-/Kleinschreibung bei Dateinamen. */,
