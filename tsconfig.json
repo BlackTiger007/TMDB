@@ -1,5 +1,7 @@
 {
 	"compilerOptions": {
+		"ignoreDeprecations": "6.0",
+
 		/* Language and Environment */
 		"target": "es2020" /* Modernes JavaScript-Target für bessere Unterstützung aktueller Features. */,
 		"module": "commonjs" /* CommonJS-Module für Node.js-Kompatibilität. */,
